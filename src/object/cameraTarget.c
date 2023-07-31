@@ -57,8 +57,8 @@ void CameraTarget(Entity* this) {
                 break;
             }
         default:
-            if (gPossibleInteraction.currentObject->kinstoneId == KINSTONE_32) {
-                if (CheckKinstoneFused(KINSTONE_32) == 0) {
+            if (gPossibleInteraction.currentObject->kinstoneId == FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE) {
+                if (CheckKinstoneFused(FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE) == 0) {
                     uVar2 = 0;
                     break;
                 }

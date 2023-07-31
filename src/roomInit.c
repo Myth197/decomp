@@ -281,7 +281,7 @@ void sub_StateChange_HouseInteriors1_PostOffice(void) {
     u16* flagArr;
     s32 j;
 
-    if (CheckKinstoneFused(KINSTONE_2C)) {
+    if (CheckKinstoneFused(FUSION_MARCY_POST_OFFICE)) {
         LoadRoomEntityList(&gUnk_080D6340);
     }
     j = 0;
@@ -947,26 +947,26 @@ void sub_StateChange_GoronCave_Main(void) {
     if (!CheckLocalFlag(GORON_DOUKUTU_APPEAR))
         SetLocalFlag(GORON_DOUKUTU_APPEAR);
 
-    if (CheckKinstoneFused(KINSTONE_2F))
+    if (CheckKinstoneFused(FUSION_6TH_GORON_WALL))
         LoadRoomEntityList(&gUnk_080D8B24);
-    else if (CheckKinstoneFused(KINSTONE_2B))
+    else if (CheckKinstoneFused(FUSION_5TH_GORON_WALL))
         LoadRoomEntityList(&gUnk_080D8AC4);
-    else if (CheckKinstoneFused(KINSTONE_26))
+    else if (CheckKinstoneFused(FUSION_4TH_GORON_WALL))
         LoadRoomEntityList(&gUnk_080D8A74);
-    else if (CheckKinstoneFused(KINSTONE_2A))
+    else if (CheckKinstoneFused(FUSION_3RD_GORON_WALL))
         LoadRoomEntityList(&gUnk_080D8A34);
-    else if (CheckKinstoneFused(KINSTONE_25))
+    else if (CheckKinstoneFused(FUSION_2ND_GORON_WALL))
         LoadRoomEntityList(&gUnk_080D8A04);
     else
         LoadRoomEntityList(&gUnk_080D89E4);
 
-    if (CheckKinstoneFused(KINSTONE_25))
+    if (CheckKinstoneFused(FUSION_2ND_GORON_WALL))
         sub_0807BB68(&gUnk_080D8BBC, 0x7c5, 1);
 
-    if (CheckKinstoneFused(KINSTONE_26))
+    if (CheckKinstoneFused(FUSION_4TH_GORON_WALL))
         sub_0807BB68(&gUnk_080D8BFA, 0x503, 1);
 
-    if (CheckKinstoneFused(KINSTONE_2F))
+    if (CheckKinstoneFused(FUSION_6TH_GORON_WALL))
         sub_0807BB68(&gUnk_080D8C68, 0x281, 1);
 }
 
@@ -1216,7 +1216,7 @@ void sub_StateChange_CastorWilds_Main(void) {
 
     SetGlobalFlag(DASHBOOTS);
 
-    if (CheckKinstoneFused(KINSTONE_5B))
+    if (CheckKinstoneFused(FUSION_CASTOR_WILDS_TOP_LEFT_CRACK))
         LoadRoomEntityList(&gUnk_080D9CC8);
 
     if ((gSave.windcrests & 0x20000000) == 0)
@@ -2069,7 +2069,7 @@ extern EntityData gUnk_080DDE88;
 
 void sub_StateChange_Ruins_TripleTektites(void) {
 
-    if (CheckKinstoneFused(KINSTONE_41)) {
+    if (CheckKinstoneFused(FUSION_WIND_RUINS_MINISH_CRACK)) {
         LoadRoomEntityList(&gUnk_080DDE88);
     }
 }
@@ -4290,7 +4290,7 @@ u32 sub_unk3_HyruleTown_0(void) {
     int iVar3;
 
     UpdateGlobalProgress();
-    iVar3 = CheckKinstoneFused(KINSTONE_B);
+    iVar3 = CheckKinstoneFused(FUSION_TOWN_NEW_HOUSE);
     if (iVar3 != 0) {
         iVar3 = CheckGlobalFlag(TATEKAKE_TOCHU);
         if (iVar3 == 0) {
@@ -4368,18 +4368,18 @@ void sub_StateChange_HyruleTown_0(void) {
         if ((!GetInventoryValue(ITEM_KINSTONE_BAG)) && CheckGlobalFlag(LV1_CLEAR)) {
             LoadRoomEntityList(&gUnk_080EE88C);
         }
-        if (!CheckKinstoneFused(KINSTONE_28)) {
+        if (!CheckKinstoneFused(FUSION_TOWN_GHOST)) {
             LoadRoomEntityList(&gUnk_080EE8FC);
         }
-        if (CheckKinstoneFused(KINSTONE_33)) {
+        if (CheckKinstoneFused(FUSION_TOWN_GORON_MERCHANT)) {
             LoadRoomEntityList(&gUnk_080EE91C);
         }
-        if (CheckGlobalFlag(MACHI_MACHIHOKORI)) {
+        if (CheckGlobalFlag(TOWN_DUST_REMOVED)) {
             LoadRoomEntityList(&gUnk_080EE93C);
         } else {
             LoadRoomEntityList(&gUnk_080EECBC);
         }
-        if (CheckKinstoneFused(KINSTONE_1B) && (gSave.global_progress > 3)) {
+        if (CheckKinstoneFused(FUSION_TOWN_2ND_HOUSE_RENT) && (gSave.global_progress > 3)) {
             if (!(CheckGlobalFlag(NEW_HOUSE_DIN) || CheckGlobalFlag(NEW_HOUSE_NAYRU) ||
                   CheckGlobalFlag(NEW_HOUSE_FARORE))) {
                 if (!(CheckGlobalFlag(RENTED_HOUSE_DIN) || CheckGlobalFlag(RENTED_HOUSE_NAYRU) ||
@@ -4405,7 +4405,7 @@ void sub_StateChange_HyruleTown_0(void) {
         } else {
             LoadRoomEntityList(&gUnk_080EE9DC);
         }
-        if ((gSave.global_progress > 4) && !CheckKinstoneFused(KINSTONE_B) &&
+        if ((gSave.global_progress > 4) && !CheckKinstoneFused(FUSION_TOWN_NEW_HOUSE) &&
             (CheckGlobalFlag(RENTED_HOUSE_DIN) || CheckGlobalFlag(RENTED_HOUSE_NAYRU) ||
              CheckGlobalFlag(RENTED_HOUSE_FARORE))) {
             LoadRoomEntityList(&gUnk_080EEA5C);
@@ -4797,7 +4797,7 @@ extern EntityData gUnk_080F27D8;
 extern EntityData gUnk_080F2798;
 
 void sub_StateChange_HouseInteriors2_Percy(void) {
-    if (CheckKinstoneFused(KINSTONE_21)) {
+    if (CheckKinstoneFused(FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE)) {
         if (!CheckLocalFlag(0x42)) {
             if (!CheckLocalFlag(0x43)) {
                 LoadRoomEntityList(&gUnk_additional_9_HouseInteriors2_Percy);
@@ -5036,7 +5036,7 @@ void sub_StateChange_LakeHylia_Main(void) {
     if (CheckGlobalFlag(LV4_CLEAR) && !CheckLocalFlag(4)) {
         LoadRoomEntityList(&gUnk_080F3C64);
     }
-    if (CheckKinstoneFused(KINSTONE_12)) {
+    if (CheckKinstoneFused(FUSION_LAKE_LIBRARI_CRACK)) {
         LoadRoomEntityList(&gUnk_080F3C94);
     }
     if ((gSave.global_progress > 3) && CheckGlobalFlag(TINGLE_TALK1ST)) {
@@ -5204,7 +5204,7 @@ void sub_StateChange_MinishWoods_Main(void) {
         }
         LoadRoomEntityList(&gUnk_080F4DF0);
     }
-    if (CheckKinstoneFused(KINSTONE_4E)) {
+    if (CheckKinstoneFused(FUSION_MINISH_WOODS_CRACK)) {
         LoadRoomEntityList(&gUnk_080F4F10);
     }
     if ((s32)gSave.windcrests > -1) {
@@ -5487,7 +5487,7 @@ void sub_StateChange_WindTribeTower_Entrance(void) {
     if (CheckLocalFlagByBank(FLAG_BANK_1, KUMOUE_00_CAP_0)) {
         SetLocalFlag(0x90);
     }
-    if (CheckKinstoneFused(KINSTONE_F)) {
+    if (CheckKinstoneFused(FUSION_WIND_TRIBE_PORTAL)) {
         LoadRoomEntityList(&gUnk_080F61BC);
     }
     if (!CheckGlobalFlag(WARP_EVENT_END)) {
@@ -5731,7 +5731,7 @@ void sub_StateChange_HyruleField_LonLonRanch(void) {
     if (CheckGlobalFlag(TABIDACHI) && !GetInventoryValue(ITEM_EARTH_ELEMENT)) {
         LoadRoomEntityList(&gUnk_080F7810);
     }
-    if (!CheckKinstoneFused(KINSTONE_29)) {
+    if (!CheckKinstoneFused(FUSION_1ST_GORON_WALL)) {
         LoadRoomEntityList(&gUnk_080F7860);
         SetTile(0x4072, 0xd88, 1);
         SetTile(0x4096, 0xdc8, 1);
@@ -5972,7 +5972,7 @@ extern EntityData gUnk_080F8430;
 
 void sub_StateChange_HyruleField_WesternWoodsCenter(void) {
     CloudOverlayManager_Main(NULL);
-    if (CheckKinstoneFused(KINSTONE_21) && !CheckLocalFlagByBank(FLAG_BANK_2, MHOUSE08_03)) {
+    if (CheckKinstoneFused(FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE) && !CheckLocalFlagByBank(FLAG_BANK_2, MHOUSE08_03)) {
         LoadRoomEntityList(&gUnk_080F8430);
     }
 }
@@ -6254,7 +6254,7 @@ void sub_StateChange_VeilFallsCaves_HeartPiece(void) {
 extern u32 gUnk_080F9BF8;
 
 u32 sub_unk3_VeilFallsTop_Main(void) {
-    if (!CheckKinstoneFused(KINSTONE_E)) {
+    if (!CheckKinstoneFused(FUSION_BIGGORON)) {
         gRoomVars.field_0x6c[0] = &gUnk_080F9BF8;
     }
     return 1;
@@ -6308,7 +6308,7 @@ extern EntityData gUnk_080F9FA8;
 extern EntityData gUnk_080F9F88;
 
 void sub_StateChange_TreeInteriors_WitchHut(void) {
-    if (CheckKinstoneFused(KINSTONE_14)) {
+    if (CheckKinstoneFused(FUSION_WITCH_RED_POTION)) {
         LoadRoomEntityList(&gUnk_080F9FA8);
     }
     if (!GetInventoryValue(ITEM_QST_MUSHROOM)) {
@@ -6435,7 +6435,7 @@ u32 sub_unk3_TreeInteriors_PercysTreehouse(void) {
 extern EntityData gUnk_080FA5D0;
 
 void sub_StateChange_TreeInteriors_PercysTreehouse(void) {
-    if (!CheckKinstoneFused(KINSTONE_21)) {
+    if (!CheckKinstoneFused(FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE)) {
         LoadRoomEntityList(&gUnk_080FA5D0);
     }
 }

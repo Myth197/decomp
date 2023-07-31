@@ -217,7 +217,7 @@ void sub_0806E23C(void) {
 
 void sub_0806E250(PicolyteBottleEntity* this, ScriptExecutionContext* context) {
     context->condition = 0;
-    if (CheckKinstoneFused(KINSTONE_31) != 0) {
+    if (CheckKinstoneFused(FUSION_TOWN_BARLOV_GAME) != 0) {
         context->condition = 1;
     }
     gActiveScriptInfo.flags |= 1;

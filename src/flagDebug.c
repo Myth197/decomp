@@ -17,7 +17,7 @@ const char* const globalFlagNames[] = {
     "MACHI_SET_6",
     "MACHI_SET_7",
     "MACHI_SET_8",
-    "MACHI_MACHIHOKORI",
+    "TOWN_DUST_REMOVED",
     "START",
     "EZERO_1ST",
     "TABIDACHI",

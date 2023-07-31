@@ -87,12 +87,12 @@ void TingleSiblings_MakeInteractable(Entity* this) {
     this->field_0x68.HALF.LO = GetFusionToOffer(this);
     switch (this->type) {
         case 0:
-            if ((CheckKinstoneFused(KINSTONE_59) != 0) && (GetInventoryValue(ITEM_MAGIC_BOOMERANG) == 0)) {
+            if ((CheckKinstoneFused(FUSION_NORTH_HYRULE_FIELD_TOP_LEFT_TREE) != 0) && (GetInventoryValue(ITEM_MAGIC_BOOMERANG) == 0)) {
                 this->field_0x68.HALF.LO = 0;
             }
             break;
         case 3:
-            if ((CheckKinstoneFused(KINSTONE_5A) != 0) && (GetInventoryValue(ITEM_MAGIC_BOOMERANG) == 0)) {
+            if ((CheckKinstoneFused(FUSION_NORTH_HYRULE_FIELD_BOTTOM_RIGHT_TREE) != 0) && (GetInventoryValue(ITEM_MAGIC_BOOMERANG) == 0)) {
                 this->field_0x68.HALF.LO = 0;
             }
             break;

@@ -1,16 +1,16 @@
 @ Castor Wilds Statue right
 SCRIPT_START script_CastorWildsStatueRight
 	BeginBlock
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_RIGHT
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_RIGHT
 	JumpIf script_0800B302
-	_0807EA88 KINSTONE_CASTOR_WILDS_STATUE_RIGHT
+	_0807EA88 FUSION_CASTOR_WILDS_STATUE_RIGHT
 	SetAnimationState 0x0002
 	EndBlock
 script_0800B2C8:
 	_0807EA4C
 	_0807E9F0
 	SetPlayerIdle
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_RIGHT
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_RIGHT
 	JumpIf script_0800B2E2
 	Call EnablePauseMenu
 	EnablePlayerControl

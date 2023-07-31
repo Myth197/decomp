@@ -1,7 +1,7 @@
 @ Waterfalls MINISH_VILLAGE_OBJECT during kinstone cutscene?
 SCRIPT_START script_MinishVillageObjectLeftStoneOpening
 	BeginBlock
-	CheckKinstoneFused KINSTONE_SOURCE_FLOW
+	CheckKinstoneFused FUSION_VEIL_FALLS_DOOR
 	JumpIf script_MinishVillageObjectLeftStone
 	EndBlock
 	WaitForSyncFlagAndClear 0x00000001

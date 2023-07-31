@@ -39,55 +39,55 @@ extern const u16 gLocalFlagBanks[];
  * Annoyingly they are offset by 1. Needs to be taken into account whereever gLocalFlagBanks is used.
  */
 enum LocalBanks {
-    LOCAL_BANK_G,
+    LOCAL_BANK_G,   /**< Global Flags */
     LOCAL_BANK_0,
-    LOCAL_BANK_1,
-    LOCAL_BANK_2,
-    LOCAL_BANK_3,
-    LOCAL_BANK_4,
-    LOCAL_BANK_5,
-    LOCAL_BANK_6,
-    LOCAL_BANK_7,
-    LOCAL_BANK_8,
-    LOCAL_BANK_9,
-    LOCAL_BANK_10,
+    LOCAL_BANK_1,   /**< Overworld Flags */
+    LOCAL_BANK_2,   /**< House Flags */
+    LOCAL_BANK_3,   /**< Flags for: Digging areas, Beanstalks, Minish Paths, Crypt, Town Minish*/
+    LOCAL_BANK_4,   /**< Cave and Tree Flags */
+    LOCAL_BANK_5,   /**< Deepwood Shrine Flags */
+    LOCAL_BANK_6,   /**< Cave of Flames Flags */
+    LOCAL_BANK_7,   /**< Fortress of Winds Flags */
+    LOCAL_BANK_8,   /**< Temple of Droplets Flags */
+    LOCAL_BANK_9,   /**< Palace of Winds Flags */
+    LOCAL_BANK_10,  /**< Dark Hyrule Castle Flags */
     LOCAL_BANK_11,
     LOCAL_BANK_12,
 };
 
 enum LocalFlagOffsets {
-    FLAG_BANK_G = 0,
+    FLAG_BANK_G = 0,        /**< Global Flags */
     FLAG_BANK_0 = 0,
-    FLAG_BANK_1 = 0x100,
-    FLAG_BANK_2 = 0x200,
-    FLAG_BANK_3 = 0x300,
-    FLAG_BANK_4 = 0x400,
-    FLAG_BANK_5 = 0x500,
-    FLAG_BANK_6 = 0x5C0,
-    FLAG_BANK_7 = 0x680,
-    FLAG_BANK_8 = 0x740,
-    FLAG_BANK_9 = 0x800,
-    FLAG_BANK_10 = 0x8C0,
+    FLAG_BANK_1 = 0x100,    /**< Overworld Flags */
+    FLAG_BANK_2 = 0x200,    /**< House Flags */
+    FLAG_BANK_3 = 0x300,    /**< Flags for: Digging areas, Beanstalks, Minish Paths, Crypt, Town Minish*/
+    FLAG_BANK_4 = 0x400,    /**< Cave and Tree Flags */
+    FLAG_BANK_5 = 0x500,    /**< Deepwood Shrine Flags */
+    FLAG_BANK_6 = 0x5C0,    /**< Cave of Flames Flags */
+    FLAG_BANK_7 = 0x680,    /**< Fortress of Winds Flags */
+    FLAG_BANK_8 = 0x740,    /**< Temple of Droplets Flags */
+    FLAG_BANK_9 = 0x800,    /**< Palace of Winds Flags */
+    FLAG_BANK_10 = 0x8C0,   /**< Dark Hyrule Castle Flags */
     FLAG_BANK_11 = 0x9C0,
     FLAG_BANK_12 = 0xA80,
 };
 
 typedef enum {
     BEGIN,
-    /*0x01*/ LV0_CLEAR,           /**< undocumented */
-    /*0x02*/ LV1_CLEAR,           /**< undocumented */
-    /*0x03*/ LV2_CLEAR,           /**< undocumented */
-    /*0x04*/ LV3_CLEAR,           /**< undocumented */
-    /*0x05*/ LV4_CLEAR,           /**< undocumented */
-    /*0x06*/ LV5_CLEAR,           /**< undocumented */
+    /*0x01*/ LV0_CLEAR,           /**< Simulation chest opened */
+    /*0x02*/ LV1_CLEAR,           /**< Defeated Big Green Chuchu */
+    /*0x03*/ LV2_CLEAR,           /**< Defeated Gleerok */
+    /*0x04*/ LV3_CLEAR,           /**< Entered Ocarina Room */
+    /*0x05*/ LV4_CLEAR,           /**< Defeated Big Octorok */
+    /*0x06*/ LV5_CLEAR,           /**< Defeated Gyorg Pair */
     /*0x07*/ LV6_CLEAR,           /**< undocumented */
     /*0x08*/ LV7_CLEAR,           /**< undocumented */
     /*0x09*/ LV8_CLEAR,           /**< undocumented */
-    /*0x0a*/ MACHI_SET_1,         /**< Defeated Big Green Chuchu */
-    /*0x0b*/ MACHI_SET_2,         /**< Defeated Gleerok */
+    /*0x0a*/ MACHI_SET_1,         /**< undocumented */
+    /*0x0b*/ MACHI_SET_2,         /**< undocumented */
     /*0x0c*/ MACHI_SET_3,         /**< undocumented */
-    /*0x0d*/ MACHI_SET_4,         /**< Defeated Big Octorok */
-    /*0x0e*/ MACHI_SET_5,         /**< Defeated Gyorg Pair */
+    /*0x0d*/ MACHI_SET_4,         /**< undocumented */
+    /*0x0e*/ MACHI_SET_5,         /**< undocumented */
     /*0x0f*/ MACHI_SET_6,         /**< undocumented */
     /*0x10*/ MACHI_SET_7,         /**< undocumented */
     /*0x11*/ MACHI_SET_8,         /**< undocumented */
@@ -174,6 +174,7 @@ typedef enum {
     /*0x62*/ MAZE_CLEAR,          /**< Cleared Castle maze */
     /*0x63*/ TINY_ENTRANCE,       /**< Ezlo described entrances */
     /*0x64*/ CASTLE_BGM,          /**< Castle intro BGM */
+
     END,
 } Flag;
 
@@ -193,7 +194,7 @@ typedef enum {
     MIZUUMI_00_CAP_0,             /**< undocumented */
 #else
     HIKYOU_00_T0,                 /**< undocumented */
-    HIKYOU_00_T1,                 /**< undocumented */
+    HIKYOU_00_T1,                 /**< Chest opened in Swamp overworld */
 #endif
     MAENIWA_00_00,                /**< Ladder to Hyrule Castle Basement revealed in Hyrule Castle Garden */
     MAENIWA_00_01,                /**< undocumented */
@@ -239,8 +240,8 @@ typedef enum {
     LOST_05_00,                   /**< Defeated Armoses in Wind Ruins Running Armos */
     LOST_05_01,                   /**< Defeated Beetles & Ropes in Wind Ruins */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    LOST_05_02,                   /**< undocumented */
-    LOST_05_03,                   /**< undocumented */
+    LOST_05_02,                   /**< Defeat the 3 Armos in Wind Ruins */
+    LOST_05_03,                   /**< Defeat the Ropes and Beetles in Wind Ruins */
 #endif
     LOST_05_T0,                   /**< 100 Rupee Chest Open in Wind Ruins */
     LOST_05_T1,                   /**< 50 Shell Chest Open in Wind Ruins */
@@ -265,7 +266,7 @@ typedef enum {
     YAMA_03_DOKU_2,               /**< Bottom wall tile "blown up in Mount Crenel Wall Entrance */
     YAMA_04_CAP_0,                /**< Ezlo talks about Whirlwind in Mount Crenel Base */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    YAMA_04_CAP_1,                /**< undocumented */
+    YAMA_04_CAP_1,                /**< Ezlo talks after Rock Shrink Cutscene */
 #endif
     YAMA_04_R00,                  /**< Grabbed Red Rupee in Mount Crenel Base */
     YAMA_04_HIBI_0,               /**< undocumented */
@@ -366,7 +367,7 @@ typedef enum {
     SUIGEN_00_R0,                 /**< Obtained hidden 50 Rupee in Veil Falls, rock circle */
     SUIGEN_00_R1,                 /**< undocumented */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    SUIGEN_00_R2,                 /**< undocumented */
+    SUIGEN_00_R2,                 /**< Dig up Big Green Rupee in Lower Veil Falls */
 #endif
     SUIGEN_00_h1,                 /**< Obtained Heart Piece in Veil Falls South */
     SUIGENGORON_00_CAP_0,         /**< Ezlo talks about vortex in Veil Springs */
@@ -380,7 +381,7 @@ typedef enum {
     KAKERA_TAKARA_A,              /**< Bottle Chest Opened in Eastern Hills */
     KAKERA_TAKARA_E,              /**< Blue S Kinstone Chest Open in Minish Woods, northwest */
 #if !defined(JP) && !defined(EU) && !defined(DEMO_JP)
-    KAKERA_TAKARA_J,              /**< undocumented */
+    KAKERA_TAKARA_J,              /**< Blue S Kinstone Chest open in Minish Woods, southwest */
 #endif
     KAKERA_TAKARA_K,              /**< Bomb Bag Chest Open in Wind Ruins, near entrance to Fortress of Winds */
     KAKERA_TAKARA_L,              /**< Red W Kinstone Chest Open in Minish Woods */
@@ -455,11 +456,11 @@ typedef enum {
     KS_C25,                       /**< undocumented */
 #else
     MIZUUMI_00_CAP_0,             /**< undocumented */
-    SUIGEN_00_R2,                 /**< undocumented */
-    YAMA_04_CAP_1,                /**< undocumented */
-    LOST_05_02,                   /**< undocumented */
-    LOST_05_03,                   /**< undocumented */
-    KAKERA_TAKARA_J,              /**< undocumented */
+    SUIGEN_00_R2,                 /**< Dig up Big Green Rupee in Lower Veil Falls */
+    YAMA_04_CAP_1,                /**< Ezlo talks after Rock Shrink Cutscene */
+    LOST_05_02,                   /**< Defeat the 3 Armos in Wind Ruins */
+    LOST_05_03,                   /**< Defeat the Ropes and Beetles in Wind Ruins */
+    KAKERA_TAKARA_J,              /**< Blue S Kinstone Chest open in Minish Woods, southwest */
 #endif
 #ifdef DEMO_JP
     KS_WARPUSE,                   /**< undocumented */

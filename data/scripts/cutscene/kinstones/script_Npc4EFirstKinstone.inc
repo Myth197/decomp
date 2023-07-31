@@ -33,7 +33,7 @@ script_0800F09A:
 	EnablePlayerControl
 	WaitForSyncFlagAndClear 0x00000040
 script_0800F11A:
-	CheckKinstoneFused KINSTONE_32
+	CheckKinstoneFused FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE
 	JumpIfNot script_0800F11A
 	SetPlayerIdle
 	Call DisablePauseMenuAndPutAwayItems

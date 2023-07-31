@@ -2,7 +2,7 @@
 SCRIPT_START script_NPC4ESourceOfTheFlow
 	BeginBlock
 	Call sub_0806DB84
-	CheckKinstoneFused KINSTONE_SOURCE_FLOW
+	CheckKinstoneFused FUSION_VEIL_FALLS_DOOR
 	JumpIf script_08016028
 	_0807EA88 KINSTONE_SOURCE_FLOW
 	CallWithArg NPC4E_ChangeInteractableHitbox, 0x00000007
@@ -12,7 +12,7 @@ script_08015FE4:
 	_0807EA4C
 	_0807E9F0
 	SetPlayerIdle
-	CheckKinstoneFused KINSTONE_SOURCE_FLOW
+	CheckKinstoneFused FUSION_VEIL_FALLS_DOOR
 	JumpIf script_08015FFE
 	Call EnablePauseMenu
 	EnablePlayerControl

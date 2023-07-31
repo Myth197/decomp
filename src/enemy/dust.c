@@ -122,7 +122,7 @@ void sub_080441E0(DustEntity* this) {
     u32* puVar3;
     Hitbox* pHVar4;
 
-    if (CheckGlobalFlag(MACHI_MACHIHOKORI)) {
+    if (CheckGlobalFlag(TOWN_DUST_REMOVED)) {
         DeleteThisEntity();
     }
     if (super->type == 0) {
@@ -244,7 +244,7 @@ void sub_08044310(DustEntity* this) {
         }
 
         if (HEAP->unk_0 == 0) {
-            SetGlobalFlag(MACHI_MACHIHOKORI);
+            SetGlobalFlag(TOWN_DUST_REMOVED);
             SoundReq(SFX_SECRET);
             DeleteThisEntity();
         }

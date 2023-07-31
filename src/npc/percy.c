@@ -110,7 +110,7 @@ void sub_0806B504(Entity* this) {
     int idx;
 
     idx = 1;
-    if (CheckKinstoneFused(KINSTONE_21)) {
+    if (CheckKinstoneFused(FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE)) {
         idx = 3;
     } else if (!CheckLocalFlag(URO_POEMN_TALK)) {
         idx = 0;
