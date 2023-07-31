@@ -158,7 +158,7 @@ void sub_080694EC(Entity* this) {
     u32 anim;
     this->animationState = 4;
     anim = 2;
-    if (!CheckKinstoneFused(KINSTONE_2F))
+    if (!CheckKinstoneFused(FUSION_6TH_GORON_WALL))
         anim = 8;
     InitAnimationForceUpdate(this, anim);
     this->field_0x80.HWORD = anim;

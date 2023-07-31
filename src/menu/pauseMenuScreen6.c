@@ -145,7 +145,7 @@ void sub_080A67C4(u32 param_1) {
             }
             break;
         case 0xb:
-            if (CheckKinstoneFused(KINSTONE_E)) {
+            if (CheckKinstoneFused(FUSION_BIGGORON)) {
                 iVar4 = 0x71;
             }
             break;

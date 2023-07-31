@@ -56,7 +56,7 @@ void CameraTarget(Entity* this) {
             if ((gMessage.doTextBox & 0x7f) != 0) {
                 default:
                     if (gUnk_03003DF0.unk_4[3] == 50) {
-                        if (CheckKinstoneFused(KINSTONE_32) == 0) {
+                        if (CheckKinstoneFused(FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE) == 0) {
                             uVar2 = 0;
                             break;
                         }

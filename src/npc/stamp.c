@@ -85,7 +85,7 @@ void sub_08062CBC(Entity* ent) {
         { 0, DIALOG_ROOM_FLAG, DIALOG_TOGGLE_FLAG, 1, { TEXT_INDEX(TEXT_POST, 0x3), TEXT_INDEX(TEXT_POST, 0x2) } },
     };
     u32 uVar1;
-    if (CheckKinstoneFused(KINSTONE_2C)) {
+    if (CheckKinstoneFused(FUSION_MARCY_POST_OFFICE)) {
         uVar1 = 1;
     } else {
         uVar1 = 0;
