@@ -44,7 +44,7 @@ script_0801610C:
 	WaitUntilTextboxCloses
 	Jump script_08016132
 script_0801611A:
-	CheckKinstoneFused KINSTONE_14
+	CheckKinstoneFused FUSION_WITCH_RED_POTION
 	JumpIfNot script_0801612C
 	MessageFromTarget TEXT_SYRUP, 0x09
 	WaitUntilTextboxCloses

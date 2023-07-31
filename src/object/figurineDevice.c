@@ -519,38 +519,38 @@ NONMATCH("asm/non_matching/figurineDevice/sub_08088160.inc",
             case 0x20:
                 switch (gUnk_080FC3E4[param_2].flag) {
                     case 0:
-                        if (CheckKinstoneFused(KINSTONE_20) || CheckKinstoneFused(KINSTONE_10) ||
-                            CheckKinstoneFused(KINSTONE_19)) {
+                        if (CheckKinstoneFused(FUSION_WIND_RUINS_BUTTERFLY) || CheckKinstoneFused(FUSION_CASTOR_WILDS_BUTTERFLY) ||
+                            CheckKinstoneFused(FUSION_ROYAL_VALLEY_BUTTERFLY)) {
                             result = TRUE;
                         }
                         break;
                     case 1:
-                        if ((u8)this->unk_7c >= 5 && CheckKinstoneFused(KINSTONE_28)) {
+                        if ((u8)this->unk_7c >= 5 && CheckKinstoneFused(FUSION_TOWN_GHOST)) {
                             result = TRUE;
                         }
 
                         break;
                     case 2:
-                        if (CheckKinstoneFused(KINSTONE_54) || CheckKinstoneFused(KINSTONE_56) ||
-                            CheckKinstoneFused(KINSTONE_3D)) {
+                        if (CheckKinstoneFused(FUSION_WIND_RUINS_GOLDEN_OCTO) || CheckKinstoneFused(FUSION_MINISH_WOODS_GOLDEN_OCTO) ||
+                            CheckKinstoneFused(FUSION_WESTERN_WOODS_GOLDEN_OCTO)) {
                             result = TRUE;
                         }
                         break;
                     case 3:
-                        if (CheckKinstoneFused(KINSTONE_3B) || CheckKinstoneFused(KINSTONE_4A) ||
-                            CheckKinstoneFused(KINSTONE_D)) {
+                        if (CheckKinstoneFused(FUSION_CRENEL_SOUTH_GOLDEN_TEKTITE) || CheckKinstoneFused(FUSION_VEIL_FALLS_GOLDEN_TEKTITE) ||
+                            CheckKinstoneFused(FUSION_CRENEL_NORTH_GOLDEN_TEKTITE)) {
                             result = TRUE;
                         }
                         break;
                     case 4:
-                        if (CheckKinstoneFused(KINSTONE_49) || CheckKinstoneFused(KINSTONE_55) ||
-                            CheckKinstoneFused(KINSTONE_3C)) {
+                        if (CheckKinstoneFused(FUSION_CASTOR_WILDS_GOLDEN_ROPE) || CheckKinstoneFused(FUSION_EASTERN_HILLS_GOLDEN_ROPE) ||
+                            CheckKinstoneFused(FUSION_CASTLE_GARDEN_GOLDEN_ROPE)) {
                             result = TRUE;
                         }
                         break;
                     case 5:
-                        if (this->unk_7c >= 2 && CheckGlobalFlag(MACHI_MACHIHOKORI)) {
-                            result = TRUE;
+                        if (this->unk_7c >= 2 && CheckGlobalFlag(TOWN_DUST_REMOVED)) {
+                            result = TRUE;  /* Beedle Spawns */
                         }
                     default:
                         return result;

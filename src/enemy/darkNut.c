@@ -750,10 +750,10 @@ const u8 gUnk_080CAB52[] = {
 };
 
 void (*const gUnk_080CAB58[])(Entity*) = {
-    sub_08021328,
-    sub_0802134C,
-    sub_08021370,
-    sub_08021380,
+    sub_08021328,   // Action 13 "Slash"
+    sub_0802134C,   // Action 15 "Dash"
+    sub_08021370,   // Action 18 "Charged"
+    sub_08021380,   // Action 19 "Stab"
 };
 
 const u8 gUnk_080CAB68[] = {

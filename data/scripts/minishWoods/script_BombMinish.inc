@@ -4,7 +4,7 @@ SCRIPT_START script_BombMinish
 	SetAnimationState 0x0004
 	Call sub_08060090
 	DoPostScriptAction 0x000a
-	CheckKinstoneFused KINSTONE_1C
+	CheckKinstoneFused FUSION_BELARI_REMOTE_BOMBS
 	JumpIf script_08009FD2
 	CheckInventory1 ITEM_BOMBS
 	JumpIf script_08009F84

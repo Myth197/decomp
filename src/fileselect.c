@@ -129,7 +129,7 @@ const struct_080FC3E4 gUnk_080FC3E4[] = {
 #else
     { 0, 0, 2, 0 },
 #endif
-    { 0, KINSTONE_33, UNK_6_10, 1 },
+    { 0, TOWN_GORON_MERCHANT, UNK_6_10, 1 },
     { 0, 1, UNK_6_20, 0 },
     { 0, 0, 0, 2 },
     { 0, 0, 4, 2 },

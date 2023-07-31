@@ -6,15 +6,15 @@ SCRIPT_START script_CastorWildsStatueRock
 	DoPostScriptAction 0x0001
 	SetEntitySpeed 0x0040
 	SetEntityDirection 0x0010
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_LEFT
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_LEFT
 	JumpIfNot script_0800B32C
 	Call sub_080676D8
 script_0800B32C:
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_MIDDLE
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_MIDDLE
 	JumpIfNot script_0800B33A
 	Call sub_080676D8
 script_0800B33A:
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_RIGHT
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_RIGHT
 	JumpIfNot script_0800B348
 	Call sub_080676D8
 script_0800B348:
@@ -30,11 +30,11 @@ script_0800B350:
 	Wait 0x0014
 	BeginBlock
 	SetSyncFlag 0x00000001
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_LEFT
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_LEFT
 	JumpIfNot script_0800B350
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_MIDDLE
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_MIDDLE
 	JumpIfNot script_0800B350
-	CheckKinstoneFused KINSTONE_CASTOR_WILDS_STATUE_RIGHT
+	CheckKinstoneFused FUSION_CASTOR_WILDS_STATUE_RIGHT
 	JumpIfNot script_0800B350
 	EndBlock
 	SetLocalFlag HIKYOU_00_SEKIZOU

@@ -44,12 +44,12 @@ typedef struct {
     /*0x009*/ u8 field_0x9[0x17];
     /*0x020*/ u16 field_0x20;
     /*0x022*/ u8 field_0x22[0x1e];
-    /*0x040*/ u32 windcrests; /**< Windcrest flags. */
+    /*0x040*/ u32 windcrests; /**< 0x40-0x42 are Map Square Revealed flags. 0x43 is wind crest flags */
     /*0x044*/ u8 filler44[0xC];
-    /*0x050*/ u32 unk50;
+    /*0x050*/ u32 unk50;    /**< Enemy Kill Counts */
     /*0x054*/ u8 filler54[0x8];
     /*0x05C*/ u32 unk5C;
-    /*0x060*/ u32 areaVisitFlags[8];      /**< Area visit flags. */
+    /*0x060*/ u32 areaVisitFlags[8];      /**< 0x60-0x62 Overworld. 0x63 Dungeons */
     /*0x080*/ char name[FILENAME_LENGTH]; /**< Save file name. */
     /*0x086*/ u8 filler86[0x2];
     /*0x088*/ PlayerRoomStatus saved_status; /**< Player room status. */

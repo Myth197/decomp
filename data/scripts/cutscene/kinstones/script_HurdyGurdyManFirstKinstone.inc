@@ -90,7 +90,7 @@ script_0800F2AA:
 script_0800F2EA:
 	EndBlock
 	BeginBlock
-	CheckKinstoneFused KINSTONE_32
+	CheckKinstoneFused FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE
 	JumpIf script_0800F314
 	CheckEntityInteractType
 	JumpIfNot script_0800F2EA

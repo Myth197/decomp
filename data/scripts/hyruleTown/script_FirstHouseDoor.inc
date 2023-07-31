@@ -2,7 +2,7 @@
 SCRIPT_START script_FirstHouseDoor
 	BeginBlock
 	DoPostScriptAction 0x0007
-	CheckKinstoneFused KINSTONE_1B
+	CheckKinstoneFused FUSION_TOWN_2ND_HOUSE_RENT
 	JumpIf script_0800EF92
 	EndBlock
 script_0801091C:
