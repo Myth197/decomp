@@ -1125,8 +1125,6 @@ void (*const gUnk_080C9CAC[])(void) = {
     sub_0801E0A0,
 };
 
-// TODO merge
-#ifdef JP
 const KinstoneWorldEvent gKinstoneWorldEvents[] = {
 //  { objPalette, gfxOffsetPiece, gfxOffsetFull, subtask, worldEventId, shape, bubbleIcon, mapMarkerIcon}
     { 15, 44, 45, 8, 0, 0, 0, 0 }, // KINSTONE_0,
@@ -1139,7 +1137,11 @@ const KinstoneWorldEvent gKinstoneWorldEvents[] = {
     { 4, 14, 2, 0, 0, 7, 2, 0 },   // FUSION_CASTOR_WILDS_STATUE_MIDDLE,
     { 4, 15, 2, 0, 0, 8, 2, 0 },   // FUSION_CASTOR_WILDS_STATUE_RIGHT,
     { 4, 16, 3, 0, 0, 9, 2, 0 },   // FUSION_VEIL_FALLS_DOOR,
+#if defined(EU) || defined(JP)
     { 0, 18, 5, 8, 20, 11, 3, 2 }, // FUSION_WIND_RUINS_BOMB_BAG_CHEST,
+#else
+    { 0, 18, 5, 8, 20, 11, 2, 2 }, // FUSION_WIND_RUINS_BOMB_BAG_CHEST,
+#endif
     { 0, 18, 5, 8, 77, 11, 0, 4 }, // FUSION_TOWN_NEW_HOUSE,
     { 0, 18, 5, 8, 65, 11, 2, 5 }, // FUSION_CASTOR_WILDS_WATERFALL,
     { 0, 18, 5, 8, 7, 11, 1, 3 },  // FUSION_CRENEL_NORTH_GOLDEN_TEKTITE,
@@ -1149,18 +1151,34 @@ const KinstoneWorldEvent gKinstoneWorldEvents[] = {
     { 0, 18, 5, 8, 55, 11, 0, 5 }, // FUSION_WESTERN_WOODS_THORNY_TREE,
     { 0, 18, 5, 8, 62, 11, 2, 5 }, // FUSION_LAKE_LIBRARI_CRACK,
     { 0, 19, 5, 8, 63, 12, 0, 5 }, // FUSION_VEIL_FALLS_NORTH_WATERFALL,
+#if defined(EU) || defined(JP)
     { 0, 19, 5, 8, 88, 12, 3, 4 }, // FUSION_WITCH_RED_POTION,
     { 0, 19, 5, 8, 66, 12, 2, 5 }, // FUSION_NORTH_HYRULE_FIELD_WATERFALL,
     { 0, 19, 5, 8, 10, 12, 3, 2 }, // FUSION_EASTERN_HILLS_BOTTLE_CHEST,
+#else
+    { 0, 19, 5, 8, 88, 12, 2, 4 }, // FUSION_WITCH_RED_POTION,
+    { 0, 19, 5, 8, 66, 12, 2, 5 }, // FUSION_NORTH_HYRULE_FIELD_WATERFALL,
+    { 0, 19, 5, 8, 10, 12, 2, 2 }, // FUSION_EASTERN_HILLS_BOTTLE_CHEST,
+#endif
     { 0, 20, 5, 8, 70, 13, 2, 6 }, // FUSION_WIND_RUINS_BEANSTALK,
     { 0, 19, 5, 8, 42, 12, 0, 5 }, // FUSION_CASTLE_GARDEN_EAST_FOUNTAIN,
     { 0, 19, 5, 8, 38, 12, 0, 3 }, // FUSION_ROYAL_VALLEY_BUTTERFLY,
     { 0, 19, 5, 8, 68, 12, 2, 6 }, // FUSION_CRENEL_BEANSTALK,
     { 0, 20, 5, 8, 76, 13, 0, 4 }, // FUSION_TOWN_2ND_HOUSE_RENT,
+#if defined(EU) || defined(JP)
     { 0, 20, 5, 8, 91, 13, 3, 4 }, // FUSION_BELARI_REMOTE_BOMBS,
     { 0, 20, 5, 8, 67, 13, 2, 5 }, // FUSION_VEIL_FALLS_SOUTH_WATERFALL,
     { 0, 20, 5, 8, 43, 13, 3, 5 }, // FUSION_LON_LON_RANCH_PUDDLE,
+#else
+    { 0, 20, 5, 8, 91, 13, 2, 4 }, // FUSION_BELARI_REMOTE_BOMBS,
+    { 0, 20, 5, 8, 67, 13, 2, 5 }, // FUSION_VEIL_FALLS_SOUTH_WATERFALL,
+    { 0, 20, 5, 8, 43, 13, 3, 5 }, // FUSION_LON_LON_RANCH_PUDDLE,
+#endif
+#ifdef EU
+    { 0, 20, 5, 8, 41, 13, 1, 7 }, // FUSION_VEIL_FALLS_ISLAND,
+#else
     { 0, 20, 5, 8, 41, 13, 0, 7 }, // FUSION_VEIL_FALLS_ISLAND,
+#endif
     { 0, 20, 5, 8, 36, 13, 0, 3 }, // FUSION_WIND_RUINS_BUTTERFLY,
     { 0, 20, 5, 8, 50, 13, 2, 7 }, // FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE,
     { 1, 21, 6, 8, 39, 14, 0, 7 }, // FUSION_TRILBY_HIGHLANDS_ISLAND,
@@ -1178,11 +1196,16 @@ const KinstoneWorldEvent gKinstoneWorldEvents[] = {
     { 1, 22, 6, 8, 71, 15, 2, 6 }, // FUSION_EASTERN_HILLS_BEANSTALK,
     { 1, 22, 6, 8, 86, 15, 2, 4 }, // FUSION_6TH_GORON_WALL,
     { 1, 22, 6, 8, 79, 15, 2, 5 }, // FUSION_ROYAL_VALLEY_GRAVE,
+#ifdef EU
+    { 1, 22, 6, 8, 89, 15, 3, 4 }, // FUSION_TOWN_BARLOV_GAME,
+#else
     { 1, 22, 6, 8, 89, 15, 2, 4 }, // FUSION_TOWN_BARLOV_GAME,
+#endif
     { 1, 22, 6, 8, 58, 15, 0, 5 }, // FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE,
     { 1, 22, 6, 8, 80, 15, 2, 4 }, // FUSION_TOWN_GORON_MERCHANT,
     { 2, 23, 7, 8, 40, 16, 1, 7 }, // FUSION_LAKE_HYLIA_ISLAND,
     { 2, 23, 7, 8, 46, 16, 0, 5 }, // FUSION_CASTLE_GARDEN_WEST_FOUNTAIN,
+#if defined(EU) || defined(JP)
     { 2, 23, 7, 8, 13, 16, 3, 2 }, // FUSION_TOWN_SCHOOL_PATH_CHEST,
     { 2, 23, 7, 8, 16, 16, 1, 2 }, // FUSION_MINISH_WOODS_PATH_CHEST,
     { 2, 23, 7, 8, 19, 16, 3, 2 }, // FUSION_MINISH_WOODS_SOUTH_WEST_CHEST,
@@ -1192,18 +1215,49 @@ const KinstoneWorldEvent gKinstoneWorldEvents[] = {
     { 2, 23, 7, 8, 5, 16, 1, 3 },  // FUSION_CASTLE_GARDEN_GOLDEN_ROPE,
     { 2, 23, 7, 8, 9, 16, 1, 3 },  // FUSION_WESTERN_WOODS_GOLDEN_OCTO,
     { 2, 23, 7, 8, 75, 16, 3, 7 }, // FUSION_CASTOR_WILDS_MIDDLE_LILY,
+#else
+    { 2, 23, 7, 8, 13, 16, 2, 2 }, // FUSION_TOWN_SCHOOL_PATH_CHEST,
+    { 2, 23, 7, 8, 16, 16, 1, 2 }, // FUSION_MINISH_WOODS_PATH_CHEST,
+    { 2, 23, 7, 8, 19, 16, 2, 2 }, // FUSION_MINISH_WOODS_SOUTH_WEST_CHEST,
+    { 2, 23, 7, 8, 23, 16, 2, 2 }, // FUSION_MINISH_WOODS_MIDDLE_CHEST,
+    { 2, 23, 7, 8, 47, 16, 2, 7 }, // FUSION_WESTERN_WOODS_MIDDLE_FALLEN_TREE,
+    { 2, 23, 7, 8, 2, 16, 1, 3 },  // FUSION_CRENEL_SOUTH_GOLDEN_TEKTITE,
+    { 2, 23, 7, 8, 5, 16, 1, 3 },  // FUSION_CASTLE_GARDEN_GOLDEN_ROPE,
+    { 2, 23, 7, 8, 9, 16, 1, 3 },  // FUSION_WESTERN_WOODS_GOLDEN_OCTO,
+    { 2, 23, 7, 8, 75, 16, 2, 7 }, // FUSION_CASTOR_WILDS_MIDDLE_LILY,
+#endif
     { 2, 23, 7, 8, 45, 16, 1, 5 }, // FUSION_TRILBY_HIGHLANDS_PUDDLE,
     { 2, 23, 7, 8, 51, 16, 2, 5 }, // FUSION_NORTH_HYRULE_FIELD_TOP_RIGHT_TREE,
+#if defined(JP)
     { 2, 23, 7, 8, 59, 16, 3, 5 }, // FUSION_WIND_RUINS_MINISH_CRACK,
     { 2, 23, 7, 8, 64, 16, 3, 5 }, // FUSION_TOWN_WATERFALL,
+#elif defined(EU)
+    { 2, 23, 7, 8, 59, 16, 1, 5 }, // FUSION_WIND_RUINS_MINISH_CRACK,
+    { 2, 23, 7, 8, 64, 16, 1, 5 }, // FUSION_TOWN_WATERFALL,
+#else
+    { 2, 23, 7, 8, 59, 16, 2, 5 }, // FUSION_WIND_RUINS_MINISH_CRACK,
+    { 2, 23, 7, 8, 64, 16, 2, 5 }, // FUSION_TOWN_WATERFALL,
+#endif
+#if defined(EU) || defined(JP)
     { 2, 24, 7, 8, 11, 17, 3, 2 }, // FUSION_CRENEL_RAIN_PATH_CHEST,
     { 2, 24, 7, 8, 14, 17, 3, 2 }, // FUSION_MINISH_WOODS_NORTH_CHEST,
     { 2, 24, 7, 8, 17, 17, 3, 2 }, // FUSION_CRENEL_MELARI_PATH_CHEST,
     { 2, 24, 7, 8, 21, 17, 3, 2 }, // FUSION_MINISH_WOODS_EAST_CHEST,
+#else
+    { 2, 24, 7, 8, 11, 17, 2, 2 }, // FUSION_CRENEL_RAIN_PATH_CHEST,
+    { 2, 24, 7, 8, 14, 17, 2, 2 }, // FUSION_MINISH_WOODS_NORTH_CHEST,
+    { 2, 24, 7, 8, 17, 17, 2, 2 }, // FUSION_CRENEL_MELARI_PATH_CHEST,
+    { 2, 24, 7, 8, 21, 17, 2, 2 }, // FUSION_MINISH_WOODS_EAST_CHEST,
+#endif
     { 2, 24, 7, 8, 24, 17, 1, 2 }, // FUSION_MINISH_WOODS_WEST_CHEST,
+#ifdef EU
+    { 2, 24, 7, 8, 48, 17, 3, 7 }, // FUSION_WESTERN_WOODS_NORTH_FALLEN_TREE,
+#else
     { 2, 24, 7, 8, 48, 17, 1, 7 }, // FUSION_WESTERN_WOODS_NORTH_FALLEN_TREE,
+#endif
     { 2, 24, 7, 8, 3, 17, 1, 3 },  // FUSION_CASTOR_WILDS_GOLDEN_ROPE,
     { 2, 24, 7, 8, 6, 17, 1, 3 },  // FUSION_VEIL_FALLS_GOLDEN_TEKTITE,
+#if defined(EU) || defined(JP)
     { 2, 24, 7, 8, 73, 17, 3, 7 }, // FUSION_CASTOR_WILDS_NORTH_LILY,
     { 2, 24, 7, 8, 49, 17, 1, 7 }, // FUSION_WESTERN_WOODS_SOUTH_FALLEN_TREE,
     { 2, 24, 7, 8, 52, 17, 2, 5 }, // FUSION_NORTH_HYRULE_FIELD_BOTTOM_LEFT_TREE,
@@ -1213,14 +1267,36 @@ const KinstoneWorldEvent gKinstoneWorldEvents[] = {
     { 2, 25, 7, 8, 18, 18, 3, 2 }, // FUSION_LAKE_HYLIA_CABIN_PATH_CHEST,
     { 2, 25, 7, 8, 22, 18, 3, 2 }, // FUSION_TRILBY_HIGHLANDS_NORTH_CHEST,
     { 2, 25, 7, 8, 25, 18, 3, 2 }, // FUSION_SOUTH_HYRULE_FIELD_CHEST,
+#else
+    { 2, 24, 7, 8, 73, 17, 2, 7 }, // FUSION_CASTOR_WILDS_NORTH_LILY,
+    { 2, 24, 7, 8, 49, 17, 1, 7 }, // FUSION_WESTERN_WOODS_SOUTH_FALLEN_TREE,
+    { 2, 24, 7, 8, 52, 17, 2, 5 }, // FUSION_NORTH_HYRULE_FIELD_BOTTOM_LEFT_TREE,
+    { 2, 24, 7, 8, 60, 17, 2, 5 }, // FUSION_MINISH_WOODS_CRACK,
+    { 2, 25, 7, 8, 12, 18, 2, 2 }, // FUSION_CRENEL_MINERAL_WATER_PATH_CHEST,
+    { 2, 25, 7, 8, 15, 18, 2, 2 }, // FUSION_LON_LON_RANCH_PATH_CHEST,
+    { 2, 25, 7, 8, 18, 18, 2, 2 }, // FUSION_LAKE_HYLIA_CABIN_PATH_CHEST,
+    { 2, 25, 7, 8, 22, 18, 2, 2 }, // FUSION_TRILBY_HIGHLANDS_NORTH_CHEST,
+    { 2, 25, 7, 8, 25, 18, 2, 2 }, // FUSION_SOUTH_HYRULE_FIELD_CHEST,
+#endif
     { 2, 25, 7, 8, 1, 18, 1, 3 },  // FUSION_WIND_RUINS_GOLDEN_OCTO,
     { 2, 25, 7, 8, 4, 18, 1, 3 },  // FUSION_EASTERN_HILLS_GOLDEN_ROPE,
     { 2, 25, 7, 8, 8, 18, 1, 3 },  // FUSION_MINISH_WOODS_GOLDEN_OCTO,
+#if defined(EU) || defined(JP)
     { 2, 25, 7, 8, 74, 18, 3, 7 }, // FUSION_CASTOR_WILDS_MIDDLE_LILY,
+#else
+    { 2, 25, 7, 8, 74, 18, 2, 7 }, // FUSION_CASTOR_WILDS_MIDDLE_LILY,
+#endif
     { 2, 25, 7, 8, 44, 18, 1, 5 }, // FUSION_SOUTH_HYRULE_FIELD_PUDDLE,
     { 2, 25, 7, 8, 53, 18, 2, 5 }, // FUSION_NORTH_HYRULE_FIELD_TOP_LEFT_TREE,
     { 2, 25, 7, 8, 54, 18, 2, 5 }, // FUSION_NORTH_HYRULE_FIELD_BOTTOM_RIGHT_TREE,
+#if defined(JP)
     { 2, 25, 7, 8, 61, 18, 3, 5 }, // FUSION_CASTOR_WILDS_TOP_LEFT_CRACK,
+#elif defined(EU)
+    { 2, 25, 7, 8, 61, 18, 1, 5 }, // FUSION_CASTOR_WILDS_TOP_LEFT_CRACK,
+#else
+    { 2, 25, 7, 8, 61, 18, 2, 5 }, // FUSION_CASTOR_WILDS_TOP_LEFT_CRACK,
+#endif
+#if defined(EU) || defined(JP)
     { 2, 23, 7, 8, 26, 16, 3, 2 }, // FUSION_ROYAL_VALLEY_TOP_LEFT_CHEST,
     { 2, 24, 7, 8, 27, 17, 3, 2 }, // FUSION_ROYAL_VALLEY_TOP_RIGHT_CHEST,
     { 2, 25, 7, 8, 28, 18, 3, 2 }, // FUSION_TRILBY_HIGHLANDS_MIDDLE_CHEST,
@@ -1230,272 +1306,35 @@ const KinstoneWorldEvent gKinstoneWorldEvents[] = {
     { 2, 24, 7, 8, 32, 17, 3, 2 }, // FUSION_CRENEL_WALL_CHEST
     { 2, 24, 7, 8, 33, 17, 1, 2 }, // FUSION_CRENEL_BASE_WEST_CHEST,
     { 2, 25, 7, 8, 34, 18, 3, 2 }, // FUSION_WIND_RUINS_PILLAR_CHEST,
-    { 4, 26, 1, 8, 0, 1, 0, 0 },   // KINSTONE_???
-    { 4, 27, 1, 8, 0, 2, 0, 0 },   // KINSTONE_???
-    { 4, 28, 1, 8, 0, 3, 0, 0 },   // KINSTONE_???
-    { 4, 28, 1, 8, 0, 3, 0, 0 },   // KINSTONE_???
-    { 4, 27, 1, 8, 0, 2, 0, 0 },   // KINSTONE_???
-    { 4, 31, 2, 8, 0, 6, 0, 0 },   // KINSTONE_???
-    { 4, 32, 2, 8, 0, 7, 0, 0 },   // KINSTONE_???
-    { 4, 33, 2, 8, 0, 8, 0, 0 },   // KINSTONE_???
-    { 4, 34, 3, 8, 0, 9, 0, 0 },   // KINSTONE_???
-    { 0, 36, 5, 8, 0, 11, 0, 0 },  // KINSTONE_???
-    { 0, 37, 5, 8, 0, 12, 0, 0 },  // KINSTONE_???
-    { 0, 38, 5, 8, 0, 13, 0, 0 },  // KINSTONE_???
-    { 1, 39, 6, 8, 0, 14, 0, 0 },  // KINSTONE_???
-    { 1, 40, 6, 8, 0, 15, 0, 0 },  // KINSTONE_???
-    { 2, 41, 7, 8, 0, 16, 0, 0 },  // KINSTONE_???
-    { 2, 42, 7, 8, 0, 17, 0, 0 },  // KINSTONE_???
-    { 2, 43, 7, 8, 0, 18, 0, 0 },  // KINSTONE_??? 
-};
-
 #else
-#ifdef EU
-const KinstoneWorldEvent gKinstoneWorldEvents[] = {
-//  { objPalette, gfxOffsetPiece, gfxOffsetFull, subtask, worldEventId, shape, bubbleIcon, mapMarkerIcon}
-    { 15, 44, 45, 8, 0, 0, 0, 0 },  // KINSTONE_0,
-    { 4, 8, 1, 0, 0, 1, 2, 0 },     // FUSION_CLOUD_TOPS_TOP_RIGHT,
-    { 4, 9, 1, 0, 0, 2, 2, 0 },     // FUSION_CLOUD_TOPS_BOTTOM_LEFT,
-    { 4, 10, 1, 0, 0, 3, 2, 0 },    // FUSION_CLOUD_TOPS_TOP_LEFT,
-    { 4, 10, 1, 0, 0, 3, 2, 0 },    // FUSION_CLOUD_TOPS_MIDDLE,
-    { 4, 9, 1, 0, 0, 2, 2, 0 },     // FUSION_CLOUD_TOPS_BOTTOM_RIGHT,
-    { 4, 13, 2, 0, 0, 6, 2, 0 },    // FUSION_CASTOR_WILDS_STATUE_LEFT,
-    { 4, 14, 2, 0, 0, 7, 2, 0 },    // FUSION_CASTOR_WILDS_STATUE_MIDDLE,
-    { 4, 15, 2, 0, 0, 8, 2, 0 },    // FUSION_CASTOR_WILDS_STATUE_RIGHT,
-    { 4, 16, 3, 0, 0, 9, 2, 0 },    // FUSION_VEIL_FALLS_DOOR,
-    { 0, 18, 5, 8, 20, 11, 3, 2 },  // FUSION_WIND_RUINS_BOMB_BAG_CHEST,
-    { 0, 18, 5, 8, 77, 11, 0, 4 },  // FUSION_TOWN_NEW_HOUSE,
-    { 0, 18, 5, 8, 65, 11, 2, 5 },  // FUSION_CASTOR_WILDS_WATERFALL,
-    { 0, 18, 5, 8, 7, 11, 1, 3 },   // FUSION_CRENEL_NORTH_GOLDEN_TEKTITE,
-    { 0, 18, 5, 8, 87, 11, 2, 0 },  // FUSION_BIGGORON,
-    { 0, 18, 5, 8, 92, 11, 2, 8 },  // FUSION_WIND_TRIBE_PORTAL,
-    { 0, 18, 5, 8, 37, 11, 0, 3 },  // FUSION_CASTOR_WILDS_BUTTERFLY,
-    { 0, 18, 5, 8, 55, 11, 0, 5 },  // FUSION_WESTERN_WOODS_THORNY_TREE,
-    { 0, 18, 5, 8, 62, 11, 2, 5 },  // FUSION_LAKE_LIBRARI_CRACK,
-    { 0, 19, 5, 8, 63, 12, 0, 5 },  // FUSION_VEIL_FALLS_NORTH_WATERFALL,
-    { 0, 19, 5, 8, 88, 12, 3, 4 },  // FUSION_WITCH_RED_POTION,
-    { 0, 19, 5, 8, 66, 12, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_WATERFALL,
-    { 0, 19, 5, 8, 10, 12, 3, 2 },  // FUSION_EASTERN_HILLS_BOTTLE_CHEST,
-    { 0, 20, 5, 8, 70, 13, 2, 6 },  // FUSION_WIND_RUINS_BEANSTALK,
-    { 0, 19, 5, 8, 42, 12, 0, 5 },  // FUSION_CASTLE_GARDEN_EAST_FOUNTAIN,
-    { 0, 19, 5, 8, 38, 12, 0, 3 },  // FUSION_ROYAL_VALLEY_BUTTERFLY,
-    { 0, 19, 5, 8, 68, 12, 2, 6 },  // FUSION_CRENEL_BEANSTALK,
-    { 0, 20, 5, 8, 76, 13, 0, 4 },  // FUSION_TOWN_2ND_HOUSE_RENT,
-    { 0, 20, 5, 8, 91, 13, 3, 4 },  // FUSION_BELARI_REMOTE_BOMBS,
-    { 0, 20, 5, 8, 67, 13, 2, 5 },  // FUSION_VEIL_FALLS_SOUTH_WATERFALL,
-    { 0, 20, 5, 8, 43, 13, 3, 5 },  // FUSION_LON_LON_RANCH_PUDDLE,
-    { 0, 20, 5, 8, 41, 13, 1, 7 },  // FUSION_VEIL_FALLS_ISLAND,
-    { 0, 20, 5, 8, 36, 13, 0, 3 },  // FUSION_WIND_RUINS_BUTTERFLY,
-    { 0, 20, 5, 8, 50, 13, 2, 7 },  // FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE,
-    { 1, 21, 6, 8, 39, 14, 0, 7 },  // FUSION_TRILBY_HIGHLANDS_ISLAND,
-    { 1, 21, 6, 8, 69, 14, 2, 6 },  // FUSION_LAKE_HYLIA_BEANSTALK,
-    { 1, 21, 6, 8, 72, 14, 2, 6 },  // FUSION_WESTERN_WOODS_BEANSTALK,
-    { 1, 22, 6, 8, 82, 15, 2, 4 },  // FUSION_2ND_GORON_WALL,
-    { 1, 22, 6, 8, 84, 15, 2, 4 },  // FUSION_4TH_GORON_WALL,
-    { 1, 21, 6, 8, 56, 14, 2, 5 },  // FUSION_MINISH_WOODS_THORNY_TREE,
-    { 1, 21, 6, 8, 78, 14, 2, 5 },  // FUSION_TOWN_GHOST,
-    { 1, 21, 6, 8, 81, 14, 2, 4 },  // FUSION_1ST_GORON_WALL,
-    { 1, 21, 6, 8, 83, 14, 2, 4 },  // FUSION_3RD_GORON_WALL,
-    { 1, 21, 6, 8, 85, 14, 2, 4 },  // FUSION_5TH_GORON_WALL,
-    { 1, 21, 6, 8, 90, 14, 2, 4 },  // FUSION_MARCY_POST_OFFICE,
-    { 1, 22, 6, 8, 57, 15, 0, 5 },  // FUSION_NORTH_HYRULE_FIELD_THORNY_TREE,
-    { 1, 22, 6, 8, 71, 15, 2, 6 },  // FUSION_EASTERN_HILLS_BEANSTALK,
-    { 1, 22, 6, 8, 86, 15, 2, 4 },  // FUSION_6TH_GORON_WALL,
-    { 1, 22, 6, 8, 79, 15, 2, 5 },  // FUSION_ROYAL_VALLEY_GRAVE,
-    { 1, 22, 6, 8, 89, 15, 3, 4 },  // FUSION_TOWN_BARLOV_GAME,
-    { 1, 22, 6, 8, 58, 15, 0, 5 },  // FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE,
-    { 1, 22, 6, 8, 80, 15, 2, 4 },  // FUSION_TOWN_GORON_MERCHANT,
-    { 2, 23, 7, 8, 40, 16, 1, 7 },  // FUSION_LAKE_HYLIA_ISLAND,
-    { 2, 23, 7, 8, 46, 16, 0, 5 },  // FUSION_CASTLE_GARDEN_WEST_FOUNTAIN,
-    { 2, 23, 7, 8, 13, 16, 3, 2 },  // FUSION_TOWN_SCHOOL_PATH_CHEST,
-    { 2, 23, 7, 8, 16, 16, 1, 2 },  // FUSION_MINISH_WOODS_PATH_CHEST,
-    { 2, 23, 7, 8, 19, 16, 3, 2 },  // FUSION_MINISH_WOODS_SOUTH_WEST_CHEST,
-    { 2, 23, 7, 8, 23, 16, 3, 2 },  // FUSION_MINISH_WOODS_MIDDLE_CHEST,
-    { 2, 23, 7, 8, 47, 16, 3, 7 },  // FUSION_WESTERN_WOODS_MIDDLE_FALLEN_TREE,
-    { 2, 23, 7, 8, 2, 16, 1, 3 },   // FUSION_CRENEL_SOUTH_GOLDEN_TEKTITE,
-    { 2, 23, 7, 8, 5, 16, 1, 3 },   // FUSION_CASTLE_GARDEN_GOLDEN_ROPE,
-    { 2, 23, 7, 8, 9, 16, 1, 3 },   // FUSION_WESTERN_WOODS_GOLDEN_OCTO,
-    { 2, 23, 7, 8, 75, 16, 3, 7 },  // FUSION_CASTOR_WILDS_MIDDLE_LILY,
-    { 2, 23, 7, 8, 45, 16, 1, 5 },  // FUSION_TRILBY_HIGHLANDS_PUDDLE,
-    { 2, 23, 7, 8, 51, 16, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_TOP_RIGHT_TREE,
-    { 2, 23, 7, 8, 59, 16, 1, 5 },  // FUSION_WIND_RUINS_MINISH_CRACK,
-    { 2, 23, 7, 8, 64, 16, 1, 5 },  // FUSION_TOWN_WATERFALL,
-    { 2, 24, 7, 8, 11, 17, 3, 2 },  // FUSION_CRENEL_RAIN_PATH_CHEST,
-    { 2, 24, 7, 8, 14, 17, 3, 2 },  // FUSION_MINISH_WOODS_NORTH_CHEST,
-    { 2, 24, 7, 8, 17, 17, 3, 2 },  // FUSION_CRENEL_MELARI_PATH_CHEST,
-    { 2, 24, 7, 8, 21, 17, 3, 2 },  // FUSION_MINISH_WOODS_EAST_CHEST,
-    { 2, 24, 7, 8, 24, 17, 1, 2 },  // FUSION_MINISH_WOODS_WEST_CHEST,
-    { 2, 24, 7, 8, 48, 17, 3, 7 },  // FUSION_WESTERN_WOODS_NORTH_FALLEN_TREE,
-    { 2, 24, 7, 8, 3, 17, 1, 3 },   // FUSION_CASTOR_WILDS_GOLDEN_ROPE,
-    { 2, 24, 7, 8, 6, 17, 1, 3 },   // FUSION_VEIL_FALLS_GOLDEN_TEKTITE,
-    { 2, 24, 7, 8, 73, 17, 3, 7 },  // FUSION_CASTOR_WILDS_NORTH_LILY,
-    { 2, 24, 7, 8, 49, 17, 1, 7 },  // FUSION_WESTERN_WOODS_SOUTH_FALLEN_TREE,
-    { 2, 24, 7, 8, 52, 17, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_BOTTOM_LEFT_TREE,
-    { 2, 24, 7, 8, 60, 17, 3, 5 },  // FUSION_MINISH_WOODS_CRACK,
-    { 2, 25, 7, 8, 12, 18, 3, 2 },  // FUSION_CRENEL_MINERAL_WATER_PATH_CHEST,
-    { 2, 25, 7, 8, 15, 18, 3, 2 },  // FUSION_LON_LON_RANCH_PATH_CHEST,
-    { 2, 25, 7, 8, 18, 18, 3, 2 },  // FUSION_LAKE_HYLIA_CABIN_PATH_CHEST,
-    { 2, 25, 7, 8, 22, 18, 3, 2 },  // FUSION_TRILBY_HIGHLANDS_NORTH_CHEST,
-    { 2, 25, 7, 8, 25, 18, 3, 2 },  // FUSION_SOUTH_HYRULE_FIELD_CHEST,
-    { 2, 25, 7, 8, 1, 18, 1, 3 },   // FUSION_WIND_RUINS_GOLDEN_OCTO,
-    { 2, 25, 7, 8, 4, 18, 1, 3 },   // FUSION_EASTERN_HILLS_GOLDEN_ROPE,
-    { 2, 25, 7, 8, 8, 18, 1, 3 },   // FUSION_MINISH_WOODS_GOLDEN_OCTO,
-    { 2, 25, 7, 8, 74, 18, 3, 7 },  // FUSION_CASTOR_WILDS_MIDDLE_LILY,
-    { 2, 25, 7, 8, 44, 18, 1, 5 },  // FUSION_SOUTH_HYRULE_FIELD_PUDDLE,
-    { 2, 25, 7, 8, 53, 18, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_TOP_LEFT_TREE,
-    { 2, 25, 7, 8, 54, 18, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_BOTTOM_RIGHT_TREE,
-    { 2, 25, 7, 8, 61, 18, 1, 5 },  // FUSION_CASTOR_WILDS_TOP_LEFT_CRACK,
-    { 2, 23, 7, 8, 26, 16, 3, 2 },  // FUSION_ROYAL_VALLEY_TOP_LEFT_CHEST,
-    { 2, 24, 7, 8, 27, 17, 3, 2 },  // FUSION_ROYAL_VALLEY_TOP_RIGHT_CHEST,
-    { 2, 25, 7, 8, 28, 18, 3, 2 },  // FUSION_TRILBY_HIGHLANDS_MIDDLE_CHEST,
-    { 2, 23, 7, 8, 29, 16, 3, 2 },  // FUSION_NORTH_HYRULE_FIELD_WESTERN_CHEST,
-    { 2, 24, 7, 8, 30, 17, 1, 2 },  // FUSION_LON_LON_RANCH_NORTH_CHEST,
-    { 2, 25, 7, 8, 31, 18, 3, 2 },  // FUSION_VEIL_FALLS_NORTH_CHEST,
-    { 2, 24, 7, 8, 32, 17, 3, 2 },  // FUSION_CRENEL_WALL_CHEST
-    { 2, 24, 7, 8, 33, 17, 1, 2 },  // FUSION_CRENEL_BASE_WEST_CHEST,
-    { 2, 25, 7, 8, 34, 18, 3, 2 },  // FUSION_WIND_RUINS_PILLAR_CHEST,
-    { 4, 26, 1, 8, 0, 1, 0, 0 },    // KINSTONE_???
-    { 4, 27, 1, 8, 0, 2, 0, 0 },    // KINSTONE_???
-    { 4, 28, 1, 8, 0, 3, 0, 0 },    // KINSTONE_???
-    { 4, 28, 1, 8, 0, 3, 0, 0 },    // KINSTONE_???
-    { 4, 27, 1, 8, 0, 2, 0, 0 },    // KINSTONE_???
-    { 4, 31, 2, 8, 0, 6, 0, 0 },    // KINSTONE_???
-    { 4, 32, 2, 8, 0, 7, 0, 0 },    // KINSTONE_???
-    { 4, 33, 2, 8, 0, 8, 0, 0 },    // KINSTONE_???
-    { 4, 34, 3, 8, 0, 9, 0, 0 },    // KINSTONE_???
-    { 0, 36, 5, 8, 0, 11, 0, 0 },   // KINSTONE_???
-    { 0, 37, 5, 8, 0, 12, 0, 0 },   // KINSTONE_???
-    { 0, 38, 5, 8, 0, 13, 0, 0 },   // KINSTONE_???
-    { 1, 39, 6, 8, 0, 14, 0, 0 },   // KINSTONE_???
-    { 1, 40, 6, 8, 0, 15, 0, 0 },   // KINSTONE_???
-    { 2, 41, 7, 8, 0, 16, 0, 0 },   // KINSTONE_???
-    { 2, 42, 7, 8, 0, 17, 0, 0 },   // KINSTONE_???
-    { 2, 43, 7, 8, 0, 18, 0, 0 },   // KINSTONE_???
-};
-#else
-const KinstoneWorldEvent gKinstoneWorldEvents[] = {
-//  { objPalette, gfxOffsetPiece, gfxOffsetFull, subtask, worldEventId, shape, bubbleIcon, mapMarkerIcon}
-    { 15, 44, 45, 8, 0, 0, 0, 0 },  // KINSTONE_0,
-    { 4, 8, 1, 0, 0, 1, 2, 0 },     // FUSION_CLOUD_TOPS_TOP_RIGHT,
-    { 4, 9, 1, 0, 0, 2, 2, 0 },     // FUSION_CLOUD_TOPS_BOTTOM_LEFT,
-    { 4, 10, 1, 0, 0, 3, 2, 0 },    // FUSION_CLOUD_TOPS_TOP_LEFT,
-    { 4, 10, 1, 0, 0, 3, 2, 0 },    // FUSION_CLOUD_TOPS_MIDDLE,
-    { 4, 9, 1, 0, 0, 2, 2, 0 },     // FUSION_CLOUD_TOPS_BOTTOM_RIGHT,
-    { 4, 13, 2, 0, 0, 6, 2, 0 },    // FUSION_CASTOR_WILDS_STATUE_LEFT,
-    { 4, 14, 2, 0, 0, 7, 2, 0 },    // FUSION_CASTOR_WILDS_STATUE_MIDDLE,
-    { 4, 15, 2, 0, 0, 8, 2, 0 },    // FUSION_CASTOR_WILDS_STATUE_RIGHT,
-    { 4, 16, 3, 0, 0, 9, 2, 0 },    // FUSION_VEIL_FALLS_DOOR,
-    { 0, 18, 5, 8, 20, 11, 2, 2 },  // FUSION_WIND_RUINS_BOMB_BAG_CHEST,
-    { 0, 18, 5, 8, 77, 11, 0, 4 },  // FUSION_TOWN_NEW_HOUSE,
-    { 0, 18, 5, 8, 65, 11, 2, 5 },  // FUSION_CASTOR_WILDS_WATERFALL,
-    { 0, 18, 5, 8, 7, 11, 1, 3 },   // FUSION_CRENEL_NORTH_GOLDEN_TEKTITE,
-    { 0, 18, 5, 8, 87, 11, 2, 0 },  // FUSION_BIGGORON,
-    { 0, 18, 5, 8, 92, 11, 2, 8 },  // FUSION_WIND_TRIBE_PORTAL,
-    { 0, 18, 5, 8, 37, 11, 0, 3 },  // FUSION_CASTOR_WILDS_BUTTERFLY,
-    { 0, 18, 5, 8, 55, 11, 0, 5 },  // FUSION_WESTERN_WOODS_THORNY_TREE,
-    { 0, 18, 5, 8, 62, 11, 2, 5 },  // FUSION_LAKE_LIBRARI_CRACK,
-    { 0, 19, 5, 8, 63, 12, 0, 5 },  // FUSION_VEIL_FALLS_NORTH_WATERFALL,
-    { 0, 19, 5, 8, 88, 12, 2, 4 },  // FUSION_WITCH_RED_POTION,
-    { 0, 19, 5, 8, 66, 12, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_WATERFALL,
-    { 0, 19, 5, 8, 10, 12, 2, 2 },  // FUSION_EASTERN_HILLS_BOTTLE_CHEST,
-    { 0, 20, 5, 8, 70, 13, 2, 6 },  // FUSION_WIND_RUINS_BEANSTALK,
-    { 0, 19, 5, 8, 42, 12, 0, 5 },  // FUSION_CASTLE_GARDEN_EAST_FOUNTAIN,
-    { 0, 19, 5, 8, 38, 12, 0, 3 },  // FUSION_ROYAL_VALLEY_BUTTERFLY,
-    { 0, 19, 5, 8, 68, 12, 2, 6 },  // FUSION_CRENEL_BEANSTALK,
-    { 0, 20, 5, 8, 76, 13, 0, 4 },  // FUSION_TOWN_2ND_HOUSE_RENT,
-    { 0, 20, 5, 8, 91, 13, 2, 4 },  // FUSION_BELARI_REMOTE_BOMBS,
-    { 0, 20, 5, 8, 67, 13, 2, 5 },  // FUSION_VEIL_FALLS_SOUTH_WATERFALL,
-    { 0, 20, 5, 8, 43, 13, 2, 5 },  // FUSION_LON_LON_RANCH_PUDDLE,
-    { 0, 20, 5, 8, 41, 13, 0, 7 },  // FUSION_VEIL_FALLS_ISLAND,
-    { 0, 20, 5, 8, 36, 13, 0, 3 },  // FUSION_WIND_RUINS_BUTTERFLY,
-    { 0, 20, 5, 8, 50, 13, 2, 7 },  // FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE,
-    { 1, 21, 6, 8, 39, 14, 0, 7 },  // FUSION_TRILBY_HIGHLANDS_ISLAND,
-    { 1, 21, 6, 8, 69, 14, 2, 6 },  // FUSION_LAKE_HYLIA_BEANSTALK,
-    { 1, 21, 6, 8, 72, 14, 2, 6 },  // FUSION_WESTERN_WOODS_BEANSTALK,
-    { 1, 22, 6, 8, 82, 15, 2, 4 },  // FUSION_2ND_GORON_WALL,
-    { 1, 22, 6, 8, 84, 15, 2, 4 },  // FUSION_4TH_GORON_WALL,
-    { 1, 21, 6, 8, 56, 14, 2, 5 },  // FUSION_MINISH_WOODS_THORNY_TREE,
-    { 1, 21, 6, 8, 78, 14, 2, 5 },  // FUSION_TOWN_GHOST,
-    { 1, 21, 6, 8, 81, 14, 2, 4 },  // FUSION_1ST_GORON_WALL,
-    { 1, 21, 6, 8, 83, 14, 2, 4 },  // FUSION_3RD_GORON_WALL,
-    { 1, 21, 6, 8, 85, 14, 2, 4 },  // FUSION_5TH_GORON_WALL,
-    { 1, 21, 6, 8, 90, 14, 2, 4 },  // FUSION_MARCY_POST_OFFICE,
-    { 1, 22, 6, 8, 57, 15, 0, 5 },  // FUSION_NORTH_HYRULE_FIELD_THORNY_TREE,
-    { 1, 22, 6, 8, 71, 15, 2, 6 },  // FUSION_EASTERN_HILLS_BEANSTALK,
-    { 1, 22, 6, 8, 86, 15, 2, 4 },  // FUSION_6TH_GORON_WALL,
-    { 1, 22, 6, 8, 79, 15, 2, 5 },  // FUSION_ROYAL_VALLEY_GRAVE,
-    { 1, 22, 6, 8, 89, 15, 2, 4 },  // FUSION_TOWN_BARLOV_GAME,
-    { 1, 22, 6, 8, 58, 15, 0, 5 },  // FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE,
-    { 1, 22, 6, 8, 80, 15, 2, 4 },  // FUSION_TOWN_GORON_MERCHANT,
-    { 2, 23, 7, 8, 40, 16, 1, 7 },  // FUSION_LAKE_HYLIA_ISLAND,
-    { 2, 23, 7, 8, 46, 16, 0, 5 },  // FUSION_CASTLE_GARDEN_WEST_FOUNTAIN,
-    { 2, 23, 7, 8, 13, 16, 2, 2 },  // FUSION_TOWN_SCHOOL_PATH_CHEST,
-    { 2, 23, 7, 8, 16, 16, 1, 2 },  // FUSION_MINISH_WOODS_PATH_CHEST,
-    { 2, 23, 7, 8, 19, 16, 2, 2 },  // FUSION_MINISH_WOODS_SOUTH_WEST_CHEST,
-    { 2, 23, 7, 8, 23, 16, 2, 2 },  // FUSION_MINISH_WOODS_MIDDLE_CHEST,
-    { 2, 23, 7, 8, 47, 16, 2, 7 },  // FUSION_WESTERN_WOODS_MIDDLE_FALLEN_TREE,
-    { 2, 23, 7, 8, 2, 16, 1, 3 },   // FUSION_CRENEL_SOUTH_GOLDEN_TEKTITE,
-    { 2, 23, 7, 8, 5, 16, 1, 3 },   // FUSION_CASTLE_GARDEN_GOLDEN_ROPE,
-    { 2, 23, 7, 8, 9, 16, 1, 3 },   // FUSION_WESTERN_WOODS_GOLDEN_OCTO,
-    { 2, 23, 7, 8, 75, 16, 2, 7 },  // FUSION_CASTOR_WILDS_MIDDLE_LILY,
-    { 2, 23, 7, 8, 45, 16, 1, 5 },  // FUSION_TRILBY_HIGHLANDS_PUDDLE,
-    { 2, 23, 7, 8, 51, 16, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_TOP_RIGHT_TREE,
-    { 2, 23, 7, 8, 59, 16, 2, 5 },  // FUSION_WIND_RUINS_MINISH_CRACK,
-    { 2, 23, 7, 8, 64, 16, 2, 5 },  // FUSION_TOWN_WATERFALL,
-    { 2, 24, 7, 8, 11, 17, 2, 2 },  // FUSION_CRENEL_RAIN_PATH_CHEST,
-    { 2, 24, 7, 8, 14, 17, 2, 2 },  // FUSION_MINISH_WOODS_NORTH_CHEST,
-    { 2, 24, 7, 8, 17, 17, 2, 2 },  // FUSION_CRENEL_MELARI_PATH_CHEST,
-    { 2, 24, 7, 8, 21, 17, 2, 2 },  // FUSION_MINISH_WOODS_EAST_CHEST,
-    { 2, 24, 7, 8, 24, 17, 1, 2 },  // FUSION_MINISH_WOODS_WEST_CHEST,
-    { 2, 24, 7, 8, 48, 17, 1, 7 },  // FUSION_WESTERN_WOODS_NORTH_FALLEN_TREE,
-    { 2, 24, 7, 8, 3, 17, 1, 3 },   // FUSION_CASTOR_WILDS_GOLDEN_ROPE,
-    { 2, 24, 7, 8, 6, 17, 1, 3 },   // FUSION_VEIL_FALLS_GOLDEN_TEKTITE,
-    { 2, 24, 7, 8, 73, 17, 2, 7 },  // FUSION_CASTOR_WILDS_NORTH_LILY,
-    { 2, 24, 7, 8, 49, 17, 1, 7 },  // FUSION_WESTERN_WOODS_SOUTH_FALLEN_TREE,
-    { 2, 24, 7, 8, 52, 17, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_BOTTOM_LEFT_TREE,
-    { 2, 24, 7, 8, 60, 17, 2, 5 },  // FUSION_MINISH_WOODS_CRACK,
-    { 2, 25, 7, 8, 12, 18, 2, 2 },  // FUSION_CRENEL_MINERAL_WATER_PATH_CHEST,
-    { 2, 25, 7, 8, 15, 18, 2, 2 },  // FUSION_LON_LON_RANCH_PATH_CHEST,
-    { 2, 25, 7, 8, 18, 18, 2, 2 },  // FUSION_LAKE_HYLIA_CABIN_PATH_CHEST,
-    { 2, 25, 7, 8, 22, 18, 2, 2 },  // FUSION_TRILBY_HIGHLANDS_NORTH_CHEST,
-    { 2, 25, 7, 8, 25, 18, 2, 2 },  // FUSION_SOUTH_HYRULE_FIELD_CHEST,
-    { 2, 25, 7, 8, 1, 18, 1, 3 },   // FUSION_WIND_RUINS_GOLDEN_OCTO,
-    { 2, 25, 7, 8, 4, 18, 1, 3 },   // FUSION_EASTERN_HILLS_GOLDEN_ROPE,
-    { 2, 25, 7, 8, 8, 18, 1, 3 },   // FUSION_MINISH_WOODS_GOLDEN_OCTO,
-    { 2, 25, 7, 8, 74, 18, 2, 7 },  // FUSION_CASTOR_WILDS_MIDDLE_LILY,
-    { 2, 25, 7, 8, 44, 18, 1, 5 },  // FUSION_SOUTH_HYRULE_FIELD_PUDDLE,
-    { 2, 25, 7, 8, 53, 18, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_TOP_LEFT_TREE,
-    { 2, 25, 7, 8, 54, 18, 2, 5 },  // FUSION_NORTH_HYRULE_FIELD_BOTTOM_RIGHT_TREE,
-    { 2, 25, 7, 8, 61, 18, 2, 5 },  // FUSION_CASTOR_WILDS_TOP_LEFT_CRACK,
-    { 2, 23, 7, 8, 26, 16, 2, 2 },  // FUSION_ROYAL_VALLEY_TOP_LEFT_CHEST,
-    { 2, 24, 7, 8, 27, 17, 2, 2 },  // FUSION_ROYAL_VALLEY_TOP_RIGHT_CHEST,
-    { 2, 25, 7, 8, 28, 18, 2, 2 },  // FUSION_TRILBY_HIGHLANDS_MIDDLE_CHEST,
-    { 2, 23, 7, 8, 29, 16, 2, 2 },  // FUSION_NORTH_HYRULE_FIELD_WESTERN_CHEST,
-    { 2, 24, 7, 8, 30, 17, 1, 2 },  // FUSION_LON_LON_RANCH_NORTH_CHEST,
-    { 2, 25, 7, 8, 31, 18, 2, 2 },  // FUSION_VEIL_FALLS_NORTH_CHEST,
-    { 2, 24, 7, 8, 32, 17, 2, 2 },  // FUSION_CRENEL_WALL_CHEST
-    { 2, 24, 7, 8, 33, 17, 1, 2 },  // FUSION_CRENEL_BASE_WEST_CHEST,
-    { 2, 25, 7, 8, 34, 18, 2, 2 },  // FUSION_WIND_RUINS_PILLAR_CHEST,
-    { 4, 26, 1, 8, 0, 1, 0, 0 },    // KINSTONE_???
-    { 4, 27, 1, 8, 0, 2, 0, 0 },    // KINSTONE_???
-    { 4, 28, 1, 8, 0, 3, 0, 0 },    // KINSTONE_???
-    { 4, 28, 1, 8, 0, 3, 0, 0 },    // KINSTONE_???
-    { 4, 27, 1, 8, 0, 2, 0, 0 },    // KINSTONE_???
-    { 4, 31, 2, 8, 0, 6, 0, 0 },    // KINSTONE_???
-    { 4, 32, 2, 8, 0, 7, 0, 0 },    // KINSTONE_???
-    { 4, 33, 2, 8, 0, 8, 0, 0 },    // KINSTONE_???
-    { 4, 34, 3, 8, 0, 9, 0, 0 },    // KINSTONE_???
-    { 0, 36, 5, 8, 0, 11, 0, 0 },   // KINSTONE_???
-    { 0, 37, 5, 8, 0, 12, 0, 0 },   // KINSTONE_???
-    { 0, 38, 5, 8, 0, 13, 0, 0 },   // KINSTONE_???
-    { 1, 39, 6, 8, 0, 14, 0, 0 },   // KINSTONE_???
-    { 1, 40, 6, 8, 0, 15, 0, 0 },   // KINSTONE_???
-    { 2, 41, 7, 8, 0, 16, 0, 0 },   // KINSTONE_???
-    { 2, 42, 7, 8, 0, 17, 0, 0 },   // KINSTONE_???
-    { 2, 43, 7, 8, 0, 18, 0, 0 },   // KINSTONE_???
-};
+    { 2, 23, 7, 8, 26, 16, 2, 2 }, // FUSION_ROYAL_VALLEY_TOP_LEFT_CHEST,
+    { 2, 24, 7, 8, 27, 17, 2, 2 }, // FUSION_ROYAL_VALLEY_TOP_RIGHT_CHEST,
+    { 2, 25, 7, 8, 28, 18, 2, 2 }, // FUSION_TRILBY_HIGHLANDS_MIDDLE_CHEST,
+    { 2, 23, 7, 8, 29, 16, 2, 2 }, // FUSION_NORTH_HYRULE_FIELD_WESTERN_CHEST,
+    { 2, 24, 7, 8, 30, 17, 1, 2 }, // FUSION_LON_LON_RANCH_NORTH_CHEST,
+    { 2, 25, 7, 8, 31, 18, 2, 2 }, // FUSION_VEIL_FALLS_NORTH_CHEST,
+    { 2, 24, 7, 8, 32, 17, 2, 2 }, // FUSION_CRENEL_WALL_CHEST
+    { 2, 24, 7, 8, 33, 17, 1, 2 }, // FUSION_CRENEL_BASE_WEST_CHEST,
+    { 2, 25, 7, 8, 34, 18, 2, 2 }, // FUSION_WIND_RUINS_PILLAR_CHEST,
 #endif
-#endif
+    { 4, 26, 1, 8, 0, 1, 0, 0 },   // FUSION_???
+    { 4, 27, 1, 8, 0, 2, 0, 0 },   // FUSION_???
+    { 4, 28, 1, 8, 0, 3, 0, 0 },   // FUSION_???
+    { 4, 28, 1, 8, 0, 3, 0, 0 },   // FUSION_???
+    { 4, 27, 1, 8, 0, 2, 0, 0 },   // FUSION_???
+    { 4, 31, 2, 8, 0, 6, 0, 0 },   // FUSION_???
+    { 4, 32, 2, 8, 0, 7, 0, 0 },   // FUSION_???
+    { 4, 33, 2, 8, 0, 8, 0, 0 },   // FUSION_???
+    { 4, 34, 3, 8, 0, 9, 0, 0 },   // FUSION_???
+    { 0, 36, 5, 8, 0, 11, 0, 0 },  // FUSION_???
+    { 0, 37, 5, 8, 0, 12, 0, 0 },  // FUSION_???
+    { 0, 38, 5, 8, 0, 13, 0, 0 },  // FUSION_???
+    { 1, 39, 6, 8, 0, 14, 0, 0 },  // FUSION_???
+    { 1, 40, 6, 8, 0, 15, 0, 0 },  // FUSION_???
+    { 2, 41, 7, 8, 0, 16, 0, 0 },  // FUSION_???
+    { 2, 42, 7, 8, 0, 17, 0, 0 },  // FUSION_???
+    { 2, 43, 7, 8, 0, 18, 0, 0 },  // FUSION_???
+};
 
 // For sub_080A4418
 // TODO these are gGlobalGfxAndPalettes offsets with the size of 0x80

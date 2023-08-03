@@ -5,6 +5,7 @@
     { 0xff, index, unk, 0, 0, 0 }
 
 const SpriteDataC gPlayerItemDefinitions[] = {
+    /* { bitfield, index, unk, unk2, spriteIndex, gfxLoadBitfield} */
     { 0, 0, 16384, 1, SPRITE_0, 0 },                // DeleteEntity
     MULTI_FORM(0, 1),                               // PlayerItemSword
     { 1, 12, 5644, 169, SPRITE_166, 192 },          // PlayerItemBomb
@@ -32,12 +33,20 @@ const SpriteDataC gPlayerItemDefinitions[] = {
 };
 
 const SpriteDataC gPlayerItemDefinition_0[] = {
-    { 1, 4, 1036, 151, SPRITE_14, 0 }, { 2, 4, 1292, 151, SPRITE_15, 0 }, { 0, 4, 1292, 151, SPRITE_15, 0 },
-    { 1, 4, 1292, 151, SPRITE_15, 0 }, { 4, 4, 1292, 151, SPRITE_15, 0 }, { 4, 4, 1548, 151, SPRITE_16, 0 },
+    { 1, 4, 1036, 151, SPRITE_14, 0 }, 
+    { 2, 4, 1292, 151, SPRITE_15, 0 }, 
+    { 0, 4, 1292, 151, SPRITE_15, 0 },
+    { 1, 4, 1292, 151, SPRITE_15, 0 }, 
+    { 4, 4, 1292, 151, SPRITE_15, 0 }, 
+    { 4, 4, 1548, 151, SPRITE_16, 0 },
 };
 const SpriteDataC gPlayerItemDefinition_1[] = {
-    { 1, 4, 4108, 151, SPRITE_14, 0 }, { 2, 4, 4364, 151, SPRITE_15, 0 }, { 0, 4, 4364, 151, SPRITE_15, 0 },
-    { 1, 4, 4364, 151, SPRITE_15, 0 }, { 4, 4, 4364, 151, SPRITE_15, 0 }, { 4, 4, 4620, 151, SPRITE_16, 0 },
+    { 1, 4, 4108, 151, SPRITE_14, 0 }, 
+    { 2, 4, 4364, 151, SPRITE_15, 0 }, 
+    { 0, 4, 4364, 151, SPRITE_15, 0 },
+    { 1, 4, 4364, 151, SPRITE_15, 0 }, 
+    { 4, 4, 4364, 151, SPRITE_15, 0 }, 
+    { 4, 4, 4620, 151, SPRITE_16, 0 },
 };
 const SpriteDataC gPlayerItemDefinition_2[] = {
     { 1, 0, 524, 153, SPRITE_17, 0 },
