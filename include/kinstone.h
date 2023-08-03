@@ -35,107 +35,112 @@ typedef struct {
 extern const KinstoneWorldEvent gKinstoneWorldEvents[];
 
 typedef enum {
-    KINSTONE_0,                                 //  0x00
-    FUSION_CLOUD_TOPS_TOP_RIGHT,                //  0x01
-    FUSION_CLOUD_TOPS_BOTTOM_LEFT,              //  0x02
-    FUSION_CLOUD_TOPS_TOP_LEFT,                 //  0x03
-    FUSION_CLOUD_TOPS_MIDDLE,                   //  0x04
-    FUSION_CLOUD_TOPS_BOTTOM_RIGHT,             //  0x05
-    FUSION_CASTOR_WILDS_STATUE_LEFT,            //  0x06
-    FUSION_CASTOR_WILDS_STATUE_MIDDLE,          //  0x07
-    FUSION_CASTOR_WILDS_STATUE_RIGHT,           //  0x08
-    FUSION_VEIL_FALLS_DOOR,                     //  0x09
-    FUSION_WIND_RUINS_BOMB_BAG_CHEST,           //  0x0A
-    FUSION_TOWN_NEW_HOUSE,                      //  0x0B
-    FUSION_CASTOR_WILDS_WATERFALL,              //  0x0C
-    FUSION_CRENEL_NORTH_GOLDEN_TEKTITE,         //  0x0D
-    FUSION_BIGGORON,                            //  0x0E
-    FUSION_WIND_TRIBE_PORTAL,                   //  0x0F
-    FUSION_CASTOR_WILDS_BUTTERFLY,              //  0x10
-    FUSION_WESTERN_WOODS_THORNY_TREE,           //  0x11
-    FUSION_LAKE_LIBRARI_CRACK,                  //  0x12
-    FUSION_VEIL_FALLS_NORTH_WATERFALL,          //  0x13
-    FUSION_WITCH_RED_POTION,                    //  0x14
-    FUSION_NORTH_HYRULE_FIELD_WATERFALL,        //  0x15
-    FUSION_EASTERN_HILLS_BOTTLE_CHEST,          //  0x16
-    FUSION_WIND_RUINS_BEANSTALK,                //  0x17
-    FUSION_CASTLE_GARDEN_EAST_FOUNTAIN,         //  0x18
-    FUSION_ROYAL_VALLEY_BUTTERFLY,              //  0x19
-    FUSION_CRENEL_BEANSTALK,                    //  0x1A
-    FUSION_TOWN_2ND_HOUSE_RENT,                 //  0x1B
-    FUSION_BELARI_REMOTE_BOMBS,                 //  0x1C
-    FUSION_VEIL_FALLS_SOUTH_WATERFALL,          //  0x1D
-    FUSION_LON_LON_RANCH_PUDDLE,                //  0x1E
-    FUSION_VEIL_FALLS_ISLAND,                   //  0x1F
-    FUSION_WIND_RUINS_BUTTERFLY,                //  0x20
-    FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE,     //  0x21
-    FUSION_TRILBY_HIGHLANDS_ISLAND,             //  0x22
-    FUSION_LAKE_HYLIA_BEANSTALK,                //  0x23
-    FUSION_WESTERN_WOODS_BEANSTALK,             //  0x24
-    FUSION_2ND_GORON_WALL,                      //  0x25
-    FUSION_4TH_GORON_WALL,                      //  0x26
-    FUSION_MINISH_WOODS_THORNY_TREE,            //  0x27
-    FUSION_TOWN_GHOST,                          //  0x28
-    FUSION_1ST_GORON_WALL,                      //  0x29
-    FUSION_3RD_GORON_WALL,                      //  0x2A
-    FUSION_5TH_GORON_WALL,                      //  0x2B
-    FUSION_MARCY_POST_OFFICE,                   //  0x2C
-    FUSION_NORTH_HYRULE_FIELD_THORNY_TREE,      //  0x2D
-    FUSION_EASTERN_HILLS_BEANSTALK,             //  0x2E
-    FUSION_6TH_GORON_WALL,                      //  0x2F
-    FUSION_ROYAL_VALLEY_GRAVE,                  //  0x30
-    FUSION_TOWN_BARLOV_GAME,                    //  0x31
-    FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE,      //  0x32
-    FUSION_TOWN_GORON_MERCHANT,                 //  0x33
-    FUSION_LAKE_HYLIA_ISLAND,                   //  0x34
-    FUSION_CASTLE_GARDEN_WEST_FOUNTAIN,         //  0x35
-    FUSION_TOWN_SCHOOL_PATH_CHEST,              //  0x36
-    FUSION_MINISH_WOODS_PATH_CHEST,             //  0x37
-    FUSION_MINISH_WOODS_SOUTH_WEST_CHEST,       //  0x38
-    FUSION_MINISH_WOODS_MIDDLE_CHEST,           //  0x39
-    FUSION_WESTERN_WOODS_MIDDLE_FALLEN_TREE,    //  0x3A
-    FUSION_CRENEL_SOUTH_GOLDEN_TEKTITE,         //  0x3B
-    FUSION_CASTLE_GARDEN_GOLDEN_ROPE,           //  0x3C
-    FUSION_WESTERN_WOODS_GOLDEN_OCTO,           //  0x3D
-    FUSION_CASTOR_WILDS_MIDDLE_LILY,            //  0x3E
-    FUSION_TRILBY_HIGHLANDS_PUDDLE,             //  0x3F
-    FUSION_NORTH_HYRULE_FIELD_TOP_RIGHT_TREE,   //  0x40
-    FUSION_WIND_RUINS_MINISH_CRACK,             //  0x41
-    FUSION_TOWN_WATERFALL,                      //  0x42
-    FUSION_CRENEL_RAIN_PATH_CHEST,              //  0x43
-    FUSION_MINISH_WOODS_NORTH_CHEST,            //  0x44
-    FUSION_CRENEL_MELARI_PATH_CHEST,            //  0x45
-    FUSION_MINISH_WOODS_EAST_CHEST,             //  0x46
-    FUSION_MINISH_WOODS_WEST_CHEST,             //  0x47
-    FUSION_WESTERN_WOODS_NORTH_FALLEN_TREE,     //  0x48
-    FUSION_CASTOR_WILDS_GOLDEN_ROPE,            //  0x49
-    FUSION_VEIL_FALLS_GOLDEN_TEKTITE,           //  0x4A
-    FUSION_CASTOR_WILDS_NORTH_LILY,             //  0x4B
-    FUSION_WESTERN_WOODS_SOUTH_FALLEN_TREE,     //  0x4C
-    FUSION_NORTH_HYRULE_FIELD_BOTTOM_LEFT_TREE, //  0x4D
-    FUSION_MINISH_WOODS_CRACK,                  //  0x4E
-    FUSION_CRENEL_MINERAL_WATER_PATH_CHEST,     //  0x4F
-    FUSION_LON_LON_RANCH_PATH_CHEST,            //  0x50
-    FUSION_LAKE_HYLIA_CABIN_PATH_CHEST,         //  0x51
-    FUSION_TRILBY_HIGHLANDS_NORTH_CHEST,        //  0x52
-    FUSION_SOUTH_HYRULE_FIELD_CHEST,            //  0x53
-    FUSION_WIND_RUINS_GOLDEN_OCTO,              //  0x54
-    FUSION_EASTERN_HILLS_GOLDEN_ROPE,           //  0x55
-    FUSION_MINISH_WOODS_GOLDEN_OCTO,            //  0x56
-    FUSION_CASTOR_WILDS_MIDDLE_LILY,            //  0x57
-    FUSION_SOUTH_HYRULE_FIELD_PUDDLE,           //  0x58
-    FUSION_NORTH_HYRULE_FIELD_TOP_LEFT_TREE,    //  0x59
-    FUSION_NORTH_HYRULE_FIELD_BOTTOM_RIGHT_TREE,//  0x5A
-    FUSION_CASTOR_WILDS_TOP_LEFT_CRACK,         //  0x5B
-    FUSION_ROYAL_VALLEY_TOP_LEFT_CHEST,         //  0x5C
-    FUSION_ROYAL_VALLEY_TOP_RIGHT_CHEST,        //  0x5D
-    FUSION_TRILBY_HIGHLANDS_MIDDLE_CHEST,       //  0x5E
-    FUSION_NORTH_HYRULE_FIELD_WESTERN_CHEST,    //  0x5F
-    FUSION_LON_LON_RANCH_NORTH_CHEST,           //  0x60
-    FUSION_VEIL_FALLS_NORTH_CHEST,              //  0x61
-    FUSION_CRENEL_WALL_CHEST,                   //  0x62
-    FUSION_CRENEL_BASE_WEST_CHEST,              //  0x63
-    FUSION_WIND_RUINS_PILLAR_CHEST,             //  0x64
+    KINSTONE_NONE,                              /**<  0x00 */
+    FUSION_CLOUD_TOPS_TOP_RIGHT,                /**<  0x01 */
+    FUSION_CLOUD_TOPS_BOTTOM_LEFT,              /**<  0x02 */
+    FUSION_CLOUD_TOPS_TOP_LEFT,                 /**<  0x03 */
+    FUSION_CLOUD_TOPS_MIDDLE,                   /**<  0x04 */
+    FUSION_CLOUD_TOPS_BOTTOM_RIGHT,             /**<  0x05 */
+    FUSION_CASTOR_WILDS_STATUE_LEFT,            /**<  0x06 */
+    FUSION_CASTOR_WILDS_STATUE_MIDDLE,          /**<  0x07 */
+    FUSION_CASTOR_WILDS_STATUE_RIGHT,           /**<  0x08 */
+    FUSION_VEIL_FALLS_DOOR,                     /**<  0x09 */
+    FUSION_WIND_RUINS_BOMB_BAG_CHEST,           /**<  0x0A */
+    FUSION_TOWN_NEW_HOUSE,                      /**<  0x0B */
+    FUSION_CASTOR_WILDS_WATERFALL,              /**<  0x0C */
+    FUSION_CRENEL_NORTH_GOLDEN_TEKTITE,         /**<  0x0D */
+    FUSION_BIGGORON,                            /**<  0x0E */
+    FUSION_WIND_TRIBE_PORTAL,                   /**<  0x0F */
+    FUSION_CASTOR_WILDS_BUTTERFLY,              /**<  0x10 */
+    FUSION_WESTERN_WOODS_THORNY_TREE,           /**<  0x11 */
+    FUSION_LAKE_LIBRARI_CRACK,                  /**<  0x12 */
+    FUSION_VEIL_FALLS_NORTH_WATERFALL,          /**<  0x13 */
+    FUSION_WITCH_RED_POTION,                    /**<  0x14 */
+    FUSION_NORTH_HYRULE_FIELD_WATERFALL,        /**<  0x15 */
+    FUSION_EASTERN_HILLS_BOTTLE_CHEST,          /**<  0x16 */
+    FUSION_WIND_RUINS_BEANSTALK,                /**<  0x17 */
+    FUSION_CASTLE_GARDEN_EAST_FOUNTAIN,         /**<  0x18 */
+    FUSION_ROYAL_VALLEY_BUTTERFLY,              /**<  0x19 */
+    FUSION_CRENEL_BEANSTALK,                    /**<  0x1A */
+    FUSION_TOWN_2ND_HOUSE_RENT,                 /**<  0x1B */
+    FUSION_BELARI_REMOTE_BOMBS,                 /**<  0x1C */
+    FUSION_VEIL_FALLS_SOUTH_WATERFALL,          /**<  0x1D */
+    FUSION_LON_LON_RANCH_PUDDLE,                /**<  0x1E */
+    FUSION_VEIL_FALLS_ISLAND,                   /**<  0x1F */
+    FUSION_WIND_RUINS_BUTTERFLY,                /**<  0x20 */
+    FUSION_WESTERN_WOODS_PERCY_FALLEN_TREE,     /**<  0x21 */
+    FUSION_TRILBY_HIGHLANDS_ISLAND,             /**<  0x22 */
+    FUSION_LAKE_HYLIA_BEANSTALK,                /**<  0x23 */
+    FUSION_WESTERN_WOODS_BEANSTALK,             /**<  0x24 */
+    FUSION_2ND_GORON_WALL,                      /**<  0x25 */
+    FUSION_4TH_GORON_WALL,                      /**<  0x26 */
+    FUSION_MINISH_WOODS_THORNY_TREE,            /**<  0x27 */
+    FUSION_TOWN_GHOST,                          /**<  0x28 */
+    FUSION_1ST_GORON_WALL,                      /**<  0x29 */
+    FUSION_3RD_GORON_WALL,                      /**<  0x2A */
+    FUSION_5TH_GORON_WALL,                      /**<  0x2B */
+    FUSION_MARCY_POST_OFFICE,                   /**<  0x2C */
+    FUSION_NORTH_HYRULE_FIELD_THORNY_TREE,      /**<  0x2D */
+    FUSION_EASTERN_HILLS_BEANSTALK,             /**<  0x2E */
+    FUSION_6TH_GORON_WALL,                      /**<  0x2F */
+    FUSION_ROYAL_VALLEY_GRAVE,                  /**<  0x30 */
+    FUSION_TOWN_BARLOV_GAME,                    /**<  0x31 */
+    FUSION_SOUTH_HYRULE_FIELD_THORNY_TREE,      /**<  0x32 */
+    FUSION_TOWN_GORON_MERCHANT,                 /**<  0x33 */
+    FUSION_LAKE_HYLIA_ISLAND,                   /**<  0x34 */
+    FUSION_CASTLE_GARDEN_WEST_FOUNTAIN,         /**<  0x35 */
+    FUSION_TOWN_SCHOOL_PATH_CHEST,              /**<  0x36 */
+    FUSION_MINISH_WOODS_PATH_CHEST,             /**<  0x37 */
+    FUSION_MINISH_WOODS_SOUTH_WEST_CHEST,       /**<  0x38 */
+    FUSION_MINISH_WOODS_MIDDLE_CHEST,           /**<  0x39 */
+    FUSION_WESTERN_WOODS_MIDDLE_FALLEN_TREE,    /**<  0x3A */
+    FUSION_CRENEL_SOUTH_GOLDEN_TEKTITE,         /**<  0x3B */
+    FUSION_CASTLE_GARDEN_GOLDEN_ROPE,           /**<  0x3C */
+    FUSION_WESTERN_WOODS_GOLDEN_OCTO,           /**<  0x3D */
+    FUSION_CASTOR_WILDS_MIDDLE_LILY,            /**<  0x3E */
+    FUSION_TRILBY_HIGHLANDS_PUDDLE,             /**<  0x3F */
+    FUSION_NORTH_HYRULE_FIELD_TOP_RIGHT_TREE,   /**<  0x40 */
+    FUSION_WIND_RUINS_MINISH_CRACK,             /**<  0x41 */
+    FUSION_TOWN_WATERFALL,                      /**<  0x42 */
+    FUSION_CRENEL_RAIN_PATH_CHEST,              /**<  0x43 */
+    FUSION_MINISH_WOODS_NORTH_CHEST,            /**<  0x44 */
+    FUSION_CRENEL_MELARI_PATH_CHEST,            /**<  0x45 */
+    FUSION_MINISH_WOODS_EAST_CHEST,             /**<  0x46 */
+    FUSION_MINISH_WOODS_WEST_CHEST,             /**<  0x47 */
+    FUSION_WESTERN_WOODS_NORTH_FALLEN_TREE,     /**<  0x48 */
+    FUSION_CASTOR_WILDS_GOLDEN_ROPE,            /**<  0x49 */
+    FUSION_VEIL_FALLS_GOLDEN_TEKTITE,           /**<  0x4A */
+    FUSION_CASTOR_WILDS_NORTH_LILY,             /**<  0x4B */
+    FUSION_WESTERN_WOODS_SOUTH_FALLEN_TREE,     /**<  0x4C */
+    FUSION_NORTH_HYRULE_FIELD_BOTTOM_LEFT_TREE, /**<  0x4D */
+    FUSION_MINISH_WOODS_CRACK,                  /**<  0x4E */
+    FUSION_CRENEL_MINERAL_WATER_PATH_CHEST,     /**<  0x4F */
+    FUSION_LON_LON_RANCH_PATH_CHEST,            /**<  0x50 */
+    FUSION_LAKE_HYLIA_CABIN_PATH_CHEST,         /**<  0x51 */
+    FUSION_TRILBY_HIGHLANDS_NORTH_CHEST,        /**<  0x52 */
+    FUSION_SOUTH_HYRULE_FIELD_CHEST,            /**<  0x53 */
+    FUSION_WIND_RUINS_GOLDEN_OCTO,              /**<  0x54 */
+    FUSION_EASTERN_HILLS_GOLDEN_ROPE,           /**<  0x55 */
+    FUSION_MINISH_WOODS_GOLDEN_OCTO,            /**<  0x56 */
+    FUSION_CASTOR_WILDS_MIDDLE_LILY,            /**<  0x57 */
+    FUSION_SOUTH_HYRULE_FIELD_PUDDLE,           /**<  0x58 */
+    FUSION_NORTH_HYRULE_FIELD_TOP_LEFT_TREE,    /**<  0x59 */
+    FUSION_NORTH_HYRULE_FIELD_BOTTOM_RIGHT_TREE,/**<  0x5A */
+    FUSION_CASTOR_WILDS_TOP_LEFT_CRACK,         /**<  0x5B */
+    FUSION_ROYAL_VALLEY_TOP_LEFT_CHEST,         /**<  0x5C */
+    FUSION_ROYAL_VALLEY_TOP_RIGHT_CHEST,        /**<  0x5D */
+    FUSION_TRILBY_HIGHLANDS_MIDDLE_CHEST,       /**<  0x5E */
+    FUSION_NORTH_HYRULE_FIELD_WESTERN_CHEST,    /**<  0x5F */
+    FUSION_LON_LON_RANCH_NORTH_CHEST,           /**<  0x60 */
+    FUSION_VEIL_FALLS_NORTH_CHEST,              /**<  0x61 */
+    FUSION_CRENEL_WALL_CHEST,                   /**<  0x62 */
+    FUSION_CRENEL_BASE_WEST_CHEST,              /**<  0x63 */
+    FUSION_WIND_RUINS_PILLAR_CHEST,             /**<  0x64 */
+    /* some special values, mostly for fusers */
+    FUSION_NEEDS_REPLACEMENT = 0xF1,
+    FUSION_JUST_FUSED = 0xF2,
+    FUSION_FUSER_DONE = 0xF3,
+    FUSION_RANDOM = 0xFF,
 } KinstoneId;
 
 typedef struct {
