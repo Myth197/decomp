@@ -17,7 +17,7 @@ static void EzloHintManager_Action2(EzloHintManager*);
 static void EzloHintManager_Action3(EzloHintManager*);
 static void EzloHintManager_Action4(EzloHintManager*);
 static u32 PlayerStateValid(EzloHintManager*);
-static void sub_080585DC(EzloHintManager*);
+static void EzloHintManager_DeleteIfFlagSet(EzloHintManager*);
 
 void EzloHintManager_Main(EzloHintManager* this) {
     static void (*const EzloHintManager_Actions[])(EzloHintManager*) = {
@@ -59,13 +59,13 @@ static void EzloHintManager_Action2(EzloHintManager* this) {
         case 1:
             return;
         case 2:
-            sub_080585DC(this);
+            EzloHintManager_DeleteIfFlagSet(this);
             if ((gPlayerState.flags & PL_MINISH) == 0)
                 return;
             // fallthrough
         case 0:
         default:
-            sub_080585DC(this);
+            EzloHintManager_DeleteIfFlagSet(this);
             if (!PlayerStateValid(this))
                 return;
             SetPlayerControl(3);
@@ -85,32 +85,32 @@ static void EzloHintManager_Action2(EzloHintManager* this) {
 
 static u32 PlayerStateValid(EzloHintManager* this) {
     switch (gPlayerState.framestate) {
-        case PL_STATE_THROW:
-        case PL_STATE_SWIM:
-        case PL_STATE_PARACHUTE:
-        case PL_STATE_FALL:
-        case PL_STATE_JUMP:
-        case PL_STATE_C:
-        case PL_STATE_D:
-        case PL_STATE_USEPORTAL:
-        case PL_STATE_F:
-        case PL_STATE_TRAPPED:
-        case PL_STATE_11:
-        case PL_STATE_DIE:
-        case PL_STATE_TALKEZLO:
-        case PL_STATE_CAPE:
-        case PL_STATE_ITEMGET:
-        case PL_STATE_DROWN:
-        case PL_STATE_HOLE:
-        case PL_STATE_CLIMB:
-        case PL_STATE_SINKING:
-        case PL_STATE_STAIRS:
+/*0x04*/  case PL_STATE_THROW:
+/*0x07*/  case PL_STATE_SWIM:
+/*0x08*/  case PL_STATE_PARACHUTE:
+/*0x0A*/  case PL_STATE_FALL:
+/*0x0B*/  case PL_STATE_JUMP:
+/*0x0C*/  case PL_STATE_MINECART:
+/*0x0D*/  case PL_STATE_D:
+/*0x0E*/  case PL_STATE_USEPORTAL:
+/*0x0F*/  case PL_STATE_F:
+/*0x10*/  case PL_STATE_TRAPPED:
+/*0x11*/  case PL_STATE_11:
+/*0x12*/  case PL_STATE_DIE:
+/*0x13*/  case PL_STATE_TALKEZLO:
+/*0x14*/  case PL_STATE_CAPE:
+/*0x15*/  case PL_STATE_ITEMGET:
+/*0x16*/  case PL_STATE_DROWN:
+/*0x17*/  case PL_STATE_HOLE:
+/*0x18*/  case PL_STATE_CLIMB:
+/*0x1B*/  case PL_STATE_SINKING:
+/*0x1C*/  case PL_STATE_STAIRS:
             return 0;
-        case PL_STATE_6:
-        case PL_STATE_ROLL:
-        case PL_STATE_PUSH:
-        case PL_STATE_PULL:
-        default:
+/*0x06*/  case PL_STATE_6:
+/*0x09*/  case PL_STATE_ROLL:
+/*0x19*/  case PL_STATE_PUSH:
+/*0x1A*/  case PL_STATE_PULL:
+          default:
             return 1;
     }
 }
@@ -158,7 +158,7 @@ static void EzloHintManager_Action4(EzloHintManager* this) {
     }
 }
 
-static void sub_080585DC(EzloHintManager* this) {
+static void EzloHintManager_DeleteIfFlagSet(EzloHintManager* this) {
     if (CheckFlags(this->flag1)) {
         DeleteThisEntity();
     }

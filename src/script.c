@@ -2009,7 +2009,7 @@ void WaitForPlayerNormal(Entity* entity, ScriptExecutionContext* context) {
         case PL_STATE_PARACHUTE:
         case PL_STATE_FALL:
         case PL_STATE_JUMP:
-        case PL_STATE_C:
+        case PL_STATE_MINECART:
         case PL_STATE_D:
         case PL_STATE_USEPORTAL:
         case PL_STATE_F:
@@ -2039,7 +2039,7 @@ void WaitForPlayerNormalOrTalkEzlo(Entity* entity, ScriptExecutionContext* conte
         case PL_STATE_PARACHUTE:
         case PL_STATE_FALL:
         case PL_STATE_JUMP:
-        case PL_STATE_C:
+        case PL_STATE_MINECART:
         case PL_STATE_D:
         case PL_STATE_USEPORTAL:
         case PL_STATE_F:

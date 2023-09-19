@@ -12,7 +12,7 @@ enum PlayerActions {
     PLAYER_JUMP,
     PLAYER_PUSH,
     PLAYER_BOUNCE,
-    PLAYER_08070E9C, // sub_080782C0, only when pressing L to start a Kinstone Fusion
+    PLAYER_TALKNPC, // sub_080782C0, only when pressing L to start a Kinstone Fusion
     PLAYER_ITEMGET,
     PLAYER_MINISH,
     PLAYER_MINISHDIE,
@@ -52,7 +52,7 @@ enum PlayerFrameState {
     PL_STATE_ROLL,
     PL_STATE_FALL,
     PL_STATE_JUMP,
-    PL_STATE_C,
+    PL_STATE_MINECART,
     PL_STATE_D,
     PL_STATE_USEPORTAL,
     PL_STATE_F,

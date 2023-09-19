@@ -57,7 +57,7 @@ static EntityAction PlayerFall;
 static EntityAction PlayerJump;
 static EntityAction PlayerPush;
 static EntityAction PlayerBounce;
-static EntityAction sub_08070E9C;
+static EntityAction PlayerTalkNPC;
 static EntityAction PlayerItemGet;
 static EntityAction PlayerMinish;
 static EntityAction PlayerMinishDie;
@@ -92,7 +92,7 @@ static EntityAction PlayerBounceInit;
 static EntityAction PlayerBounceUpdate;
 static EntityAction sub_08070E7C;
 
-// PLAYER_08070E9C
+// PLAYER_TALKNPC
 static EntityAction sub_08070EDC;
 static EntityAction sub_08070f24;
 
@@ -302,38 +302,38 @@ bool32 CheckInitPauseMenu(void) {
 
 void DoPlayerAction(Entity* this) {
     static void (*const sPlayerActions[])(Entity*) = {
-        [PLAYER_INIT] = PlayerInit,
-        [PLAYER_NORMAL] = PlayerNormal,
-        [PLAYER_DUMMY] = PlayerInit,
-        [PLAYER_FALL] = PlayerFall,
-        [PLAYER_JUMP] = PlayerJump,
-        [PLAYER_PUSH] = PlayerPush,
-        [PLAYER_BOUNCE] = PlayerBounce,
-        [PLAYER_08070E9C] = sub_08070E9C,
-        [PLAYER_ITEMGET] = PlayerItemGet,
-        [PLAYER_MINISH] = PlayerMinish,
-        [PLAYER_MINISHDIE] = PlayerMinishDie,
-        [PLAYER_08071DB8] = sub_08071DB8,
-        [PLAYER_EMPTYBOTTLE] = PlayerEmptyBottle,
-        [PLAYER_FROZEN] = PlayerFrozen,
-        [PLAYER_0807204C] = sub_0807204C,
-        [PLAYER_ROOM_EXIT] = PlayerRoomExit,
-        [PLAYER_PULL] = PlayerPull,
-        [PLAYER_LAVA] = PlayerLava,
-        [PLAYER_WARP] = PlayerWarp,
-        [PLAYER_08072454] = sub_08072454,
-        [PLAYER_DROWN] = PlayerDrown,
-        [PLAYER_USEPORTAL] = PlayerUsePortal,
-        [PLAYER_TALKEZLO] = PlayerTalkEzlo,
-        [PLAYER_ROOMTRANSITION] = PlayerRoomTransition,
-        [PLAYER_ROLL] = PlayerRoll,
-        [PLAYER_080728AC] = PlayerWaitForScroll,
-        [PLAYER_INHOLE] = PlayerInHole,
-        [PLAYER_08072C9C] = sub_08072C9C,
-        [PLAYER_SLEEP] = PlayerSleep,
-        [PLAYER_CLIMB] = PlayerClimb,
-        [PLAYER_USEENTRANCE] = PlayerUseEntrance,
-        [PLAYER_PARACHUTE] = PlayerParachute,
+/*0x00*/    [PLAYER_INIT] = PlayerInit,
+/*0x01*/    [PLAYER_NORMAL] = PlayerNormal,
+/*0x02*/    [PLAYER_DUMMY] = PlayerInit,
+/*0x03*/    [PLAYER_FALL] = PlayerFall,
+/*0x04*/    [PLAYER_JUMP] = PlayerJump,
+/*0x05*/    [PLAYER_PUSH] = PlayerPush,
+/*0x06*/    [PLAYER_BOUNCE] = PlayerBounce,
+/*0x07*/    [PLAYER_TALKNPC] = PlayerTalkNPC,
+/*0x08*/    [PLAYER_ITEMGET] = PlayerItemGet,
+/*0x09*/    [PLAYER_MINISH] = PlayerMinish,
+/*0x0A*/    [PLAYER_MINISHDIE] = PlayerMinishDie,
+/*0x0B*/    [PLAYER_08071DB8] = sub_08071DB8,
+/*0x0C*/    [PLAYER_EMPTYBOTTLE] = PlayerEmptyBottle,
+/*0x0D*/    [PLAYER_FROZEN] = PlayerFrozen,
+/*0x0E*/    [PLAYER_0807204C] = sub_0807204C,
+/*0x0F*/    [PLAYER_ROOM_EXIT] = PlayerRoomExit,
+/*0x10*/    [PLAYER_PULL] = PlayerPull,
+/*0x11*/    [PLAYER_LAVA] = PlayerLava,
+/*0x12*/    [PLAYER_WARP] = PlayerWarp,
+/*0x13*/    [PLAYER_08072454] = sub_08072454,
+/*0x14*/    [PLAYER_DROWN] = PlayerDrown,
+/*0x15*/    [PLAYER_USEPORTAL] = PlayerUsePortal,
+/*0x16*/    [PLAYER_TALKEZLO] = PlayerTalkEzlo,
+/*0x17*/    [PLAYER_ROOMTRANSITION] = PlayerRoomTransition,
+/*0x18*/    [PLAYER_ROLL] = PlayerRoll,
+/*0x19*/    [PLAYER_080728AC] = PlayerWaitForScroll,
+/*0x1A*/    [PLAYER_INHOLE] = PlayerInHole,
+/*0x1B*/    [PLAYER_08072C9C] = sub_08072C9C,
+/*0x1C*/    [PLAYER_SLEEP] = PlayerSleep,
+/*0x1D*/    [PLAYER_CLIMB] = PlayerClimb,
+/*0x1E*/    [PLAYER_USEENTRANCE] = PlayerUseEntrance,
+/*0x1F*/    [PLAYER_PARACHUTE] = PlayerParachute,
     };
     sPlayerActions[this->action](this);
 }
@@ -406,7 +406,7 @@ static void PlayerNormal(Entity* this) {
     }
     if (gPlayerState.flags & PL_IN_MINECART) {
         this->hurtType = 30;
-        gPlayerState.framestate = PL_STATE_C;
+        gPlayerState.framestate = PL_STATE_MINECART;
         sub_08070BEC(this, this->speed == 0 ? 1 : 0);
         return;
     }
@@ -711,7 +711,7 @@ static void sub_08070E7C(Entity* this) {
     }
 }
 
-static void sub_08070E9C(Entity* this) {
+static void PlayerTalkNPC(Entity* this) {
     static EntityAction* const gUnk_0811BA74[] = {
         sub_08070EDC,
         sub_08070f24,

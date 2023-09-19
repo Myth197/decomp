@@ -1054,7 +1054,7 @@ bool32 sub_080782C0(void) {
     switch (tmp) {
         case PL_STATE_SWORD:
         case PL_STATE_GUSTJAR:
-        case PL_STATE_C:
+        case PL_STATE_MINECART:
         case PL_STATE_DIE:
         case PL_STATE_ITEMGET:
         case PL_STATE_DROWN:
@@ -1096,7 +1096,7 @@ bool32 sub_080782C0(void) {
         if (gSave.kinstoneAmounts[0] != 0) {
             gPossibleInteraction.kinstoneId = gPossibleInteraction.currentObject->kinstoneId;
             gPossibleInteraction.currentObject->entity->interactType = 2;
-            gPlayerState.queued_action = PLAYER_08070E9C;
+            gPlayerState.queued_action = PLAYER_TALKNPC;
         } else {
             CreateEzloHint(TEXT_INDEX(TEXT_EZLO, 0x65), 0);
         }
@@ -1114,7 +1114,7 @@ bool32 sub_080782C0(void) {
         case INTERACTION_USE_BIG_KEY:
         case INTERACTION_CHECK:
         case INTERACTION_DROP_PEDESTAL:
-            gPlayerState.queued_action = PLAYER_08070E9C;
+            gPlayerState.queued_action = PLAYER_TALKNPC;
             ForceSetPlayerState(PL_STATE_TALKEZLO);
         case INTERACTION_OPEN_CHEST:
         case INTERACTION_USE_SMALL_KEY:
