@@ -10,10 +10,10 @@
 #include "entity.h"
 #include "fileselect.h"
 #include "functions.h"
+#include "item.h"
 #include "npc.h"
 #include "object.h"
 #include "script.h"
-#include "item.h"
 
 typedef struct {
     Entity base;
@@ -108,7 +108,7 @@ void CuccoMinigame(CuccoMinigameEntity* this) {
         sub_0807DD64(super);
         sub_0806EC20(super);
     }
-    sub_0807DD94(super, 0);
+    ExecuteScriptAndHandleAnimation(super, NULL);
 }
 
 NONMATCH("asm/non_matching/objectB9/sub_080A1270.inc", void sub_080A1270(CuccoMinigameEntity* this)) {

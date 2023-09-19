@@ -10,7 +10,7 @@ SCRIPT_START script_NPC4ESourceOfTheFlow
 	EndBlock
 script_08015FE4:
 	_0807EA4C
-	_0807E9F0
+	UpdateFusion
 	SetPlayerIdle
 	CheckKinstoneFused FUSION_VEIL_FALLS_DOOR
 	JumpIf script_08015FFE
