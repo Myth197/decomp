@@ -15,65 +15,65 @@ gAreaTilesets_Unused:: @ 08100CF0
 gAreaRoomMaps_Unused::
 	.4byte gAreaTileset_Unused_0
 
-gTileset_MinishWoods_0:: @ 08100CF4
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_0, 0x6000000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_1, 0x6004000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_2, 0x6008000, 0x4000, 1
+gTileset_MinishWoods_Main:: @ 08100CF4
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_0, 0x6000000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_1, 0x6004000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 28, 1
 
 gTileset_MinishWoods_1:: @ 08100D24
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_3, 0x6000000, 0x2000, 1
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_4, 0x6008000, 0x2000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_3, 0x6000000, 0x2000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_4, 0x6008000, 0x2000, 1
 	tileset_palette_set 21, 1
 
 gAreaTilesets_MinishWoods:: @ 08100D48
-	.4byte gTileset_MinishWoods_0
+	.4byte gTileset_MinishWoods_Main
 	.4byte gTileset_MinishWoods_1
 
-gAreaTileset_LakeHylia_0:: @ 08100D50
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_0, 0x6000000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_1, 0x6004000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_2, 0x6008000, 0x4000, 1
+gAreaTileset_LakeHylia_Main:: @ 08100D50
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_0, 0x6000000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_1, 0x6004000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 39, 1
 
 gAreaTilesets_LakeHylia:: @ 08100D80
-	.4byte gAreaTileset_LakeHylia_0
+	.4byte gAreaTileset_LakeHylia_Main
 
-gAreaTileset_CastorWilds_0:: @ 08100D84
+gAreaTileset_CastorWilds_Main:: @ 08100D84
 	tileset_tiles offset_gAreaTileset_OuterFortressOfWinds_0_0, 0x6000000, 0x4000, 1
 	tileset_tiles offset_gAreaTileset_OuterFortressOfWinds_0_1, 0x6004000, 0x4000, 1
 	tileset_tiles offset_gAreaTileset_OuterFortressOfWinds_0_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 19, 1
 
 gAreaTilesets_CastorWilds:: @ 08100DB4
-	.4byte gAreaTileset_CastorWilds_0
+	.4byte gAreaTileset_CastorWilds_Main
 
-gAreaTileset_Ruins_0:: @ 08100DB8
+gAreaTileset_Ruins_Entrance:: @ 08100DB8
 	tileset_tiles offset_gAreaTileset_OuterFortressOfWinds_0_0, 0x6000000, 0x4000, 1
 	tileset_tiles offset_gAreaTileset_OuterFortressOfWinds_0_1, 0x6004000, 0x4000, 1
 	tileset_tiles offset_gAreaTileset_OuterFortressOfWinds_0_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 29, 1
 
 gAreaTilesets_Ruins:: @ 08100DE8
-	.4byte gAreaTileset_Ruins_0
+	.4byte gAreaTileset_Ruins_Entrance
 
-gAreaTileset_HyruleTown_0:: @ 08100DEC
+gAreaTileset_HyruleTown_Main:: @ 08100DEC
 	tileset_tiles offset_gAreaTileset_HyruleDigCaves_0_0, 0x6000000, 0x4000, 1
 	tileset_tiles offset_gAreaTileset_HyruleDigCaves_0_1, 0x6004000, 0x4000, 1
 	tileset_tiles offset_gAreaTileset_HyruleDigCaves_0_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 27, 1
 
 gAreaTilesets_HyruleTown:: @ 08100E1C
-	.4byte gAreaTileset_HyruleTown_0
+	.4byte gAreaTileset_HyruleTown_Main
 
-gAreaTileset_FestivalTown_0:: @ 08100E20
-	tileset_tiles offset_gAreaTileset_FestivalTown_0_0, 0x6000000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_FestivalTown_0_1, 0x6004000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_FestivalTown_0_2, 0x6008000, 0x4000, 1
+gAreaTileset_FestivalTown_Main:: @ 08100E20
+	tileset_tiles offset_gAreaTileset_FestivalTown_Main_0, 0x6000000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_FestivalTown_Main_1, 0x6004000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_FestivalTown_Main_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 170, 1
 
 gAreaTilesets_FestivalTown:: @ 08100E50
-	.4byte gAreaTileset_FestivalTown_0
+	.4byte gAreaTileset_FestivalTown_Main
 
 gAreaTileset_MtCrenel_0:: @ 08100E54
 	tileset_tiles offset_gAreaTileset_CrenelDigCave_0_0, 0x6000000, 0x4000, 1
@@ -198,16 +198,16 @@ gAreaTilesets_GreatFairies:: @ 0810115C
 	.4byte gAreaTileset_GreatFairies_1
 	.4byte gAreaTileset_GreatFairies_2
 
-gAreaTileset_LakeWoodsCave_0:: @ 08101168
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_0, 0x6000000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_1, 0x6004000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_2, 0x6008000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_3, 0x6001000, 0x2000, 1
-	tileset_tiles offset_gAreaTileset_LakeWoodsCave_0_4, 0x6009000, 0x2000, 1
+gAreaTileset_LakeWoodsCave_Main:: @ 08101168
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_0, 0x6000000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_1, 0x6004000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_2, 0x6008000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_3, 0x6001000, 0x2000, 1
+	tileset_tiles offset_gAreaTileset_LakeWoodsCave_Main_4, 0x6009000, 0x2000, 1
 	tileset_palette_set 21, 1
 
 gAreaTilesets_LakeWoodsCave:: @ 081011B0
-	.4byte gAreaTileset_LakeWoodsCave_0
+	.4byte gAreaTileset_LakeWoodsCave_Main
 
 gAreaTileset_HyruleDigCaves_0:: @ 081011B4
 	tileset_tiles offset_gAreaTileset_HyruleDigCaves_0_0, 0x6000000, 0x4000, 1
@@ -275,32 +275,32 @@ gAreaTileset_OuterFortressOfWinds_0:: @ 08101330
 gAreaTilesets_OuterFortressOfWinds:: @ 08101378
 	.4byte gAreaTileset_OuterFortressOfWinds_0
 
-gAreaTileset_HyliaDigCaves_0:: @ 0810137C
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_0, 0x6000000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_1, 0x6004000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_2, 0x6008000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_3, 0x6001000, 0x2000, 1
-	tileset_tiles offset_gAreaTileset_HyliaDigCaves_0_4, 0x6009000, 0x2000, 1
+gAreaTileset_HyliaDigCaves_Middle:: @ 0810137C
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_0, 0x6000000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_1, 0x6004000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_2, 0x6008000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_3, 0x6001000, 0x2000, 1
+	tileset_tiles offset_gAreaTileset_HyliaDigCaves_Middle_4, 0x6009000, 0x2000, 1
 	tileset_palette_set 20, 1
 
 gAreaTilesets_HyliaDigCaves:: @ 081013C4
-	.4byte gAreaTileset_HyliaDigCaves_0
+	.4byte gAreaTileset_HyliaDigCaves_Middle
 
-gAreaTileset_MinishVillage_0:: @ 081013C8
-	tileset_tiles offset_gAreaTileset_MinishVillage_0_0, 0x6000000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_MinishVillage_0_1, 0x6004000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_MinishVillage_0_2, 0x6008000, 0x4000, 1
+gAreaTileset_MinishVillage_Main:: @ 081013C8
+	tileset_tiles offset_gAreaTileset_MinishVillage_Main_0, 0x6000000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_MinishVillage_Main_1, 0x6004000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_MinishVillage_Main_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 14, 1
 
-gAreaTileset_MinishVillage_1:: @ 081013F8
-	tileset_tiles offset_gAreaTileset_MinishVillage_1_0, 0x6000000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_MinishVillage_1_1, 0x6004000, 0x4000, 1
-	tileset_tiles offset_gAreaTileset_MinishVillage_1_2, 0x6008000, 0x4000, 1
+gAreaTileset_MinishVillage_SideHouse:: @ 081013F8
+	tileset_tiles offset_gAreaTileset_MinishVillage_SideHouse_0, 0x6000000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_MinishVillage_SideHouse_1, 0x6004000, 0x4000, 1
+	tileset_tiles offset_gAreaTileset_MinishVillage_SideHouse_2, 0x6008000, 0x4000, 1
 	tileset_palette_set 25, 1
 
 gAreaTilesets_MinishVillage:: @ 08101428
-	.4byte gAreaTileset_MinishVillage_0
-	.4byte gAreaTileset_MinishVillage_1
+	.4byte gAreaTileset_MinishVillage_Main
+	.4byte gAreaTileset_MinishVillage_SideHouse
 
 gAreaTileset_MelarisMine_0:: @ 08101430
 	tileset_tiles offset_gAreaTileset_MelarisMine_0_0, 0x6000000, 0x4000, 1
@@ -453,52 +453,52 @@ gAreaTilesets_MinishHouseInteriors:: @ 08101734
 	.4byte gAreaTileset_MinishHouseInteriors_18
 	.4byte gAreaTileset_MinishHouseInteriors_19
 
-gAreaTileset_TownMinishHoles_0:: @ 08101784
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_0_0, 0x6000000, 0x6100, 1
+gAreaTileset_TownMinishHoles_MayorsHouse:: @ 08101784
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_MayorsHouse_0, 0x6000000, 0x6100, 1
 	tileset_palette_set 115, 1
 
-gAreaTileset_TownMinishHoles_1:: @ 0810179C
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_1_0, 0x6000000, 0x7DC0, 1
+gAreaTileset_TownMinishHoles_WestOracle:: @ 0810179C
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_WestOracle_0, 0x6000000, 0x7DC0, 1
 	tileset_palette_set 116, 1
 
-gAreaTileset_TownMinishHoles_2:: @ 081017B4
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_2_0, 0x6000000, 0x70C0, 1
+gAreaTileset_TownMinishHoles_DrLeft:: @ 081017B4
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_DrLeft_0, 0x6000000, 0x70C0, 1
 	tileset_palette_set 117, 1
 
-gAreaTileset_TownMinishHoles_3:: @ 081017CC
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_3_0, 0x6000000, 0x7E40, 1
+gAreaTileset_TownMinishHoles_Carpenter:: @ 081017CC
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_Carpenter_0, 0x6000000, 0x7E40, 1
 	tileset_palette_set 118, 1
 
-gAreaTileset_TownMinishHoles_4:: @ 081017E4
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_4_0, 0x6000000, 0x7240, 1
+gAreaTileset_TownMinishHoles_Cafe:: @ 081017E4
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_Cafe_0, 0x6000000, 0x7240, 1
 	tileset_palette_set 119, 1
 
-gAreaTileset_TownMinishHoles_5:: @ 081017FC
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_5_0, 0x6000000, 0x8900, 1
+gAreaTileset_TownMinishHoles_Unused:: @ 081017FC
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_Unused_0, 0x6000000, 0x8900, 1
 	tileset_palette_set 129, 1
 
-gAreaTileset_TownMinishHoles_6:: @ 08101814
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_6_0, 0x6000000, 0xBEC0, 1
+gAreaTileset_TownMinishHoles_LibraryBookshelf:: @ 08101814
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_LibraryBookshelf_0, 0x6000000, 0xBEC0, 1
 	tileset_palette_set 124, 1
 
-gAreaTileset_TownMinishHoles_7:: @ 0810182C
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_7_0, 0x6000000, 0xA480, 1
+gAreaTileset_TownMinishHoles_LibrariBookHouse:: @ 0810182C
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_LibrariBookHouse_0, 0x6000000, 0xA480, 1
 	tileset_palette_set 123, 1
 
-gAreaTileset_TownMinishHoles_8:: @ 08101844
-	tileset_tiles offset_gAreaTileset_TownMinishHoles_8_0, 0x6000000, 0xB0C0, 1
+gAreaTileset_TownMinishHoles_RemShoeShop:: @ 08101844
+	tileset_tiles offset_gAreaTileset_TownMinishHoles_RemShoeShop_0, 0x6000000, 0xB0C0, 1
 	tileset_palette_set 122, 1
 
 gAreaTilesets_TownMinishHoles:: @ 0810185C
-	.4byte gAreaTileset_TownMinishHoles_0
-	.4byte gAreaTileset_TownMinishHoles_1
-	.4byte gAreaTileset_TownMinishHoles_2
-	.4byte gAreaTileset_TownMinishHoles_3
-	.4byte gAreaTileset_TownMinishHoles_4
-	.4byte gAreaTileset_TownMinishHoles_5
-	.4byte gAreaTileset_TownMinishHoles_6
-	.4byte gAreaTileset_TownMinishHoles_7
-	.4byte gAreaTileset_TownMinishHoles_8
+	.4byte gAreaTileset_TownMinishHoles_MayorsHouse
+	.4byte gAreaTileset_TownMinishHoles_WestOracle
+	.4byte gAreaTileset_TownMinishHoles_DrLeft
+	.4byte gAreaTileset_TownMinishHoles_Carpenter
+	.4byte gAreaTileset_TownMinishHoles_Cafe
+	.4byte gAreaTileset_TownMinishHoles_Unused
+	.4byte gAreaTileset_TownMinishHoles_LibraryBookshelf
+	.4byte gAreaTileset_TownMinishHoles_LibrariBookHouse
+	.4byte gAreaTileset_TownMinishHoles_RemShoeShop
 
 gAreaTileset_HouseInteriors1_0:: @ 08101880
 	tileset_tiles offset_gAreaTileset_HouseInteriors1_0_0, 0x6000000, 0x4000, 1

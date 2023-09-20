@@ -6,77 +6,77 @@
 
 	.include "map_offsets.inc"
 
-gAreaRoomMap_MinishWoods_0:: @ 081032DC
-	map_bottom offset_gAreaRoomMap_MinishWoods_0_0, 0x1F02, 1
-	map_top offset_gAreaRoomMap_MinishWoods_0_1, 0x1F02, 1, 1
+gAreaRoomMap_MinishWoods_Main:: @ 081032DC
+	map_bottom offset_gAreaRoomMap_MinishWoods_Main_0, 0x1F02, 1
+	map_top offset_gAreaRoomMap_MinishWoods_Main_1, 0x1F02, 1, 1
 
 gAreaRoomMaps_MinishWoods:: @ 081032F4
-	.4byte gAreaRoomMap_MinishWoods_0
+	.4byte gAreaRoomMap_MinishWoods_Main
 
-gAreaRoomMap_LakeHylia_0:: @ 081032F8
-	map_bottom offset_gAreaRoomMap_LakeHylia_0_0, 0x1680, 1
-	map_top offset_gAreaRoomMap_LakeHylia_0_1, 0x1680, 1, 1
+gAreaRoomMap_LakeHylia_Main:: @ 081032F8
+	map_bottom offset_gAreaRoomMap_LakeHylia_Main_0, 0x1680, 1
+	map_top offset_gAreaRoomMap_LakeHylia_Main_1, 0x1680, 1, 1
 
-gAreaRoomMap_LakeHylia_1:: @ 08103310
-	map_bottom offset_gAreaRoomMap_LakeHylia_1_0, 0x5E8, 1
-	map_top offset_gAreaRoomMap_LakeHylia_1_1, 0x5E8, 1, 1
+gAreaRoomMap_LakeHylia_Beanstalk:: @ 08103310
+	map_bottom offset_gAreaRoomMap_LakeHylia_Beanstalk_0, 0x5E8, 1
+	map_top offset_gAreaRoomMap_LakeHylia_Beanstalk_1, 0x5E8, 1, 1
 
 gAreaRoomMaps_LakeHylia:: @ 08103328
-	.4byte gAreaRoomMap_LakeHylia_0
-	.4byte gAreaRoomMap_LakeHylia_1
+	.4byte gAreaRoomMap_LakeHylia_Main
+	.4byte gAreaRoomMap_LakeHylia_Beanstalk
 
-gAreaRoomMap_CastorWilds_0:: @ 08103330
-	map_bottom offset_gAreaRoomMap_CastorWilds_0_0, 0x1D88, 1
-	map_top offset_gAreaRoomMap_CastorWilds_0_1, 0x1D88, 1, 1
+gAreaRoomMap_CastorWilds_Main:: @ 08103330
+	map_bottom offset_gAreaRoomMap_CastorWilds_Main_0, 0x1D88, 1
+	map_top offset_gAreaRoomMap_CastorWilds_Main_1, 0x1D88, 1, 1
 
 gAreaRoomMaps_CastorWilds:: @ 08103348
-	.4byte gAreaRoomMap_CastorWilds_0
+	.4byte gAreaRoomMap_CastorWilds_Main
 
-gAreaRoomMap_Ruins_0:: @ 0810334C
-	map_bottom offset_gAreaRoomMap_Ruins_0_0, 0x3DE, 1
-	map_top offset_gAreaRoomMap_Ruins_0_1, 0x3DE, 1, 1
+gAreaRoomMap_Ruins_Entrance:: @ 0810334C
+	map_bottom offset_gAreaRoomMap_Ruins_Entrance_0, 0x3DE, 1
+	map_top offset_gAreaRoomMap_Ruins_Entrance_1, 0x3DE, 1, 1
 
-gAreaRoomMap_Ruins_1:: @ 08103364
-	map_bottom offset_gAreaRoomMap_Ruins_1_0, 0x186, 1
-	map_top offset_gAreaRoomMap_Ruins_1_1, 0x186, 1, 1
+gAreaRoomMap_Ruins_Beanstalk:: @ 08103364
+	map_bottom offset_gAreaRoomMap_Ruins_Beanstalk_0, 0x186, 1
+	map_top offset_gAreaRoomMap_Ruins_Beanstalk_1, 0x186, 1, 1
 
-gAreaRoomMap_Ruins_2:: @ 0810337C
-	map_bottom offset_gAreaRoomMap_Ruins_2_0, 0x12C, 1
-	map_top offset_gAreaRoomMap_Ruins_2_1, 0x12C, 1, 1
+gAreaRoomMap_Ruins_Tektites:: @ 0810337C
+	map_bottom offset_gAreaRoomMap_Ruins_Tektites_0, 0x12C, 1
+	map_top offset_gAreaRoomMap_Ruins_Tektites_1, 0x12C, 1, 1
 
-gAreaRoomMap_Ruins_3:: @ 08103394
-	map_bottom offset_gAreaRoomMap_Ruins_3_0, 0x12C, 1
-	map_top offset_gAreaRoomMap_Ruins_3_1, 0x12C, 1, 1
+gAreaRoomMap_Ruins_LadderToTektites:: @ 08103394
+	map_bottom offset_gAreaRoomMap_Ruins_LadderToTektites_0, 0x12C, 1
+	map_top offset_gAreaRoomMap_Ruins_LadderToTektites_1, 0x12C, 1, 1
 
-gAreaRoomMap_Ruins_4:: @ 081033AC
-	map_bottom offset_gAreaRoomMap_Ruins_4_0, 0x420, 1
-	map_top offset_gAreaRoomMap_Ruins_4_1, 0x420, 1, 1
+gAreaRoomMap_Ruins_FortressEntrance:: @ 081033AC
+	map_bottom offset_gAreaRoomMap_Ruins_FortressEntrance_0, 0x420, 1
+	map_top offset_gAreaRoomMap_Ruins_FortressEntrance_1, 0x420, 1, 1
 
-gAreaRoomMap_Ruins_5:: @ 081033C4
-	map_bottom offset_gAreaRoomMap_Ruins_5_0, 0x462, 1
-	map_top offset_gAreaRoomMap_Ruins_5_1, 0x462, 1, 1
+gAreaRoomMap_Ruins_BelowFortressEntrance:: @ 081033C4
+	map_bottom offset_gAreaRoomMap_Ruins_BelowFortressEntrance_0, 0x462, 1
+	map_top offset_gAreaRoomMap_Ruins_BelowFortressEntrance_1, 0x462, 1, 1
 
 gAreaRoomMaps_Ruins:: @ 081033DC
-	.4byte gAreaRoomMap_Ruins_0
-	.4byte gAreaRoomMap_Ruins_1
-	.4byte gAreaRoomMap_Ruins_2
-	.4byte gAreaRoomMap_Ruins_3
-	.4byte gAreaRoomMap_Ruins_4
-	.4byte gAreaRoomMap_Ruins_5
+	.4byte gAreaRoomMap_Ruins_Entrance
+	.4byte gAreaRoomMap_Ruins_Beanstalk
+	.4byte gAreaRoomMap_Ruins_Tektites
+	.4byte gAreaRoomMap_Ruins_LadderToTektites
+	.4byte gAreaRoomMap_Ruins_FortressEntrance
+	.4byte gAreaRoomMap_Ruins_BelowFortressEntrance
 
-gAreaRoomMap_HyruleTown_0:: @ 081033F4
-	map_bottom offset_gAreaRoomMap_HyruleTown_0_0, 0x1D88, 1
-	map_top offset_gAreaRoomMap_HyruleTown_0_1, 0x1D88, 1, 1
+gAreaRoomMap_HyruleTown_Main:: @ 081033F4
+	map_bottom offset_gAreaRoomMap_HyruleTown_Main_0, 0x1D88, 1
+	map_top offset_gAreaRoomMap_HyruleTown_Main_1, 0x1D88, 1, 1
 
 gAreaRoomMaps_HyruleTown:: @ 0810340C
-	.4byte gAreaRoomMap_HyruleTown_0
+	.4byte gAreaRoomMap_HyruleTown_Main
 
-gAreaRoomMap_FestivalTown_0:: @ 08103410
-	map_bottom offset_gAreaRoomMap_FestivalTown_0_0, 0xBB8, 1
-	map_top offset_gAreaRoomMap_FestivalTown_0_1, 0xBB8, 1, 1
+gAreaRoomMap_FestivalTown_Main:: @ 08103410
+	map_bottom offset_gAreaRoomMap_FestivalTown_Main_0, 0xBB8, 1
+	map_top offset_gAreaRoomMap_FestivalTown_Main_1, 0xBB8, 1, 1
 
 gAreaRoomMaps_FestivalTown:: @ 08103428
-	.4byte gAreaRoomMap_FestivalTown_0
+	.4byte gAreaRoomMap_FestivalTown_Main
 
 gAreaRoomMap_MtCrenel_0:: @ 0810342C
 	map_bottom offset_gAreaRoomMap_MtCrenel_0_0, 0x6E4, 1
@@ -387,12 +387,12 @@ gAreaRoomMaps_GreatFairies:: @ 08103A80
 	.4byte gAreaRoomMap_Unused
 	.4byte gAreaRoomMap_Unused
 
-gAreaRoomMap_LakeWoodsCave_0:: @ 08103AA0
-	map_bottom offset_gAreaRoomMap_LakeWoodsCave_0_0, 0x1F02, 1
-	map_top offset_gAreaRoomMap_LakeWoodsCave_0_1, 0x1F02, 1, 1
+gAreaRoomMap_LakeWoodsCave_Main:: @ 08103AA0
+	map_bottom offset_gAreaRoomMap_LakeWoodsCave_Main_0, 0x1F02, 1
+	map_top offset_gAreaRoomMap_LakeWoodsCave_Main_1, 0x1F02, 1, 1
 
 gAreaRoomMaps_LakeWoodsCave:: @ 08103AB8
-	.4byte gAreaRoomMap_LakeWoodsCave_0
+	.4byte gAreaRoomMap_LakeWoodsCave_Main
 
 gAreaRoomMap_HyruleDigCaves_0:: @ 08103ABC
 	map_bottom offset_gAreaRoomMap_HyruleDigCaves_0_0, 0x1D88, 1
@@ -463,17 +463,17 @@ gAreaRoomMaps_OuterFortressOfWinds:: @ 08103BE4
 	.4byte gAreaRoomMap_OuterFortressOfWinds_3
 	.4byte gAreaRoomMap_OuterFortressOfWinds_4
 
-gAreaRoomMap_HyliaDigCaves_0:: @ 08103BF8
-	map_bottom offset_gAreaRoomMap_HyliaDigCaves_0_0, 0x220, 1
-	map_top offset_gAreaRoomMap_HyliaDigCaves_0_1, 0x220, 1, 1
+gAreaRoomMap_HyliaDigCaves_Middle:: @ 08103BF8
+	map_bottom offset_gAreaRoomMap_HyliaDigCaves_Middle_0, 0x220, 1
+	map_top offset_gAreaRoomMap_HyliaDigCaves_Middle_1, 0x220, 1, 1
 
-gAreaRoomMap_HyliaDigCaves_1:: @ 08103C10
-	map_bottom offset_gAreaRoomMap_HyliaDigCaves_1_0, 0xD4A, 1
-	map_top offset_gAreaRoomMap_HyliaDigCaves_1_1, 0xD4A, 1, 1
+gAreaRoomMap_HyliaDigCaves_North:: @ 08103C10
+	map_bottom offset_gAreaRoomMap_HyliaDigCaves_North_0, 0xD4A, 1
+	map_top offset_gAreaRoomMap_HyliaDigCaves_North_1, 0xD4A, 1, 1
 
 gAreaRoomMaps_HyliaDigCaves:: @ 08103C28
-	.4byte gAreaRoomMap_HyliaDigCaves_0
-	.4byte gAreaRoomMap_HyliaDigCaves_1
+	.4byte gAreaRoomMap_HyliaDigCaves_Middle
+	.4byte gAreaRoomMap_HyliaDigCaves_North
 
 gAreaRoomMap_Empty_0:: @ 08103C30
 	map_bottom offset_gAreaRoomMap_Empty_0_0, 0x1F02, 1
@@ -483,17 +483,17 @@ gAreaRoomMaps_Empty:: @ 08103C48
 	.4byte gAreaRoomMap_Empty_0
 	.4byte gAreaRoomMap_Empty_0
 
-gAreaRoomMap_MinishVillage_0:: @ 08103C50
-	map_bottom offset_gAreaRoomMap_MinishVillage_0_0, 0x1F02, 1
-	map_top offset_gAreaRoomMap_MinishVillage_0_1, 0x1F02, 1, 1
+gAreaRoomMap_MinishVillage_Main:: @ 08103C50
+	map_bottom offset_gAreaRoomMap_MinishVillage_Main_0, 0x1F02, 1
+	map_top offset_gAreaRoomMap_MinishVillage_Main_1, 0x1F02, 1, 1
 
-gAreaRoomMap_MinishVillage_1:: @ 08103C68
-	map_bottom offset_gAreaRoomMap_MinishVillage_1_0, 0x618, 1
-	map_top offset_gAreaRoomMap_MinishVillage_1_1, 0x618, 1, 1
+gAreaRoomMap_MinishVillage_SideHouse:: @ 08103C68
+	map_bottom offset_gAreaRoomMap_MinishVillage_SideHouse_0, 0x618, 1
+	map_top offset_gAreaRoomMap_MinishVillage_SideHouse_1, 0x618, 1, 1
 
 gAreaRoomMaps_MinishVillage:: @ 08103C80
-	.4byte gAreaRoomMap_MinishVillage_0
-	.4byte gAreaRoomMap_MinishVillage_1
+	.4byte gAreaRoomMap_MinishVillage_Main
+	.4byte gAreaRoomMap_MinishVillage_SideHouse
 
 gAreaRoomMap_MelarisMine_0:: @ 08103C88
 	map_bottom offset_gAreaRoomMap_MelarisMine_0_0, 0xDB6, 1
@@ -543,107 +543,107 @@ gAreaRoomMaps_CrenelMinishPaths:: @ 08103D24
 	.4byte gAreaRoomMap_CrenelMinishPaths_3
 
 gAreaRoomMap_MinishHouseInteriors_0:: @ 08103D34
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_0_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_0_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_1:: @ 08103D58
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_1_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_1_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_2:: @ 08103D7C
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_2_1, 0x1D0, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_2_2, 0x1000, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_3:: @ 08103DA0
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_3_1, 0xA0, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_3_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_4:: @ 08103DC4
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_4_1, 0xA0, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_4_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_5:: @ 08103DE8
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_5_1, 0xA0, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_5_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_6:: @ 08103E0C
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_6_1, 0xA0, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_6_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_8:: @ 08103E30
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_8_1, 0xE1, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_8_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_7:: @ 08103E54
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_7_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_7_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_9:: @ 08103E78
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_9_1, 0x159, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_9_2, 0x1000, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_10:: @ 08103E9C
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_10_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_10_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_11:: @ 08103EC0
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_11_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_11_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_12:: @ 08103EE4
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_12_1, 0xDC, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_12_2, 0x1000, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_13:: @ 08103F08
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_13_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_13_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_14:: @ 08103F2C
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_14_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_14_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_15:: @ 08103F50
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_15_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_15_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_16:: @ 08103F74
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_16_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_16_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_17:: @ 08103F98
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_17_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_17_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_18:: @ 08103FBC
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_18_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_18_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_19:: @ 08103FE0
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_19_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_19_2, 0x800, 1, 1
 
 gAreaRoomMap_MinishHouseInteriors_20:: @ 08104004
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
 	collision_bottom offset_gAreaRoomMap_MinishHouseInteriors_20_1, 0x96, 1
 	map_bottom_special offset_gAreaRoomMap_MinishHouseInteriors_20_2, 0x800, 1, 1
 
@@ -689,58 +689,58 @@ gAreaRoomMaps_MinishHouseInteriors:: @ 08104028
 	.4byte gAreaRoomMap_MinishHouseInteriors_19
 	.4byte gAreaRoomMap_MinishHouseInteriors_20
 
-gAreaRoomMap_TownMinishHoles_0:: @ 081040C8
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_0_1, 0x96, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_0_2, 0x800, 1, 1
+gAreaRoomMap_TownMinishHoles_MayorsHouse:: @ 081040C8
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_MayorsHouse_1, 0x96, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_MayorsHouse_2, 0x800, 1, 1
 
-gAreaRoomMap_TownMinishHoles_1:: @ 081040EC
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_1_1, 0x96, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_1_2, 0x800, 1, 1
+gAreaRoomMap_TownMinishHoles_WestOracle:: @ 081040EC
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_WestOracle_1, 0x96, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_WestOracle_2, 0x800, 1, 1
 
-gAreaRoomMap_TownMinishHoles_2:: @ 08104110
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_2_1, 0x96, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_2_2, 0x800, 1, 1
+gAreaRoomMap_TownMinishHoles_DrLeft:: @ 08104110
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_DrLeft_1, 0x96, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_DrLeft_2, 0x800, 1, 1
 
-gAreaRoomMap_TownMinishHoles_3:: @ 08104134
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_3_1, 0x96, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_3_2, 0x800, 1, 1
+gAreaRoomMap_TownMinishHoles_Carpenter:: @ 08104134
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_Carpenter_1, 0x96, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_Carpenter_2, 0x800, 1, 1
 
-gAreaRoomMap_TownMinishHoles_4:: @ 08104158
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_4_1, 0x96, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_4_2, 0x800, 1, 1
+gAreaRoomMap_TownMinishHoles_Cafe:: @ 08104158
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_Cafe_1, 0x96, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_Cafe_2, 0x800, 1, 1
 
-gAreaRoomMap_TownMinishHoles_5:: @ 0810417C
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_5_1, 0x96, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_5_2, 0x800, 1, 1
+gAreaRoomMap_TownMinishHoles_Unused:: @ 0810417C
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_Unused_1, 0x96, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_Unused_2, 0x800, 1, 1
 
-gAreaRoomMap_TownMinishHoles_6:: @ 081041A0
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_6_1, 0x24C, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_6_2, 0x2000, 1, 1
+gAreaRoomMap_TownMinishHoles_LibraryBookshelf:: @ 081041A0
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_LibraryBookshelf_1, 0x24C, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_LibraryBookshelf_2, 0x2000, 1, 1
 
-gAreaRoomMap_TownMinishHoles_7:: @ 081041C4
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_7_1, 0xE1, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_7_2, 0x800, 1, 1
+gAreaRoomMap_TownMinishHoles_LibrariBookHouse:: @ 081041C4
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_LibrariBookHouse_1, 0xE1, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_LibrariBookHouse_2, 0x800, 1, 1
 
-gAreaRoomMap_TownMinishHoles_8:: @ 081041E8
-	map_bottom offset_gAreaRoomMap_TownMinishHoles_8_0, 0x2000, 1
-	collision_bottom offset_gAreaRoomMap_TownMinishHoles_8_1, 0x190, 1
-	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_8_2, 0x2000, 1, 1
+gAreaRoomMap_TownMinishHoles_RemShoeShop:: @ 081041E8
+	map_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_0, 0x2000, 1
+	collision_bottom offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_1, 0x190, 1
+	map_bottom_special offset_gAreaRoomMap_TownMinishHoles_RemShoeShop_2, 0x2000, 1, 1
 
 gAreaRoomMaps_TownMinishHoles:: @ 0810420C
-	.4byte gAreaRoomMap_TownMinishHoles_0
-	.4byte gAreaRoomMap_TownMinishHoles_1
-	.4byte gAreaRoomMap_TownMinishHoles_2
-	.4byte gAreaRoomMap_TownMinishHoles_3
-	.4byte gAreaRoomMap_TownMinishHoles_4
-	.4byte gAreaRoomMap_TownMinishHoles_5
+	.4byte gAreaRoomMap_TownMinishHoles_MayorsHouse
+	.4byte gAreaRoomMap_TownMinishHoles_WestOracle
+	.4byte gAreaRoomMap_TownMinishHoles_DrLeft
+	.4byte gAreaRoomMap_TownMinishHoles_Carpenter
+	.4byte gAreaRoomMap_TownMinishHoles_Cafe
+	.4byte gAreaRoomMap_TownMinishHoles_Unused
 	.4byte 0x0
 	.4byte 0x0
 	.4byte 0x0
@@ -751,9 +751,9 @@ gAreaRoomMaps_TownMinishHoles:: @ 0810420C
 	.4byte 0x0
 	.4byte 0x0
 	.4byte 0x0
-	.4byte gAreaRoomMap_TownMinishHoles_6
-	.4byte gAreaRoomMap_TownMinishHoles_7
-	.4byte gAreaRoomMap_TownMinishHoles_8
+	.4byte gAreaRoomMap_TownMinishHoles_LibraryBookshelf
+	.4byte gAreaRoomMap_TownMinishHoles_LibrariBookHouse
+	.4byte gAreaRoomMap_TownMinishHoles_RemShoeShop
 	.4byte 0x0
 	.4byte 0x0
 	.4byte 0x0

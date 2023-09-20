@@ -105,7 +105,7 @@ Area_MelarisMine:: @ 080D4210
 	.4byte 0x0
 
 Area_HyruleTown:: @ 080D4250
-	.4byte Room_HyruleTown_0
+	.4byte Room_HyruleTown_Main
 	.4byte Room_HyruleTown_1
 	.4byte Room_HyruleTown_2
 	.4byte Room_HyruleTown_2
@@ -809,7 +809,7 @@ Area_TownMinishHoles:: @ 080D4B7C
 	.4byte Room_TownMinishHoles_DrLeft
 	.4byte Room_TownMinishHoles_Carpenter
 	.4byte Room_TownMinishHoles_Cafe
-	.4byte Room_TownMinishHoles_5
+	.4byte Room_TownMinishHoles_Unused
 	.4byte 0x0
 	.4byte 0x0
 	.4byte 0x0
@@ -1134,20 +1134,20 @@ Area_CastleGardenMinishHoles:: @ 080D5008
 	.4byte Room_CastleGardenMinishHoles_East
 	.4byte Room_CastleGardenMinishHoles_West
 
-Area_37:: @ 080D5010
-	.4byte Room_37_0
-	.4byte Room_37_1
+Area_UnusedCastleGardenMinishHoles:: @ 080D5010
+	.4byte Room_UnusedCastleGardenMinishHoles_East
+	.4byte Room_UnusedCastleGardenMinishHoles_West
 
-Area_40:: @ 080D5018
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
+Area_CastleUndergroundTestDungeon:: @ 080D5018
+	.4byte Room_CastleUndergroundTestDungeonNorthWest
+	.4byte Room_CastleUndergroundTestDungeonNorth
+	.4byte Room_CastleUndergroundTestDungeonNorthEast
+	.4byte Room_CastleUndergroundTestDungeonWest
+	.4byte Room_CastleUndergroundTestDungeonMiddle
+	.4byte Room_CastleUndergroundTestDungeonEast
+	.4byte Room_CastleUndergroundTestDungeonSouthWest
+	.4byte Room_CastleUndergroundTestDungeonSouth
+	.4byte Room_CastleUndergroundTestDungeonSouthEast
 	.4byte 0x0
 	.4byte 0x0
 	.4byte 0x0
@@ -1214,63 +1214,63 @@ Area_47:: @ 080D50E8
 	.4byte Room_47_4
 
 gAreaTable:: @ 080D50FC
-	.4byte Area_MinishWoods             @ 0x0
-	.4byte Area_MinishVillage           @ 0x1
-	.4byte Area_HyruleTown              @ 0x2
-	.4byte Area_HyruleField             @ 0x3
-	.4byte Area_CastorWilds             @ 0x4
-	.4byte Area_Ruins                   @ 0x5
-	.4byte Area_MtCrenel                @ 0x6
-	.4byte Area_CastleGarden            @ 0x7
-	.4byte Area_CloudTops               @ 0x8
-	.4byte Area_RoyalValley             @ 0x9
-	.4byte Area_VeilFalls               @ 0xA
-	.4byte Area_LakeHylia               @ 0xB
-	.4byte Area_LakeWoodsCave           @ 0xC
-	.4byte Area_Beanstalks              @ 0xD
-	.4byte Area_Empty                   @ 0xE
-	.4byte Area_HyruleDigCaves          @ 0xF
-	.4byte Area_MelarisMine             @ 0x10
-	.4byte Area_MinishPaths            @ 0x11
-	.4byte Area_CrenelMinishPaths       @ 0x12
-	.4byte Area_DigCaves1               @ 0x13
-	.4byte Area_CrenelDigCave           @ 0x14
-	.4byte Area_FestivalTown            @ 0x15
-	.4byte Area_VeilFallsDigCave        @ 0x16
-	.4byte Area_CastorWildsDigCave      @ 0x17
-	.4byte Area_OuterFortressOfWinds    @ 0x18
-	.4byte Area_HyliaDigCaves           @ 0x19
-	.4byte Area_VeilFallsTop            @ 0x1A
+	.4byte Area_MinishWoods						@ 0x0
+	.4byte Area_MinishVillage					@ 0x1
+	.4byte Area_HyruleTown						@ 0x2
+	.4byte Area_HyruleField						@ 0x3
+	.4byte Area_CastorWilds						@ 0x4
+	.4byte Area_Ruins							@ 0x5
+	.4byte Area_MtCrenel						@ 0x6
+	.4byte Area_CastleGarden					@ 0x7
+	.4byte Area_CloudTops						@ 0x8
+	.4byte Area_RoyalValley						@ 0x9
+	.4byte Area_VeilFalls						@ 0xA
+	.4byte Area_LakeHylia						@ 0xB
+	.4byte Area_LakeWoodsCave					@ 0xC
+	.4byte Area_Beanstalks						@ 0xD
+	.4byte Area_Empty							@ 0xE
+	.4byte Area_HyruleDigCaves					@ 0xF
+	.4byte Area_MelarisMine						@ 0x10
+	.4byte Area_MinishPaths						@ 0x11
+	.4byte Area_CrenelMinishPaths				@ 0x12
+	.4byte Area_DigCaves1						@ 0x13
+	.4byte Area_CrenelDigCave					@ 0x14
+	.4byte Area_FestivalTown					@ 0x15
+	.4byte Area_VeilFallsDigCave				@ 0x16
+	.4byte Area_CastorWildsDigCave				@ 0x17
+	.4byte Area_OuterFortressOfWinds			@ 0x18
+	.4byte Area_HyliaDigCaves					@ 0x19
+	.4byte Area_VeilFallsTop					@ 0x1A
 	.4byte 0x0                                       @ 0x1B
 	.4byte 0x0                                       @ 0x1C
 	.4byte 0x0                                       @ 0x1D
 	.4byte 0x0                                       @ 0x1E
 	.4byte 0x0                                       @ 0x1F
-	.4byte Area_MinishHouseInteriors    @ 0x20
-	.4byte Area_HouseInteriors1         @ 0x21
-	.4byte Area_HouseInteriors2         @ 0x22
-	.4byte Area_HouseInteriors3         @ 0x23
-	.4byte Area_TreeInteriors           @ 0x24
-	.4byte Area_Dojos                   @ 0x25
-	.4byte Area_CrenelCaves             @ 0x26
-	.4byte Area_MinishCracks            @ 0x27
-	.4byte Area_HouseInteriors4         @ 0x28
-	.4byte Area_GreatFairies            @ 0x29
-	.4byte Area_CastorCaves             @ 0x2A
-	.4byte Area_CastorDarknut           @ 0x2B
-	.4byte Area_ArmosInteriors          @ 0x2C
-	.4byte Area_TownMinishHoles         @ 0x2D
-	.4byte Area_MinishRafters           @ 0x2E
-	.4byte Area_GoronCave               @ 0x2F
-	.4byte Area_WindTribeTower          @ 0x30
-	.4byte Area_WindTribeTowerRoof      @ 0x31
-	.4byte Area_Caves                   @ 0x32
-	.4byte Area_VeilFallsCaves          @ 0x33
-	.4byte Area_RoyalValleyGraves       @ 0x34
-	.4byte Area_MinishCaves             @ 0x35
-	.4byte Area_CastleGardenMinishHoles @ 0x36
-	.4byte Area_37                      @ 0x37
-	.4byte Area_EzloCutscene            @ 0x38
+	.4byte Area_MinishHouseInteriors			@ 0x20
+	.4byte Area_HouseInteriors1					@ 0x21
+	.4byte Area_HouseInteriors2					@ 0x22
+	.4byte Area_HouseInteriors3					@ 0x23
+	.4byte Area_TreeInteriors					@ 0x24
+	.4byte Area_Dojos							@ 0x25
+	.4byte Area_CrenelCaves						@ 0x26
+	.4byte Area_MinishCracks					@ 0x27
+	.4byte Area_HouseInteriors4					@ 0x28
+	.4byte Area_GreatFairies					@ 0x29
+	.4byte Area_CastorCaves						@ 0x2A
+	.4byte Area_CastorDarknut					@ 0x2B
+	.4byte Area_ArmosInteriors					@ 0x2C
+	.4byte Area_TownMinishHoles					@ 0x2D
+	.4byte Area_MinishRafters					@ 0x2E
+	.4byte Area_GoronCave						@ 0x2F
+	.4byte Area_WindTribeTower					@ 0x30
+	.4byte Area_WindTribeTowerRoof				@ 0x31
+	.4byte Area_Caves							@ 0x32
+	.4byte Area_VeilFallsCaves					@ 0x33
+	.4byte Area_RoyalValleyGraves				@ 0x34
+	.4byte Area_MinishCaves						@ 0x35
+	.4byte Area_CastleGardenMinishHoles			@ 0x36
+	.4byte Area_UnusedCastleGardenMinishHoles	@ 0x37
+	.4byte Area_EzloCutscene					@ 0x38
 	.4byte 0x0                                       @ 0x39
 	.4byte 0x0                                       @ 0x3A
 	.4byte 0x0                                       @ 0x3B
@@ -1278,13 +1278,13 @@ gAreaTable:: @ 080D50FC
 	.4byte 0x0                                       @ 0x3D
 	.4byte 0x0                                       @ 0x3E
 	.4byte 0x0                                       @ 0x3F
-	.4byte Area_40                      @ 0x40
-	.4byte Area_HyruleTownUnderground   @ 0x41
-	.4byte Area_GardenFountains         @ 0x42
-	.4byte Area_HyruleCastleCellar      @ 0x43
-	.4byte Area_SimonsSimulation        @ 0x44
-	.4byte Area_45                      @ 0x45
-	.4byte 0x0                                       @ 0x46
+	.4byte Area_CastleUndergroundTestDungeon	@ 0x40
+	.4byte Area_HyruleTownUnderground			@ 0x41
+	.4byte Area_GardenFountains					@ 0x42
+	.4byte Area_HyruleCastleCellar				@ 0x43
+	.4byte Area_SimonsSimulation				@ 0x44
+	.4byte Area_45								@ 0x45
+	.4byte 0x0                                  @ 0x46
 	.4byte Area_47                      @ 0x47
 	.4byte Area_DeepwoodShrine          @ 0x48
 	.4byte Area_DeepwoodShrineBoss      @ 0x49
@@ -1769,7 +1769,7 @@ Room_MinishPaths_ToMinishVillage:: @ 080D5D18
 	.4byte sub_unk3_MinishPaths_ToMinishVillage
 	.4byte sub_StateChange_MinishPaths_ToMinishVillage
 
-Entities_MinishPaths_CastorWilds_0:: @ 080D5D38
+Entities_MinishPaths_CastorWilds_Main:: @ 080D5D38
 	object_raw subtype=0x14, x=0x78, y=0x48, paramB=0x100
 	object_raw subtype=0x14, x=0x78, y=0x2d8, paramB=0x100
 	entity_list_end
@@ -1789,7 +1789,7 @@ TileEntities_MinishPaths_CastorWilds:: @ 080D5DC8
 	tile_entity_list_end
 
 Room_MinishPaths_CastorWilds:: @ 080D5DD8
-	.4byte Entities_MinishPaths_CastorWilds_0
+	.4byte Entities_MinishPaths_CastorWilds_Main
 	.4byte Entities_MinishPaths_CastorWilds_1
 	.4byte Enemies_MinishPaths_CastorWilds
 	.4byte TileEntities_MinishPaths_CastorWilds
@@ -1798,7 +1798,7 @@ Room_MinishPaths_CastorWilds:: @ 080D5DD8
 	.4byte sub_unk3_MinishPaths_CastorWilds
 	.4byte sub_StateChange_MinishPaths_CastorWilds
 
-Entities_MinishPaths_HyruleTown_0:: @ 080D5DF8
+Entities_MinishPaths_HyruleTown_Main:: @ 080D5DF8
 	object_raw subtype=0x0, x=0x58, y=0x44, collision=1, paramA=0x63, paramB=0x400, paramC=0x7e0000
 	entity_list_end
 
@@ -1833,7 +1833,7 @@ TileEntities_MinishPaths_HyruleTown:: @ 080D5F48
 	tile_entity_list_end
 
 Room_MinishPaths_HyruleTown:: @ 080D5F70
-	.4byte Entities_MinishPaths_HyruleTown_0
+	.4byte Entities_MinishPaths_HyruleTown_Main
 	.4byte Entities_MinishPaths_HyruleTown_1
 	.4byte Enemies_MinishPaths_HyruleTown
 	.4byte TileEntities_MinishPaths_HyruleTown
@@ -4278,7 +4278,7 @@ Room_GreatFairies_Graveyard:: @ 080DA3EC
 	.4byte sub_unk3_GreatFairies_Graveyard
 	.4byte sub_StateChange_GreatFairies_Graveyard
 
-Entities_GreatFairies_MinishWoods_0:: @ 080DA40C
+Entities_GreatFairies_MinishWoods_Main:: @ 080DA40C
 	object_raw subtype=0x69, x=0x78, y=0x48, unknown=0x4f, paramC=script_GreatFairyRupees
 	object_raw subtype=0x1b, x=0x78, y=0x48, collision=2, paramA=0xb
 	entity_list_end
@@ -4290,7 +4290,7 @@ TileEntities_GreatFairies_MinishWoods:: @ 080DA44C
 	tile_entity_list_end
 
 Room_GreatFairies_MinishWoods:: @ 080DA454
-	.4byte Entities_GreatFairies_MinishWoods_0
+	.4byte Entities_GreatFairies_MinishWoods_Main
 	.4byte 0x00000000
 	.4byte Enemies_GreatFairies_MinishWoods
 	.4byte TileEntities_GreatFairies_MinishWoods
@@ -4924,7 +4924,7 @@ Room_MinishHouseInteriors_HyruleFieldExit:: @ 080DB308
 	.4byte sub_unk3_MinishHouseInteriors_HyruleFieldExit
 	.4byte sub_StateChange_MinishHouseInteriors_HyruleFieldExit
 
-Entities_MinishHouseInteriors_HyruleTown_0:: @ 080DB328
+Entities_MinishHouseInteriors_HyruleTown_Main:: @ 080DB328
 	npc_raw subtype=0x38, x=0x78, y=0x48, paramA=0x2, paramB=0x212, script=script_TownMinish1
 	entity_list_end
 
@@ -4939,7 +4939,7 @@ TileEntities_MinishHouseInteriors_HyruleTown:: @ 080DB378
 	tile_entity_list_end
 
 Room_MinishHouseInteriors_HyruleTown:: @ 080DB380
-	.4byte Entities_MinishHouseInteriors_HyruleTown_0
+	.4byte Entities_MinishHouseInteriors_HyruleTown_Main
 	.4byte Entities_MinishHouseInteriors_HyruleTown_1
 	.4byte Enemies_MinishHouseInteriors_HyruleTown
 	.4byte TileEntities_MinishHouseInteriors_HyruleTown
@@ -5130,29 +5130,29 @@ Room_TownMinishHoles_Cafe:: @ 080DB768
 	.4byte sub_unk3_TownMinishHoles_Cafe
 	.4byte sub_StateChange_TownMinishHoles_Cafe
 
-Entities_TownMinishHoles_5_0:: @ 080DB788
+Entities_TownMinishHoles_Unused_0:: @ 080DB788
 	entity_list_end
 
-Entities_TownMinishHoles_5_1:: @ 080DB798
+Entities_TownMinishHoles_Unused_1:: @ 080DB798
 	object_raw subtype=0x6f, x=0xe8, y=0x50, paramA=0x14
 	object_raw subtype=0xa4, x=0x48, y=0x20, paramB=0x1
 	entity_list_end
 
-Enemies_TownMinishHoles_5:: @ 080DB7C8
+Enemies_TownMinishHoles_Unused:: @ 080DB7C8
 	entity_list_end
 
-TileEntities_TownMinishHoles_5:: @ 080DB7D8
+TileEntities_TownMinishHoles_Unused:: @ 080DB7D8
 	tile_entity_list_end
 
-Room_TownMinishHoles_5:: @ 080DB7E0
-	.4byte Entities_TownMinishHoles_5_0
-	.4byte Entities_TownMinishHoles_5_1
-	.4byte Enemies_TownMinishHoles_5
-	.4byte TileEntities_TownMinishHoles_5
+Room_TownMinishHoles_Unused:: @ 080DB7E0
+	.4byte Entities_TownMinishHoles_Unused_0
+	.4byte Entities_TownMinishHoles_Unused_1
+	.4byte Enemies_TownMinishHoles_Unused
+	.4byte TileEntities_TownMinishHoles_Unused
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_unk3_TownMinishHoles_5
-	.4byte sub_StateChange_TownMinishHoles_5
+	.4byte sub_unk3_TownMinishHoles_Unused
+	.4byte sub_StateChange_TownMinishHoles_Unused
 
 Entities_TownMinishHoles_LibraryBookshelf_0:: @ 080DB800
 	npc_raw subtype=0x38, x=0xc0, y=0xd0, paramB=0x201, script=script_TownMinish1
@@ -5675,45 +5675,45 @@ Room_CastleGardenMinishHoles_West:: @ 080DC660
 	.4byte sub_unk3_CastleGardenMinishHoles_West
 	.4byte sub_StateChange_CastleGardenMinishHoles_West
 
-Entities_37_0_0:: @ 080DC680
+Entities_UnusedCastleGardenMinishHoles_East_0:: @ 080DC680
 	entity_list_end
 
-Enemies_37_0:: @ 080DC690
+Enemies_UnusedCastleGardenMinishHoles_East:: @ 080DC690
 	entity_list_end
 
-TileEntities_37_0:: @ 080DC6A0
+TileEntities_UnusedCastleGardenMinishHoles_East:: @ 080DC6A0
 	tile_entity type=0x2, paramA=0x66, paramB=0x643f, paramC=0x147
 	tile_entity_list_end
 
-Room_37_0:: @ 080DC6B0
-	.4byte Entities_37_0_0
+Room_UnusedCastleGardenMinishHoles_East:: @ 080DC6B0
+	.4byte Entities_UnusedCastleGardenMinishHoles_East_0
 	.4byte 0x00000000
-	.4byte Enemies_37_0
-	.4byte TileEntities_37_0
+	.4byte Enemies_UnusedCastleGardenMinishHoles_East
+	.4byte TileEntities_UnusedCastleGardenMinishHoles_East
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_unk3_37_0
-	.4byte sub_StateChange_37_0
+	.4byte sub_unk3_UnusedCastleGardenMinishHoles_East
+	.4byte sub_StateChange_UnusedCastleGardenMinishHoles_East
 
-Entities_37_1_0:: @ 080DC6D0
+Entities_UnusedCastleGardenMinishHoles_West_0:: @ 080DC6D0
 	entity_list_end
 
-Enemies_37_1:: @ 080DC6E0
+Enemies_UnusedCastleGardenMinishHoles_West:: @ 080DC6E0
 	entity_list_end
 
-TileEntities_37_1:: @ 080DC6F0
+TileEntities_UnusedCastleGardenMinishHoles_West:: @ 080DC6F0
 	tile_entity type=0x2, paramA=0x67, paramB=0x643f, paramC=0x147
 	tile_entity_list_end
 
-Room_37_1:: @ 080DC700
-	.4byte Entities_37_1_0
+Room_UnusedCastleGardenMinishHoles_West:: @ 080DC700
+	.4byte Entities_UnusedCastleGardenMinishHoles_West_0
 	.4byte 0x00000000
-	.4byte Enemies_37_1
-	.4byte TileEntities_37_1
+	.4byte Enemies_UnusedCastleGardenMinishHoles_West
+	.4byte TileEntities_UnusedCastleGardenMinishHoles_West
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_unk3_37_1
-	.4byte sub_StateChange_37_1
+	.4byte sub_unk3_UnusedCastleGardenMinishHoles_West
+	.4byte sub_StateChange_UnusedCastleGardenMinishHoles_West
 
 Entities_MinishCracks_LonLonRanchNorth_0:: @ 080DC720
 	entity_list_end
@@ -15317,7 +15317,7 @@ Room_DarkHyruleCastle_B2Dropdown:: @ 080EE7EC
 	.4byte sub_unk3_DarkHyruleCastle_B2Dropdown
 	.4byte sub_StateChange_Ruins_Beanstalk4
 
-Entities_HyruleTown_0_0:: @ 080EE80C
+Entities_HyruleTown_Main_0:: @ 080EE80C
 	object_raw subtype=0x77, x=0x1f8, y=0x128
 .ifdef EU_JP
 	object_raw subtype=0x4c, x=0x138, y=0x138, collision=1, paramA=0x1, paramB=0xf001, paramC=0xc70000
@@ -15402,7 +15402,7 @@ gUnk_080EEABC:: @ 080EEABC
 	manager subtype=0x33
 	entity_list_end
 
-Entities_HyruleTown_0_1:: @ 080EEADC
+Entities_HyruleTown_Main_1:: @ 080EEADC
 	manager subtype=0x12
 	manager subtype=0x13
 	manager subtype=0x4
@@ -15457,7 +15457,7 @@ gUnk_080EECBC:: @ 080EECBC
 	enemy_raw subtype=0x53, x=0x220, y=0x250
 	entity_list_end
 
-TileEntities_HyruleTown_0:: @ 080EECDC
+TileEntities_HyruleTown_Main:: @ 080EECDC
 	tile_entity type=0x5, paramB=0x100, paramC=0x342, paramD=0x601
 	tile_entity type=0x5, paramB=0x100, paramC=0x19d, paramD=0x601
 	tile_entity type=0x5, paramB=0x800, paramC=0xbdd, paramD=0x608
@@ -15486,7 +15486,7 @@ gUnk_080EED7A:: @ 080EED7A
 gUnk_080EED8C:: @ 080EED8C
 	.incbin "data_080D5360/gUnk_080EED8C.bin"
 
-gUnk_additional_d_HyruleTown_0:: @ 080EED98
+gUnk_additional_d_HyruleTown_Main:: @ 080EED98
 	exit_region_raw centerX=0xe0, centerY=0x52, halfWidth=0x3, halfHeight=0x2, exitIndex=0x10, bitfield=0x1
 	exit_region_raw centerX=0x9c, centerY=0x12e, halfWidth=0x3, halfHeight=0x2, exitIndex=0x11, bitfield=0x1
 	exit_region_raw centerX=0x8c, centerY=0x29e, halfWidth=0x4, halfHeight=0x2, exitIndex=0x12, bitfield=0x1
@@ -15504,55 +15504,55 @@ gUnk_additional_d_HyruleTown_0:: @ 080EED98
 	exit_region_raw centerX=0x3aa, centerY=0x31c, halfWidth=0x8, halfHeight=0x2, exitIndex=0x1f, bitfield=0x2
 	exit_region_list_end
 
-gUnk_additional_10_HyruleTown_0:: @ 080EEE18
+gUnk_additional_10_HyruleTown_Main:: @ 080EEE18
 	exit_raw transition=0x1, destX=0x60, destY=0x128, destArea=0x62, destRoom=0x15, unknownA=0x1
 
-gUnk_additional_11_HyruleTown_0:: @ 080EEE2C
+gUnk_additional_11_HyruleTown_Main:: @ 080EEE2C
 	exit_raw transition=0x1, destX=0x78, destY=0x24, destArea=0x22, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_12_HyruleTown_0:: @ 080EEE40
+gUnk_additional_12_HyruleTown_Main:: @ 080EEE40
 	exit_raw transition=0x1, destX=0x68, destY=0x44, destArea=0x28, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_13_HyruleTown_0:: @ 080EEE54
+gUnk_additional_13_HyruleTown_Main:: @ 080EEE54
 	exit_raw transition=0x1, destX=0x24, destY=0x58, destArea=0x23, destRoom=0x2, unknownA=0x1, unknownB=0x1, unknownC=0x2
 
-gUnk_additional_14_HyruleTown_0:: @ 080EEE68
+gUnk_additional_14_HyruleTown_Main:: @ 080EEE68
 	exit_raw transition=0x1, destX=0x108, destY=0xf0, destArea=0x62, unknownA=0x1
 
-gUnk_additional_15_HyruleTown_0:: @ 080EEE7C
+gUnk_additional_15_HyruleTown_Main:: @ 080EEE7C
 	exit_raw transition=0x1, destX=0xc8, destY=0x78, destArea=0x23, destRoom=0x3, unknownA=0x1, unknownB=0x1, unknownC=0x6
 
-gUnk_additional_16_HyruleTown_0:: @ 080EEE90
+gUnk_additional_16_HyruleTown_Main:: @ 080EEE90
 	exit_raw transition=0x1, destX=0x98, destY=0x24, destArea=0x21, destRoom=0xa, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_17_HyruleTown_0:: @ 080EEEA4
+gUnk_additional_17_HyruleTown_Main:: @ 080EEEA4
 	exit_raw transition=0x1, destX=0x28, destY=0x60, destArea=0x22, destRoom=0xc, unknownA=0x1, unknownB=0x1, unknownC=0x2
 
-gUnk_additional_18_HyruleTown_0:: @ 080EEEB8
+gUnk_additional_18_HyruleTown_Main:: @ 080EEEB8
 	exit_raw transition=0x1, destX=0x80, destY=0x318, destArea=0x11, destRoom=0x2, unknownA=0x1
 
-gUnk_additional_19_HyruleTown_0:: @ 080EEECC
+gUnk_additional_19_HyruleTown_Main:: @ 080EEECC
 	exit_raw transition=0x1, destX=0x48, destY=0x56, destArea=0x22, destRoom=0x4, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_1a_HyruleTown_0:: @ 080EEEE0
+gUnk_additional_1a_HyruleTown_Main:: @ 080EEEE0
 	exit_raw transition=0x1, destX=0x1c8, destY=0xc0, destArea=0x2e, unknownA=0x1, unknownC=0x6
 
-gUnk_additional_1b_HyruleTown_0:: @ 080EEEF4
+gUnk_additional_1b_HyruleTown_Main:: @ 080EEEF4
 	exit_raw transition=0x1, destX=0x28, destY=0xc0, destArea=0x2e, destRoom=0x1, unknownA=0x1, unknownC=0x2
 
-gUnk_additional_1c_HyruleTown_0:: @ 080EEF08
+gUnk_additional_1c_HyruleTown_Main:: @ 080EEF08
 	exit_raw transition=0x1, destX=0x48, destY=0x36, destArea=0x22, destRoom=0x6, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_1d_HyruleTown_0:: @ 080EEF1C
+gUnk_additional_1d_HyruleTown_Main:: @ 080EEF1C
 	exit_raw transition=0x1, destX=0x98, destY=0x36, destArea=0x22, destRoom=0x6, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_1e_HyruleTown_0:: @ 080EEF30
+gUnk_additional_1e_HyruleTown_Main:: @ 080EEF30
 	exit_raw transition=0x1, destX=0xb8, destY=0x56, destArea=0x22, destRoom=0x7, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_1f_HyruleTown_0:: @ 080EEF44
+gUnk_additional_1f_HyruleTown_Main:: @ 080EEF44
 	exit_raw transition=0x1, destX=0x58, destY=0x36, destArea=0x22, destRoom=0xc, unknownA=0x1, unknownB=0x1, unknownC=0x4
 
-gUnk_additional_e_HyruleTown_0:: @ 080EEF58
+gUnk_additional_e_HyruleTown_Main:: @ 080EEF58
 	minish_entrance x=0x124, y=0x50, timer=0x20
 	minish_entrance x=0x2f8, y=0x70, timer=0x21
 	minish_entrance x=0x7c, y=0x168, timer=0x22
@@ -15565,46 +15565,46 @@ gUnk_additional_e_HyruleTown_0:: @ 080EEF58
 	minish_entrance x=0x344, y=0x70, timer=0x2c
 	.4byte 0
 
-gUnk_additional_20_HyruleTown_0:: @ 080EEFAC
-	.incbin "data_080D5360/gUnk_additional_20_HyruleTown_0.bin"
+gUnk_additional_20_HyruleTown_Main:: @ 080EEFAC
+	.incbin "data_080D5360/gUnk_additional_20_HyruleTown_Main.bin"
 
-gUnk_additional_21_HyruleTown_0:: @ 080EEFC0
-	.incbin "data_080D5360/gUnk_additional_21_HyruleTown_0.bin"
+gUnk_additional_21_HyruleTown_Main:: @ 080EEFC0
+	.incbin "data_080D5360/gUnk_additional_21_HyruleTown_Main.bin"
 
-gUnk_additional_22_HyruleTown_0:: @ 080EEFD4
-	.incbin "data_080D5360/gUnk_additional_22_HyruleTown_0.bin"
+gUnk_additional_22_HyruleTown_Main:: @ 080EEFD4
+	.incbin "data_080D5360/gUnk_additional_22_HyruleTown_Main.bin"
 
-gUnk_additional_23_HyruleTown_0:: @ 080EEFE8
-	.incbin "data_080D5360/gUnk_additional_23_HyruleTown_0.bin"
+gUnk_additional_23_HyruleTown_Main:: @ 080EEFE8
+	.incbin "data_080D5360/gUnk_additional_23_HyruleTown_Main.bin"
 
-gUnk_additional_24_HyruleTown_0:: @ 080EEFFC
-	.incbin "data_080D5360/gUnk_additional_24_HyruleTown_0.bin"
+gUnk_additional_24_HyruleTown_Main:: @ 080EEFFC
+	.incbin "data_080D5360/gUnk_additional_24_HyruleTown_Main.bin"
 
-gUnk_additional_25_HyruleTown_0:: @ 080EF010
-	.incbin "data_080D5360/gUnk_additional_25_HyruleTown_0.bin"
+gUnk_additional_25_HyruleTown_Main:: @ 080EF010
+	.incbin "data_080D5360/gUnk_additional_25_HyruleTown_Main.bin"
 
-gUnk_additional_26_HyruleTown_0:: @ 080EF024
-	.incbin "data_080D5360/gUnk_additional_26_HyruleTown_0.bin"
+gUnk_additional_26_HyruleTown_Main:: @ 080EF024
+	.incbin "data_080D5360/gUnk_additional_26_HyruleTown_Main.bin"
 
-gUnk_additional_27_HyruleTown_0:: @ 080EF038
-	.incbin "data_080D5360/gUnk_additional_27_HyruleTown_0.bin"
+gUnk_additional_27_HyruleTown_Main:: @ 080EF038
+	.incbin "data_080D5360/gUnk_additional_27_HyruleTown_Main.bin"
 
-gUnk_additional_28_HyruleTown_0:: @ 080EF04C
-	.incbin "data_080D5360/gUnk_additional_28_HyruleTown_0.bin"
+gUnk_additional_28_HyruleTown_Main:: @ 080EF04C
+	.incbin "data_080D5360/gUnk_additional_28_HyruleTown_Main.bin"
 
-gUnk_additional_29_HyruleTown_0:: @ 080EF060
-	.incbin "data_080D5360/gUnk_additional_29_HyruleTown_0.bin"
+gUnk_additional_29_HyruleTown_Main:: @ 080EF060
+	.incbin "data_080D5360/gUnk_additional_29_HyruleTown_Main.bin"
 
-gUnk_additional_2a_HyruleTown_0:: @ 080EF074
-	.incbin "data_080D5360/gUnk_additional_2a_HyruleTown_0.bin"
+gUnk_additional_2a_HyruleTown_Main:: @ 080EF074
+	.incbin "data_080D5360/gUnk_additional_2a_HyruleTown_Main.bin"
 
-gUnk_additional_2b_HyruleTown_0:: @ 080EF088
-	.incbin "data_080D5360/gUnk_additional_2b_HyruleTown_0.bin"
+gUnk_additional_2b_HyruleTown_Main:: @ 080EF088
+	.incbin "data_080D5360/gUnk_additional_2b_HyruleTown_Main.bin"
 
-gUnk_additional_2c_HyruleTown_0:: @ 080EF09C
-	.incbin "data_080D5360/gUnk_additional_2c_HyruleTown_0.bin"
+gUnk_additional_2c_HyruleTown_Main:: @ 080EF09C
+	.incbin "data_080D5360/gUnk_additional_2c_HyruleTown_Main.bin"
 
-gUnk_additional_f_HyruleTown_0:: @ 080EF0B0
+gUnk_additional_f_HyruleTown_Main:: @ 080EF0B0
 	delayed_entity_raw subtype=0x6, x=0x298, y=0x268, layer=1, paramA=0x8, paramC=script_Townsperson1, paramD=0x4, conditions=0x1c
 	delayed_entity_raw subtype=0x6, x=0x238, y=0x118, layer=1, paramA=0xa, paramC=script_Townsperson2, paramD=0x4, conditions=0x1fc
 	delayed_entity_raw subtype=0x6, x=0x1a8, y=0x308, layer=1, paramA=0xb, paramC=script_Townsperson2, paramD=0x4, conditions=0x1fc
@@ -15688,62 +15688,62 @@ gUnk_additional_f_HyruleTown_0:: @ 080EF0B0
 	entity_list_end
 	delayed_entity_raw subtype=0x0
 
-gUnk_additional_8_HyruleTown_0:: @ 080EF5D0
+gUnk_additional_8_HyruleTown_Main:: @ 080EF5D0
 	delayed_entity_raw subtype=0x21, x=0x388, y=0x338, layer=1, paramA=0x1, paramC=script_Ghost, conditions=0x3fc
 	entity_list_end
 
-gUnk_additional_2d_HyruleTown_0:: @ 080EF5F0
+gUnk_additional_2d_HyruleTown_Main:: @ 080EF5F0
 	delayed_entity_raw subtype=0x33, x=0x220, y=0x1f8, layer=1, paramC=script_GoronMerchant, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_2e_HyruleTown_0:: @ 080EF610
+gUnk_additional_2e_HyruleTown_Main:: @ 080EF610
 	delayed_entity_raw subtype=0x11, x=0x220, y=0x248, layer=1, paramA=0x1, paramC=script_Beedle, conditions=0x3f0
 	delayed_entity_raw subtype=0x50, x=0x220, y=0x250, layer=1, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_2f_HyruleTown_0:: @ 080EF640
+gUnk_additional_2f_HyruleTown_Main:: @ 080EF640
 	delayed_entity_raw subtype=0x34, x=0x2b8, y=0x378, layer=1, paramC=script_GormanFirstHouse, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_30_HyruleTown_0:: @ 080EF660
+gUnk_additional_30_HyruleTown_Main:: @ 080EF660
 	delayed_entity_raw subtype=0x34, x=0x68, y=0x1c8, layer=1, paramC=script_GormanSecondHouse, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_31_HyruleTown_0:: @ 080EF680
+gUnk_additional_31_HyruleTown_Main:: @ 080EF680
 	delayed_entity_raw subtype=0x34, x=0x138, y=0x108, layer=1, paramC=script_GormanCats, conditions=0x1f0
 	entity_list_end
 
-gUnk_additional_32_HyruleTown_0:: @ 080EF6A0
+gUnk_additional_32_HyruleTown_Main:: @ 080EF6A0
 	delayed_entity_raw subtype=0x34, x=0x40, y=0x1d0, layer=1, paramC=script_GormanFirstHouse, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_34_HyruleTown_0:: @ 080EF6C0
+gUnk_additional_34_HyruleTown_Main:: @ 080EF6C0
 	delayed_entity_raw subtype=0x4f, x=0x2f8, y=0x360, layer=1, conditions=0x3ff
 	entity_list_end
 
-gUnk_additional_35_HyruleTown_0:: @ 080EF6E0
+gUnk_additional_35_HyruleTown_Main:: @ 080EF6E0
 	delayed_entity_raw subtype=0x4f, x=0x2f8, y=0x360, layer=1, paramA=0x1, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_36_HyruleTown_0:: @ 080EF700
+gUnk_additional_36_HyruleTown_Main:: @ 080EF700
 	delayed_entity_raw subtype=0x4f, x=0x2f8, y=0x360, layer=1, paramA=0x2, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_37_HyruleTown_0:: @ 080EF720
+gUnk_additional_37_HyruleTown_Main:: @ 080EF720
 	delayed_entity_raw subtype=0x4f, x=0x2f8, y=0x360, layer=1, paramA=0x3, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_38_HyruleTown_0:: @ 080EF740
+gUnk_additional_38_HyruleTown_Main:: @ 080EF740
 	delayed_entity_raw subtype=0x2a, x=0x80, y=0x88, layer=1, paramA=0x2, paramC=script_Carpenter, conditions=0x3e0
 	entity_list_end
 
-gUnk_additional_39_HyruleTown_0:: @ 080EF760
+gUnk_additional_39_HyruleTown_Main:: @ 080EF760
 	delayed_entity_raw subtype=0x1e, x=0x1a8, y=0xf8, layer=1, paramA=0x1, paramC=script_MalonHyruleTown, conditions=0x3f0
 	delayed_entity_raw subtype=0x1f, x=0x1c0, y=0xf8, layer=1, conditions=0x3f0
 	delayed_entity_raw subtype=0x20, x=0x1d0, y=0xf8, layer=1, conditions=0x3f0
 	entity_list_end
 
-gUnk_additional_3a_HyruleTown_0:: @ 080EF7A0
+gUnk_additional_3a_HyruleTown_Main:: @ 080EF7A0
 	delayed_entity_raw subtype=0x6, x=0x168, y=0xb8, layer=1, paramC=script_Townsperson1, paramD=0x4, conditions=0x3c
 	entity_list_end
 
@@ -15776,167 +15776,167 @@ gUnk_additional_9_HyruleTown_1:: @ 080EF7C0
 	delayed_entity_raw subtype=0x7, x=0xa8, y=0xe8, layer=1, paramA=0x8, paramC=script_KidIntro3, conditions=0xffff
 	entity_list_end
 
-gUnk_additional_9_HyruleTown_0:: @ 080EF970
-	.incbin "data_080D5360/gUnk_additional_9_HyruleTown_0.bin"
+gUnk_additional_9_HyruleTown_Main:: @ 080EF970
+	.incbin "data_080D5360/gUnk_additional_9_HyruleTown_Main.bin"
 
-gUnk_additional_a_HyruleTown_0:: @ 080EF998
-	.incbin "data_080D5360/gUnk_additional_a_HyruleTown_0.bin"
+gUnk_additional_a_HyruleTown_Main:: @ 080EF998
+	.incbin "data_080D5360/gUnk_additional_a_HyruleTown_Main.bin"
 
-gUnk_additional_b_HyruleTown_0:: @ 080EF9C0
-	.incbin "data_080D5360/gUnk_additional_b_HyruleTown_0.bin"
+gUnk_additional_b_HyruleTown_Main:: @ 080EF9C0
+	.incbin "data_080D5360/gUnk_additional_b_HyruleTown_Main.bin"
 
-gUnk_additional_c_HyruleTown_0:: @ 080EF9E4
-	.incbin "data_080D5360/gUnk_additional_c_HyruleTown_0.bin"
+gUnk_additional_c_HyruleTown_Main:: @ 080EF9E4
+	.incbin "data_080D5360/gUnk_additional_c_HyruleTown_Main.bin"
 	.4byte script_DrLeftDoor
-	.incbin "data_080D5360/gUnk_additional_c_HyruleTown_0_1.bin"
+	.incbin "data_080D5360/gUnk_additional_c_HyruleTown_Main_1.bin"
 	.4byte script_FirstHouseDoor
-	.incbin "data_080D5360/gUnk_additional_c_HyruleTown_0_2.bin"
+	.incbin "data_080D5360/gUnk_additional_c_HyruleTown_Main_2.bin"
 
 gUnk_additional_8_HyruleTown_1:: @ 080EFAA4
 	.incbin "data_080D5360/gUnk_additional_8_HyruleTown_1.bin"
 
-Room_HyruleTown_0:: @ 080EFAEC
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+Room_HyruleTown_Main:: @ 080EFAEC
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_unk3_HyruleTown_0
-	.4byte sub_StateChange_HyruleTown_0
-	.4byte gUnk_additional_8_HyruleTown_0
-	.4byte gUnk_additional_9_HyruleTown_0
-	.4byte gUnk_additional_a_HyruleTown_0
-	.4byte gUnk_additional_b_HyruleTown_0
-	.4byte gUnk_additional_c_HyruleTown_0
-	.4byte gUnk_additional_d_HyruleTown_0
-	.4byte gUnk_additional_e_HyruleTown_0
-	.4byte gUnk_additional_f_HyruleTown_0
-	.4byte gUnk_additional_10_HyruleTown_0
-	.4byte gUnk_additional_11_HyruleTown_0
-	.4byte gUnk_additional_12_HyruleTown_0
-	.4byte gUnk_additional_13_HyruleTown_0
-	.4byte gUnk_additional_14_HyruleTown_0
-	.4byte gUnk_additional_15_HyruleTown_0
-	.4byte gUnk_additional_16_HyruleTown_0
-	.4byte gUnk_additional_17_HyruleTown_0
-	.4byte gUnk_additional_18_HyruleTown_0
-	.4byte gUnk_additional_19_HyruleTown_0
-	.4byte gUnk_additional_1a_HyruleTown_0
-	.4byte gUnk_additional_1b_HyruleTown_0
-	.4byte gUnk_additional_1c_HyruleTown_0
-	.4byte gUnk_additional_1d_HyruleTown_0
-	.4byte gUnk_additional_1e_HyruleTown_0
-	.4byte gUnk_additional_1f_HyruleTown_0
-	.4byte gUnk_additional_20_HyruleTown_0
-	.4byte gUnk_additional_21_HyruleTown_0
-	.4byte gUnk_additional_22_HyruleTown_0
-	.4byte gUnk_additional_23_HyruleTown_0
-	.4byte gUnk_additional_24_HyruleTown_0
-	.4byte gUnk_additional_25_HyruleTown_0
-	.4byte gUnk_additional_26_HyruleTown_0
-	.4byte gUnk_additional_27_HyruleTown_0
-	.4byte gUnk_additional_28_HyruleTown_0
-	.4byte gUnk_additional_29_HyruleTown_0
-	.4byte gUnk_additional_2a_HyruleTown_0
-	.4byte gUnk_additional_2b_HyruleTown_0
-	.4byte gUnk_additional_2c_HyruleTown_0
-	.4byte gUnk_additional_2d_HyruleTown_0
-	.4byte gUnk_additional_2e_HyruleTown_0
-	.4byte gUnk_additional_2f_HyruleTown_0
-	.4byte gUnk_additional_30_HyruleTown_0
-	.4byte gUnk_additional_31_HyruleTown_0
-	.4byte gUnk_additional_32_HyruleTown_0
+	.4byte sub_unk3_HyruleTown_Main
+	.4byte sub_StateChange_HyruleTown_Main
+	.4byte gUnk_additional_8_HyruleTown_Main
+	.4byte gUnk_additional_9_HyruleTown_Main
+	.4byte gUnk_additional_a_HyruleTown_Main
+	.4byte gUnk_additional_b_HyruleTown_Main
+	.4byte gUnk_additional_c_HyruleTown_Main
+	.4byte gUnk_additional_d_HyruleTown_Main
+	.4byte gUnk_additional_e_HyruleTown_Main
+	.4byte gUnk_additional_f_HyruleTown_Main
+	.4byte gUnk_additional_10_HyruleTown_Main
+	.4byte gUnk_additional_11_HyruleTown_Main
+	.4byte gUnk_additional_12_HyruleTown_Main
+	.4byte gUnk_additional_13_HyruleTown_Main
+	.4byte gUnk_additional_14_HyruleTown_Main
+	.4byte gUnk_additional_15_HyruleTown_Main
+	.4byte gUnk_additional_16_HyruleTown_Main
+	.4byte gUnk_additional_17_HyruleTown_Main
+	.4byte gUnk_additional_18_HyruleTown_Main
+	.4byte gUnk_additional_19_HyruleTown_Main
+	.4byte gUnk_additional_1a_HyruleTown_Main
+	.4byte gUnk_additional_1b_HyruleTown_Main
+	.4byte gUnk_additional_1c_HyruleTown_Main
+	.4byte gUnk_additional_1d_HyruleTown_Main
+	.4byte gUnk_additional_1e_HyruleTown_Main
+	.4byte gUnk_additional_1f_HyruleTown_Main
+	.4byte gUnk_additional_20_HyruleTown_Main
+	.4byte gUnk_additional_21_HyruleTown_Main
+	.4byte gUnk_additional_22_HyruleTown_Main
+	.4byte gUnk_additional_23_HyruleTown_Main
+	.4byte gUnk_additional_24_HyruleTown_Main
+	.4byte gUnk_additional_25_HyruleTown_Main
+	.4byte gUnk_additional_26_HyruleTown_Main
+	.4byte gUnk_additional_27_HyruleTown_Main
+	.4byte gUnk_additional_28_HyruleTown_Main
+	.4byte gUnk_additional_29_HyruleTown_Main
+	.4byte gUnk_additional_2a_HyruleTown_Main
+	.4byte gUnk_additional_2b_HyruleTown_Main
+	.4byte gUnk_additional_2c_HyruleTown_Main
+	.4byte gUnk_additional_2d_HyruleTown_Main
+	.4byte gUnk_additional_2e_HyruleTown_Main
+	.4byte gUnk_additional_2f_HyruleTown_Main
+	.4byte gUnk_additional_30_HyruleTown_Main
+	.4byte gUnk_additional_31_HyruleTown_Main
+	.4byte gUnk_additional_32_HyruleTown_Main
 	.4byte 0x00000000
-	.4byte gUnk_additional_34_HyruleTown_0
-	.4byte gUnk_additional_35_HyruleTown_0
-	.4byte gUnk_additional_36_HyruleTown_0
-	.4byte gUnk_additional_37_HyruleTown_0
-	.4byte gUnk_additional_38_HyruleTown_0
-	.4byte gUnk_additional_39_HyruleTown_0
-	.4byte gUnk_additional_3a_HyruleTown_0
+	.4byte gUnk_additional_34_HyruleTown_Main
+	.4byte gUnk_additional_35_HyruleTown_Main
+	.4byte gUnk_additional_36_HyruleTown_Main
+	.4byte gUnk_additional_37_HyruleTown_Main
+	.4byte gUnk_additional_38_HyruleTown_Main
+	.4byte gUnk_additional_39_HyruleTown_Main
+	.4byte gUnk_additional_3a_HyruleTown_Main
 
 Room_HyruleTown_1:: @ 080EFBD8
 	.4byte Entities_HyruleTown_1_0
 	.4byte Entities_HyruleTown_1_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 	.4byte gUnk_additional_8_HyruleTown_1
 	.4byte gUnk_additional_9_HyruleTown_1
 
 Room_HyruleTown_2:: @ 080EFC00
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0
 	.4byte 0
 	.4byte 0
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 
 Room_HyruleTown_3:: @ 080EFC20
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 
 Room_HyruleTown_4:: @ 080EFC40
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 
 Room_HyruleTown_5:: @ 080EFC60
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 
 Room_HyruleTown_6:: @ 080EFC80
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 
 Room_HyruleTown_7:: @ 080EFCA0
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 
 Room_HyruleTown_8:: @ 080EFCC0
-	.4byte Entities_HyruleTown_0_0
-	.4byte Entities_HyruleTown_0_1
+	.4byte Entities_HyruleTown_Main_0
+	.4byte Entities_HyruleTown_Main_1
 	.4byte 0x00000000
-	.4byte TileEntities_HyruleTown_0
+	.4byte TileEntities_HyruleTown_Main
 	.4byte sub_unk1_HyruleTown_8
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte sub_StateChange_HyruleTown_0
+	.4byte sub_StateChange_HyruleTown_Main
 
 Entities_HyruleTownMinishCaves_Entrance_0:: @ 080EFCE0
 	ezlo_hint x=0x1c, y=0x1c, rx=0x5, ry=0x1, msg=0xb15, flag=0xbe
@@ -19218,11 +19218,11 @@ Room_Beanstalks_MountCrenel:: @ 080F68FC
 	.4byte sub_unk3_Beanstalks_MountCrenel
 	.4byte sub_StateChange_Beanstalks_MountCrenel
 
-Entities_Beanstalks_LakeHylia_0:: @ 080F691C
+Entities_Beanstalks_LakeHylia_Main:: @ 080F691C
 	object_raw subtype=0x0, x=0xc0, y=0x44, collision=1, paramA=0x63, paramB=0x400, paramC=0x840000
 	entity_list_end
 
-Entities_Beanstalks_LakeHylia_1:: @ 080F693C
+Entities_Beanstalks_LakeHylia_Beanstalk:: @ 080F693C
 	manager subtype=0x1d
 	object_raw subtype=0x2c, x=0x58, y=0x78, paramA=0x8
 	object_raw subtype=0x4a, y=0x20
@@ -19241,8 +19241,8 @@ TileEntities_Beanstalks_LakeHylia:: @ 080F69AC
 	tile_entity_list_end
 
 Room_Beanstalks_LakeHylia:: @ 080F69CC
-	.4byte Entities_Beanstalks_LakeHylia_0
-	.4byte Entities_Beanstalks_LakeHylia_1
+	.4byte Entities_Beanstalks_LakeHylia_Main
+	.4byte Entities_Beanstalks_LakeHylia_Beanstalk
 	.4byte Enemies_Beanstalks_LakeHylia
 	.4byte TileEntities_Beanstalks_LakeHylia
 	.4byte 0x00000000

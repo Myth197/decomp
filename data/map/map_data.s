@@ -5,16 +5,16 @@
 	.align 2
 
 gMapData:: @ 08324AE4
-gAreaRoomMap_TownMinishHoles_8_0::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_8_0.bin"
+gAreaRoomMap_TownMinishHoles_RemShoeShop_0::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_RemShoeShop_0.bin"
 	.align 2
-gAreaTileset_LakeWoodsCave_0_0::
-	.incbin "tilesets/gAreaTileset_LakeWoodsCave_0_0.4bpp.lz"
+gAreaTileset_LakeWoodsCave_Main_0::
+	.incbin "tilesets/gAreaTileset_LakeWoodsCave_Main_0.4bpp.lz"
 	.align 2
-gAreaTileset_LakeWoodsCave_0_1::
-	.incbin "tilesets/gAreaTileset_LakeWoodsCave_0_1.4bpp.lz"
-gAreaTileset_LakeWoodsCave_0_2::
-	.incbin "tilesets/gAreaTileset_LakeWoodsCave_0_2.4bpp.lz"
+gAreaTileset_LakeWoodsCave_Main_1::
+	.incbin "tilesets/gAreaTileset_LakeWoodsCave_Main_1.4bpp.lz"
+gAreaTileset_LakeWoodsCave_Main_2::
+	.incbin "tilesets/gAreaTileset_LakeWoodsCave_Main_2.4bpp.lz"
 	.align 2
 gAreaMetatiles_MinishWoods_0::
 	.incbin "assets/gAreaMetatiles_MinishWoods_0.bin"
@@ -28,22 +28,22 @@ gAreaMetatiles_MinishWoods_2::
 gAreaMetatiles_MinishWoods_3::
 	.incbin "assets/gAreaMetatiles_MinishWoods_3.bin"
 	.align 2
-gAreaRoomMap_MinishWoods_0_0::
-	.incbin "assets/gAreaRoomMap_MinishWoods_0_0.bin"
+gAreaRoomMap_MinishWoods_Main_0::
+	.incbin "assets/gAreaRoomMap_MinishWoods_Main_0.bin"
 	.align 2
-gAreaRoomMap_MinishWoods_0_1::
-	.incbin "assets/gAreaRoomMap_MinishWoods_0_1.bin"
+gAreaRoomMap_MinishWoods_Main_1::
+	.incbin "assets/gAreaRoomMap_MinishWoods_Main_1.bin"
 	.align 2
 unknown_0::
 	.incbin "assets/unknown_0.bin"
-gAreaTileset_HyliaDigCaves_0_0::
-	.incbin "tilesets/gAreaTileset_HyliaDigCaves_0_0.4bpp.lz"
+gAreaTileset_HyliaDigCaves_Middle_0::
+	.incbin "tilesets/gAreaTileset_HyliaDigCaves_Middle_0.4bpp.lz"
 	.align 2
-gAreaTileset_HyliaDigCaves_0_1::
-	.incbin "tilesets/gAreaTileset_HyliaDigCaves_0_1.4bpp.lz"
+gAreaTileset_HyliaDigCaves_Middle_1::
+	.incbin "tilesets/gAreaTileset_HyliaDigCaves_Middle_1.4bpp.lz"
 	.align 2
-gAreaTileset_HyliaDigCaves_0_2::
-	.incbin "tilesets/gAreaTileset_HyliaDigCaves_0_2.4bpp.lz"
+gAreaTileset_HyliaDigCaves_Middle_2::
+	.incbin "tilesets/gAreaTileset_HyliaDigCaves_Middle_2.4bpp.lz"
 	.align 2
 gAreaMetatiles_LakeHylia_0::
 	.incbin "assets/gAreaMetatiles_LakeHylia_0.bin"
@@ -57,19 +57,19 @@ gAreaMetatiles_LakeHylia_2::
 gAreaMetatiles_LakeHylia_3::
 	.incbin "assets/gAreaMetatiles_LakeHylia_3.bin"
 	.align 2
-gAreaRoomMap_LakeHylia_0_0::
-	.incbin "assets/gAreaRoomMap_LakeHylia_0_0.bin"
+gAreaRoomMap_LakeHylia_Main_0::
+	.incbin "assets/gAreaRoomMap_LakeHylia_Main_0.bin"
 	.align 2
-gAreaRoomMap_LakeHylia_0_1::
-	.incbin "assets/gAreaRoomMap_LakeHylia_0_1.bin"
+gAreaRoomMap_LakeHylia_Main_1::
+	.incbin "assets/gAreaRoomMap_LakeHylia_Main_1.bin"
 	.align 2
 unknown_1::
 	.incbin "assets/unknown_1.bin"
-gAreaRoomMap_LakeHylia_1_0::
-	.incbin "assets/gAreaRoomMap_LakeHylia_1_0.bin"
+gAreaRoomMap_LakeHylia_Beanstalk_0::
+	.incbin "assets/gAreaRoomMap_LakeHylia_Beanstalk_0.bin"
 	.align 2
-gAreaRoomMap_LakeHylia_1_1::
-	.incbin "assets/gAreaRoomMap_LakeHylia_1_1.bin"
+gAreaRoomMap_LakeHylia_Beanstalk_1::
+	.incbin "assets/gAreaRoomMap_LakeHylia_Beanstalk_1.bin"
 	.align 2
 gAreaTileset_OuterFortressOfWinds_0_0::
 	.incbin "tilesets/gAreaTileset_OuterFortressOfWinds_0_0.4bpp.lz"
@@ -89,46 +89,46 @@ gAreaMetatiles_CastorWilds_2::
 	.align 2
 gAreaMetatiles_CastorWilds_3::
 	.incbin "assets/gAreaMetatiles_CastorWilds_3.bin"
-gAreaRoomMap_CastorWilds_0_0::
-	.incbin "assets/gAreaRoomMap_CastorWilds_0_0.bin"
+gAreaRoomMap_CastorWilds_Main_0::
+	.incbin "assets/gAreaRoomMap_CastorWilds_Main_0.bin"
 	.align 2
-gAreaRoomMap_CastorWilds_0_1::
-	.incbin "assets/gAreaRoomMap_CastorWilds_0_1.bin"
+gAreaRoomMap_CastorWilds_Main_1::
+	.incbin "assets/gAreaRoomMap_CastorWilds_Main_1.bin"
 	.align 2
 unknown_2::
 	.incbin "assets/unknown_2.bin"
-gAreaRoomMap_Ruins_0_0::
-	.incbin "assets/gAreaRoomMap_Ruins_0_0.bin"
+gAreaRoomMap_Ruins_Entrance_0::
+	.incbin "assets/gAreaRoomMap_Ruins_Entrance_0.bin"
 	.align 2
-gAreaRoomMap_Ruins_0_1::
-	.incbin "assets/gAreaRoomMap_Ruins_0_1.bin"
+gAreaRoomMap_Ruins_Entrance_1::
+	.incbin "assets/gAreaRoomMap_Ruins_Entrance_1.bin"
 	.align 2
-gAreaRoomMap_Ruins_1_0::
-	.incbin "assets/gAreaRoomMap_Ruins_1_0.bin"
-gAreaRoomMap_Ruins_1_1::
-	.incbin "assets/gAreaRoomMap_Ruins_1_1.bin"
-gAreaRoomMap_Ruins_2_0::
-	.incbin "assets/gAreaRoomMap_Ruins_2_0.bin"
+gAreaRoomMap_Ruins_Beanstalk_0::
+	.incbin "assets/gAreaRoomMap_Ruins_Beanstalk_0.bin"
+gAreaRoomMap_Ruins_Beanstalk_1::
+	.incbin "assets/gAreaRoomMap_Ruins_Beanstalk_1.bin"
+gAreaRoomMap_Ruins_Tektites_0::
+	.incbin "assets/gAreaRoomMap_Ruins_Tektites_0.bin"
 	.align 2
-gAreaRoomMap_Ruins_2_1::
-	.incbin "assets/gAreaRoomMap_Ruins_2_1.bin"
+gAreaRoomMap_Ruins_Tektites_1::
+	.incbin "assets/gAreaRoomMap_Ruins_Tektites_1.bin"
 	.align 2
-gAreaRoomMap_Ruins_3_0::
-	.incbin "assets/gAreaRoomMap_Ruins_3_0.bin"
+gAreaRoomMap_Ruins_LadderToTektites_0::
+	.incbin "assets/gAreaRoomMap_Ruins_LadderToTektites_0.bin"
 	.align 2
-gAreaRoomMap_Ruins_3_1::
-	.incbin "assets/gAreaRoomMap_Ruins_3_1.bin"
+gAreaRoomMap_Ruins_LadderToTektites_1::
+	.incbin "assets/gAreaRoomMap_Ruins_LadderToTektites_1.bin"
 	.align 2
-gAreaRoomMap_Ruins_4_0::
-	.incbin "assets/gAreaRoomMap_Ruins_4_0.bin"
+gAreaRoomMap_Ruins_FortressEntrance_0::
+	.incbin "assets/gAreaRoomMap_Ruins_FortressEntrance_0.bin"
 	.align 2
-gAreaRoomMap_Ruins_4_1::
-	.incbin "assets/gAreaRoomMap_Ruins_4_1.bin"
-gAreaRoomMap_Ruins_5_0::
-	.incbin "assets/gAreaRoomMap_Ruins_5_0.bin"
+gAreaRoomMap_Ruins_FortressEntrance_1::
+	.incbin "assets/gAreaRoomMap_Ruins_FortressEntrance_1.bin"
+gAreaRoomMap_Ruins_BelowFortressEntrance_0::
+	.incbin "assets/gAreaRoomMap_Ruins_BelowFortressEntrance_0.bin"
 	.align 2
-gAreaRoomMap_Ruins_5_1::
-	.incbin "assets/gAreaRoomMap_Ruins_5_1.bin"
+gAreaRoomMap_Ruins_BelowFortressEntrance_1::
+	.incbin "assets/gAreaRoomMap_Ruins_BelowFortressEntrance_1.bin"
 	.align 2
 unknown_3::
 	.incbin "assets/unknown_3.bin"
@@ -152,27 +152,27 @@ gAreaTileset_HyruleDigCaves_0_1::
 	.align 2
 gAreaTileset_HyruleDigCaves_0_2::
 	.incbin "tilesets/gAreaTileset_HyruleDigCaves_0_2.4bpp.lz"
-gAreaTileset_FestivalTown_0_0::
-	.incbin "tilesets/gAreaTileset_FestivalTown_0_0.4bpp.lz"
-gAreaTileset_FestivalTown_0_1::
-	.incbin "tilesets/gAreaTileset_FestivalTown_0_1.4bpp.lz"
+gAreaTileset_FestivalTown_Main_0::
+	.incbin "tilesets/gAreaTileset_FestivalTown_Main_0.4bpp.lz"
+gAreaTileset_FestivalTown_Main_1::
+	.incbin "tilesets/gAreaTileset_FestivalTown_Main_1.4bpp.lz"
 	.align 2
-gAreaTileset_FestivalTown_0_2::
-	.incbin "tilesets/gAreaTileset_FestivalTown_0_2.4bpp.lz"
+gAreaTileset_FestivalTown_Main_2::
+	.incbin "tilesets/gAreaTileset_FestivalTown_Main_2.4bpp.lz"
 	.align 2
-gAreaRoomMap_HyruleTown_0_0::
-	.incbin "assets/gAreaRoomMap_HyruleTown_0_0.bin"
+gAreaRoomMap_HyruleTown_Main_0::
+	.incbin "assets/gAreaRoomMap_HyruleTown_Main_0.bin"
 	.align 2
-gAreaRoomMap_HyruleTown_0_1::
-	.incbin "assets/gAreaRoomMap_HyruleTown_0_1.bin"
+gAreaRoomMap_HyruleTown_Main_1::
+	.incbin "assets/gAreaRoomMap_HyruleTown_Main_1.bin"
 	.align 2
 unknown_4::
 	.incbin "assets/unknown_4.bin"
-gAreaRoomMap_FestivalTown_0_0::
-	.incbin "assets/gAreaRoomMap_FestivalTown_0_0.bin"
+gAreaRoomMap_FestivalTown_Main_0::
+	.incbin "assets/gAreaRoomMap_FestivalTown_Main_0.bin"
 	.align 2
-gAreaRoomMap_FestivalTown_0_1::
-	.incbin "assets/gAreaRoomMap_FestivalTown_0_1.bin"
+gAreaRoomMap_FestivalTown_Main_1::
+	.incbin "assets/gAreaRoomMap_FestivalTown_Main_1.bin"
 	.align 2
 gAreaTileset_CrenelDigCave_0_0::
 	.incbin "tilesets/gAreaTileset_CrenelDigCave_0_0.4bpp.lz"
@@ -1073,11 +1073,11 @@ gAreaRoomMap_37_1_0::
 gAreaRoomMap_37_1_1::
 	.incbin "assets/gAreaRoomMap_37_1_1.bin"
 	.align 2
-gAreaTileset_LakeWoodsCave_0_3::
-	.incbin "tilesets/gAreaTileset_LakeWoodsCave_0_3.4bpp.lz"
+gAreaTileset_LakeWoodsCave_Main_3::
+	.incbin "tilesets/gAreaTileset_LakeWoodsCave_Main_3.4bpp.lz"
 	.align 2
-gAreaTileset_LakeWoodsCave_0_4::
-	.incbin "tilesets/gAreaTileset_LakeWoodsCave_0_4.4bpp.lz"
+gAreaTileset_LakeWoodsCave_Main_4::
+	.incbin "tilesets/gAreaTileset_LakeWoodsCave_Main_4.4bpp.lz"
 gAreaTileset_HyruleDigCaves_0_3::
 	.incbin "tilesets/gAreaTileset_HyruleDigCaves_0_3.4bpp.lz"
 gAreaTileset_HyruleDigCaves_0_4::
@@ -1098,34 +1098,34 @@ gAreaTileset_OuterFortressOfWinds_0_3::
 	.align 2
 gAreaTileset_OuterFortressOfWinds_0_4::
 	.incbin "tilesets/gAreaTileset_OuterFortressOfWinds_0_4.4bpp.lz"
-gAreaTileset_HyliaDigCaves_0_3::
-	.incbin "tilesets/gAreaTileset_HyliaDigCaves_0_3.4bpp.lz"
+gAreaTileset_HyliaDigCaves_Middle_3::
+	.incbin "tilesets/gAreaTileset_HyliaDigCaves_Middle_3.4bpp.lz"
 	.align 2
-gAreaTileset_HyliaDigCaves_0_4::
-	.incbin "tilesets/gAreaTileset_HyliaDigCaves_0_4.4bpp.lz"
-gAreaRoomMap_LakeWoodsCave_0_0::
-	.incbin "assets/gAreaRoomMap_LakeWoodsCave_0_0.bin"
+gAreaTileset_HyliaDigCaves_Middle_4::
+	.incbin "tilesets/gAreaTileset_HyliaDigCaves_Middle_4.4bpp.lz"
+gAreaRoomMap_LakeWoodsCave_Main_0::
+	.incbin "assets/gAreaRoomMap_LakeWoodsCave_Main_0.bin"
 	.align 2
 unknown_12::
 	.incbin "assets/unknown_12.bin"
-gAreaRoomMap_LakeWoodsCave_0_1::
-	.incbin "assets/gAreaRoomMap_LakeWoodsCave_0_1.bin"
+gAreaRoomMap_LakeWoodsCave_Main_1::
+	.incbin "assets/gAreaRoomMap_LakeWoodsCave_Main_1.bin"
 	.align 2
-gAreaRoomMap_HyliaDigCaves_0_0::
-	.incbin "assets/gAreaRoomMap_HyliaDigCaves_0_0.bin"
+gAreaRoomMap_HyliaDigCaves_Middle_0::
+	.incbin "assets/gAreaRoomMap_HyliaDigCaves_Middle_0.bin"
 	.align 2
 unknown_13::
 	.incbin "assets/unknown_13.bin"
-gAreaRoomMap_HyliaDigCaves_0_1::
-	.incbin "assets/gAreaRoomMap_HyliaDigCaves_0_1.bin"
+gAreaRoomMap_HyliaDigCaves_Middle_1::
+	.incbin "assets/gAreaRoomMap_HyliaDigCaves_Middle_1.bin"
 	.align 2
-gAreaRoomMap_HyliaDigCaves_1_0::
-	.incbin "assets/gAreaRoomMap_HyliaDigCaves_1_0.bin"
+gAreaRoomMap_HyliaDigCaves_North_0::
+	.incbin "assets/gAreaRoomMap_HyliaDigCaves_North_0.bin"
 	.align 2
 unknown_14::
 	.incbin "assets/unknown_14.bin"
-gAreaRoomMap_HyliaDigCaves_1_1::
-	.incbin "assets/gAreaRoomMap_HyliaDigCaves_1_1.bin"
+gAreaRoomMap_HyliaDigCaves_North_1::
+	.incbin "assets/gAreaRoomMap_HyliaDigCaves_North_1.bin"
 	.align 2
 gAreaRoomMap_CastorWildsDigCave_0_0::
 	.incbin "assets/gAreaRoomMap_CastorWildsDigCave_0_0.bin"
@@ -1215,13 +1215,13 @@ unknown_25::
 gAreaRoomMap_OuterFortressOfWinds_4_1::
 	.incbin "assets/gAreaRoomMap_OuterFortressOfWinds_4_1.bin"
 	.align 2
-gAreaTileset_MinishVillage_0_0::
-	.incbin "tilesets/gAreaTileset_MinishVillage_0_0.4bpp.lz"
+gAreaTileset_MinishVillage_Main_0::
+	.incbin "tilesets/gAreaTileset_MinishVillage_Main_0.4bpp.lz"
 	.align 2
-gAreaTileset_MinishVillage_0_1::
-	.incbin "tilesets/gAreaTileset_MinishVillage_0_1.4bpp.lz"
-gAreaTileset_MinishVillage_0_2::
-	.incbin "tilesets/gAreaTileset_MinishVillage_0_2.4bpp.lz"
+gAreaTileset_MinishVillage_Main_1::
+	.incbin "tilesets/gAreaTileset_MinishVillage_Main_1.4bpp.lz"
+gAreaTileset_MinishVillage_Main_2::
+	.incbin "tilesets/gAreaTileset_MinishVillage_Main_2.4bpp.lz"
 	.align 2
 gAreaMetatiles_MinishVillage_0::
 	.incbin "assets/gAreaMetatiles_MinishVillage_0.bin"
@@ -1234,23 +1234,23 @@ gAreaMetatiles_MinishVillage_2::
 gAreaMetatiles_MinishVillage_3::
 	.incbin "assets/gAreaMetatiles_MinishVillage_3.bin"
 	.align 2
-gAreaTileset_MinishVillage_1_0::
-	.incbin "tilesets/gAreaTileset_MinishVillage_1_0.4bpp.lz"
+gAreaTileset_MinishVillage_SideHouse_0::
+	.incbin "tilesets/gAreaTileset_MinishVillage_SideHouse_0.4bpp.lz"
 	.align 2
-gAreaTileset_MinishVillage_1_1::
-	.incbin "tilesets/gAreaTileset_MinishVillage_1_1.4bpp.lz"
-gAreaTileset_MinishVillage_1_2::
-	.incbin "tilesets/gAreaTileset_MinishVillage_1_2.4bpp.lz"
-gAreaRoomMap_MinishVillage_0_0::
-	.incbin "assets/gAreaRoomMap_MinishVillage_0_0.bin"
+gAreaTileset_MinishVillage_SideHouse_1::
+	.incbin "tilesets/gAreaTileset_MinishVillage_SideHouse_1.4bpp.lz"
+gAreaTileset_MinishVillage_SideHouse_2::
+	.incbin "tilesets/gAreaTileset_MinishVillage_SideHouse_2.4bpp.lz"
+gAreaRoomMap_MinishVillage_Main_0::
+	.incbin "assets/gAreaRoomMap_MinishVillage_Main_0.bin"
 	.align 2
-gAreaRoomMap_MinishVillage_0_1::
-	.incbin "assets/gAreaRoomMap_MinishVillage_0_1.bin"
-gAreaRoomMap_MinishVillage_1_0::
-	.incbin "assets/gAreaRoomMap_MinishVillage_1_0.bin"
+gAreaRoomMap_MinishVillage_Main_1::
+	.incbin "assets/gAreaRoomMap_MinishVillage_Main_1.bin"
+gAreaRoomMap_MinishVillage_SideHouse_0::
+	.incbin "assets/gAreaRoomMap_MinishVillage_SideHouse_0.bin"
 	.align 2
-gAreaRoomMap_MinishVillage_1_1::
-	.incbin "assets/gAreaRoomMap_MinishVillage_1_1.bin"
+gAreaRoomMap_MinishVillage_SideHouse_1::
+	.incbin "assets/gAreaRoomMap_MinishVillage_SideHouse_1.bin"
 	.align 2
 gAreaTileset_MelarisMine_0_0::
 	.incbin "tilesets/gAreaTileset_MelarisMine_0_0.4bpp.lz"
@@ -2180,81 +2180,81 @@ gAreaTileset_MinishHouseInteriors_19_0::
 gAreaRoomMap_MinishHouseInteriors_20_1::
 	.incbin "assets/gAreaRoomMap_MinishHouseInteriors_20_1.bin"
 	.align 2
-gAreaRoomMap_TownMinishHoles_0_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_0_2.bin"
+gAreaRoomMap_TownMinishHoles_MayorsHouse_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_MayorsHouse_2.bin"
 	.align 2
-gAreaTileset_TownMinishHoles_0_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_0_0.8bpp.lz"
+gAreaTileset_TownMinishHoles_MayorsHouse_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_MayorsHouse_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_0_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_0_1.bin"
+gAreaRoomMap_TownMinishHoles_MayorsHouse_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_MayorsHouse_1.bin"
 	.align 2
-gAreaRoomMap_TownMinishHoles_1_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_1_2.bin"
+gAreaRoomMap_TownMinishHoles_WestOracle_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_WestOracle_2.bin"
 	.align 2
-gAreaTileset_TownMinishHoles_1_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_1_0.8bpp.lz"
+gAreaTileset_TownMinishHoles_WestOracle_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_WestOracle_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_1_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_1_1.bin"
+gAreaRoomMap_TownMinishHoles_WestOracle_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_WestOracle_1.bin"
 	.align 2
-gAreaRoomMap_TownMinishHoles_2_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_2_2.bin"
+gAreaRoomMap_TownMinishHoles_DrLeft_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_DrLeft_2.bin"
 	.align 2
-gAreaTileset_TownMinishHoles_2_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_2_0.8bpp.lz"
+gAreaTileset_TownMinishHoles_DrLeft_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_DrLeft_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_2_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_2_1.bin"
+gAreaRoomMap_TownMinishHoles_DrLeft_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_DrLeft_1.bin"
 	.align 2
-gAreaRoomMap_TownMinishHoles_3_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_3_2.bin"
+gAreaRoomMap_TownMinishHoles_Carpenter_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_Carpenter_2.bin"
 	.align 2
-gAreaTileset_TownMinishHoles_3_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_3_0.8bpp.lz"
+gAreaTileset_TownMinishHoles_Carpenter_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_Carpenter_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_3_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_3_1.bin"
+gAreaRoomMap_TownMinishHoles_Carpenter_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_Carpenter_1.bin"
 	.align 2
-gAreaRoomMap_TownMinishHoles_4_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_4_2.bin"
+gAreaRoomMap_TownMinishHoles_Cafe_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_Cafe_2.bin"
 	.align 2
-gAreaTileset_TownMinishHoles_4_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_4_0.8bpp.lz"
+gAreaTileset_TownMinishHoles_Cafe_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_Cafe_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_4_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_4_1.bin"
-gAreaRoomMap_TownMinishHoles_5_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_5_2.bin"
-gAreaTileset_TownMinishHoles_5_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_5_0.8bpp.lz"
+gAreaRoomMap_TownMinishHoles_Cafe_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_Cafe_1.bin"
+gAreaRoomMap_TownMinishHoles_Unused_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_Unused_2.bin"
+gAreaTileset_TownMinishHoles_Unused_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_Unused_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_5_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_5_1.bin"
-gAreaRoomMap_TownMinishHoles_6_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_6_2.bin"
+gAreaRoomMap_TownMinishHoles_Unused_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_Unused_1.bin"
+gAreaRoomMap_TownMinishHoles_LibraryBookshelf_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_LibraryBookshelf_2.bin"
 	.align 2
-gAreaTileset_TownMinishHoles_6_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_6_0.8bpp.lz"
+gAreaTileset_TownMinishHoles_LibraryBookshelf_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_LibraryBookshelf_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_6_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_6_1.bin"
+gAreaRoomMap_TownMinishHoles_LibraryBookshelf_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_LibraryBookshelf_1.bin"
 	.align 2
-gAreaRoomMap_TownMinishHoles_7_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_7_2.bin"
-gAreaTileset_TownMinishHoles_7_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_7_0.8bpp.lz"
-gAreaRoomMap_TownMinishHoles_7_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_7_1.bin"
+gAreaRoomMap_TownMinishHoles_LibrariBookHouse_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_LibrariBookHouse_2.bin"
+gAreaTileset_TownMinishHoles_LibrariBookHouse_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_LibrariBookHouse_0.8bpp.lz"
+gAreaRoomMap_TownMinishHoles_LibrariBookHouse_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_LibrariBookHouse_1.bin"
 	.align 2
-gAreaRoomMap_TownMinishHoles_8_2::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_8_2.bin"
+gAreaRoomMap_TownMinishHoles_RemShoeShop_2::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_RemShoeShop_2.bin"
 	.align 2
-gAreaTileset_TownMinishHoles_8_0::
-	.incbin "tilesets/gAreaTileset_TownMinishHoles_8_0.8bpp.lz"
+gAreaTileset_TownMinishHoles_RemShoeShop_0::
+	.incbin "tilesets/gAreaTileset_TownMinishHoles_RemShoeShop_0.8bpp.lz"
 	.align 2
-gAreaRoomMap_TownMinishHoles_8_1::
-	.incbin "assets/gAreaRoomMap_TownMinishHoles_8_1.bin"
+gAreaRoomMap_TownMinishHoles_RemShoeShop_1::
+	.incbin "assets/gAreaRoomMap_TownMinishHoles_RemShoeShop_1.bin"
 	.align 2
 gAreaTileset_SimonsSimulation_0_0::
 	.incbin "tilesets/gAreaTileset_SimonsSimulation_0_0.4bpp.lz"

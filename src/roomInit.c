@@ -1621,11 +1621,11 @@ void sub_StateChange_TownMinishHoles_Cafe(void) {
     sub_0801AFE4();
 }
 
-u32 sub_unk3_TownMinishHoles_5(void) {
+u32 sub_unk3_TownMinishHoles_Unused(void) {
     return 1;
 }
 
-void sub_StateChange_TownMinishHoles_5(void) {
+void sub_StateChange_TownMinishHoles_Unused(void) {
     sub_0801AFE4();
 }
 
@@ -1832,18 +1832,18 @@ u32 sub_unk3_CastleGardenMinishHoles_West(void) {
 void sub_StateChange_CastleGardenMinishHoles_West(void) {
 }
 
-u32 sub_unk3_37_0(void) {
+u32 sub_unk3_UnusedCastleGardenMinishHoles_East(void) {
     return 1;
 }
 
-void sub_StateChange_37_0(void) {
+void sub_StateChange_UnusedCastleGardenMinishHoles_East(void) {
 }
 
-u32 sub_unk3_37_1(void) {
+u32 sub_unk3_UnusedCastleGardenMinishHoles_West(void) {
     return 1;
 }
 
-void sub_StateChange_37_1(void) {
+void sub_StateChange_UnusedCastleGardenMinishHoles_West(void) {
 }
 
 u32 sub_unk3_MinishCracks_LonLonRanchNorth(void) {
@@ -4285,7 +4285,7 @@ void sub_StateChange_Ruins_Beanstalk4(void) {
 
 extern u32 Area_HyruleTown[];
 
-u32 sub_unk3_HyruleTown_0(void) {
+u32 sub_unk3_HyruleTown_Main(void) {
     u32 uVar1;
     u32 uVar2;
     int iVar3;
@@ -4349,7 +4349,7 @@ extern EntityData gUnk_080EEA7C;
 extern EntityData gUnk_080EEA9C;
 extern EntityData gUnk_080EEBAC;
 
-void sub_StateChange_HyruleTown_0(void) {
+void sub_StateChange_HyruleTown_Main(void) {
     EnableRandomDrops();
     TryLoadPrologueHyruleTown();
 #if defined(USA) || defined(DEMO_USA) || defined(DEMO_JP)

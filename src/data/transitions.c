@@ -150,7 +150,7 @@ const Transition* const gExitLists_Ruins[] = {
     [ROOM_RUINS_BELOW_FORTRESS_ENTRANCE] = gExitList_NoExitList,
 };
 
-const Transition gExitList_HyruleTown_0[] = {
+const Transition gExitList_HyruleTown_Main[] = {
     { WARP_TYPE_AREA, 0x00, 0x02c8, 0x0138, 0x0068, 0x0098, 0x00, AREA_HOUSE_INTERIORS_1, ROOM_HOUSE_INTERIORS_1_MAYOR,
       1, TRANSITION_TYPE_NORMAL, 0x00, 0x00, 0x00, 0x00, 0x00 },
     { WARP_TYPE_AREA, 0x00, 0x0308, 0x0120, 0x00e8, 0x0070, 0x01, AREA_HOUSE_INTERIORS_1, ROOM_HOUSE_INTERIORS_1_MAYOR,
@@ -224,7 +224,7 @@ const Transition gExitList_HyruleTown_0[] = {
     TransitionListEnd,
 };
 const Transition* const gExitLists_HyruleTown[] = {
-    [ROOM_HYRULE_TOWN_MAIN] = gExitList_HyruleTown_0,
+    [ROOM_HYRULE_TOWN_MAIN] = gExitList_HyruleTown_Main,
 };
 
 const Transition gExitList_HyruleTown_1[] = {
@@ -2602,7 +2602,7 @@ const Transition* const gExitLists_HyruleCastleCellar[] = {
     [ROOM_HYRULE_CASTLE_CELLAR_1] = gExitList_GreatFairies_Exit,
 };
 
-const Transition* const gExitLists_40[] = {
+const Transition* const gExitLists_CastleUndergroundTestDungeon[] = {
     gExitList_NoExitList, gExitList_NoExitList, gExitList_NoExitList, gExitList_NoExitList, gExitList_NoExitList,
     gExitList_NoExitList, gExitList_NoExitList, gExitList_NoExitList, gExitList_NoExitList,
 };
@@ -3863,13 +3863,13 @@ const Transition* const* const gExitLists[] = {
     /*AREA_NULL_3D*/ gExitLists_NoExit,
     /*AREA_NULL_3E*/ gExitLists_NoExit,
     /*AREA_NULL_3F*/ gExitLists_NoExit,
-    /*AREA_40*/ gExitLists_40,
+    /*AREA_CASTLE_UNDERGROUND_TEST_DUNGEON*/ gExitLists_CastleUndergroundTestDungeon,
     /*AREA_HYRULE_TOWN_UNDERGROUND*/ gExitLists_HyruleTownUnderground,
     /*AREA_GARDEN_FOUNTAINS*/ gExitLists_GardenFountains,
     /*AREA_HYRULE_CASTLE_CELLAR*/ gExitLists_HyruleCastleCellar,
     /*AREA_SIMONS_SIMULATION*/ gExitLists_NoExit,
     /*AREA_45*/ gExitLists_NoExit,
-    /*AREA_NULL_46*/ gExitLists_40,
+    /*AREA_NULL_46*/ gExitLists_CastleUndergroundTestDungeon,
     /*AREA_47*/ gExitLists_NoExit,
     /*AREA_DEEPWOOD_SHRINE*/ gExitLists_DeepwoodShrine,
     /*AREA_DEEPWOOD_SHRINE_BOSS*/ gExitLists_DeepwoodShrineBoss,

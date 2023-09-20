@@ -12,25 +12,25 @@
     "start": 3295972
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_8_0.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_RemShoeShop_0.bin",
     "start": 3295972,
     "size": 974,
     "type": "map_layer2"
   },
   {
-    "path": "tilesets/gAreaTileset_LakeWoodsCave_0_0.4bpp.lz",
+    "path": "tilesets/gAreaTileset_LakeWoodsCave_Main_0.4bpp.lz",
     "start": 3296948,
     "size": 11346,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_LakeWoodsCave_0_1.4bpp.lz",
+    "path": "tilesets/gAreaTileset_LakeWoodsCave_Main_1.4bpp.lz",
     "start": 3308296,
     "size": 9712,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_LakeWoodsCave_0_2.4bpp.lz",
+    "path": "tilesets/gAreaTileset_LakeWoodsCave_Main_2.4bpp.lz",
     "start": 3318008,
     "size": 8429,
     "type": "tileset"
@@ -60,13 +60,13 @@
     "type": "metatiles_tile_types1"
   },
   {
-    "path": "assets/gAreaRoomMap_MinishWoods_0_0.bin",
+    "path": "assets/gAreaRoomMap_MinishWoods_Main_0.bin",
     "start": 3338724,
     "size": 4265,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_MinishWoods_0_1.bin",
+    "path": "assets/gAreaRoomMap_MinishWoods_Main_1.bin",
     "start": 3342992,
     "size": 1541,
     "type": "map_layer1"
@@ -78,19 +78,19 @@
     "type": "unknown"
   },
   {
-    "path": "tilesets/gAreaTileset_HyliaDigCaves_0_0.4bpp.lz",
+    "path": "tilesets/gAreaTileset_HyliaDigCaves_Middle_0.4bpp.lz",
     "start": 3346712,
     "size": 8203,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_HyliaDigCaves_0_1.4bpp.lz",
+    "path": "tilesets/gAreaTileset_HyliaDigCaves_Middle_1.4bpp.lz",
     "start": 3354916,
     "size": 9774,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_HyliaDigCaves_0_2.4bpp.lz",
+    "path": "tilesets/gAreaTileset_HyliaDigCaves_Middle_2.4bpp.lz",
     "start": 3364692,
     "size": 7618,
     "type": "tileset"
@@ -120,13 +120,13 @@
     "type": "metatiles_tile_types1"
   },
   {
-    "path": "assets/gAreaRoomMap_LakeHylia_0_0.bin",
+    "path": "assets/gAreaRoomMap_LakeHylia_Main_0.bin",
     "start": 3383872,
     "size": 3187,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_LakeHylia_0_1.bin",
+    "path": "assets/gAreaRoomMap_LakeHylia_Main_1.bin",
     "start": 3387060,
     "size": 1083,
     "type": "map_layer1"
@@ -138,13 +138,13 @@
     "type": "unknown"
   },
   {
-    "path": "assets/gAreaRoomMap_LakeHylia_1_0.bin",
+    "path": "assets/gAreaRoomMap_LakeHylia_Beanstalk_0.bin",
     "start": 3388904,
     "size": 367,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_LakeHylia_1_1.bin",
+    "path": "assets/gAreaRoomMap_LakeHylia_Beanstalk_1.bin",
     "start": 3389272,
     "size": 322,
     "type": "map_layer1"
@@ -192,7 +192,7 @@
     "type": "metatiles_tile_types1"
   },
   {
-    "path": "assets/gAreaRoomMap_CastorWilds_0_0.bin",
+    "path": "assets/gAreaRoomMap_CastorWilds_Main_0.bin",
     "variants": [
       "DEMO_JP",
       "DEMO_USA",
@@ -204,7 +204,7 @@
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_CastorWilds_0_0.bin",
+    "path": "assets/gAreaRoomMap_CastorWilds_Main_0.bin",
     "variants": [
       "EU"
     ],
@@ -218,7 +218,7 @@
     }
   },
   {
-    "path": "assets/gAreaRoomMap_CastorWilds_0_1.bin",
+    "path": "assets/gAreaRoomMap_CastorWilds_Main_1.bin",
     "start": 3433588,
     "size": 1018,
     "type": "map_layer1"
@@ -230,73 +230,73 @@
     "type": "unknown"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_0_0.bin",
+    "path": "assets/gAreaRoomMap_Ruins_Entrance_0.bin",
     "start": 3435572,
     "size": 733,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_0_1.bin",
+    "path": "assets/gAreaRoomMap_Ruins_Entrance_1.bin",
     "start": 3436308,
     "size": 206,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_1_0.bin",
+    "path": "assets/gAreaRoomMap_Ruins_Beanstalk_0.bin",
     "start": 3436516,
     "size": 284,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_1_1.bin",
+    "path": "assets/gAreaRoomMap_Ruins_Beanstalk_1.bin",
     "start": 3436800,
     "size": 108,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_2_0.bin",
+    "path": "assets/gAreaRoomMap_Ruins_Tektites_0.bin",
     "start": 3436908,
     "size": 246,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_2_1.bin",
+    "path": "assets/gAreaRoomMap_Ruins_Tektites_1.bin",
     "start": 3437156,
     "size": 98,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_3_0.bin",
+    "path": "assets/gAreaRoomMap_Ruins_LadderToTektites_0.bin",
     "start": 3437256,
     "size": 254,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_3_1.bin",
+    "path": "assets/gAreaRoomMap_Ruins_LadderToTektites_1.bin",
     "start": 3437512,
     "size": 91,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_4_0.bin",
+    "path": "assets/gAreaRoomMap_Ruins_FortressEntrance_0.bin",
     "start": 3437604,
     "size": 769,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_4_1.bin",
+    "path": "assets/gAreaRoomMap_Ruins_FortressEntrance_1.bin",
     "start": 3438376,
     "size": 236,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_5_0.bin",
+    "path": "assets/gAreaRoomMap_Ruins_BelowFortressEntrance_0.bin",
     "start": 3438612,
     "size": 651,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_Ruins_5_1.bin",
+    "path": "assets/gAreaRoomMap_Ruins_BelowFortressEntrance_1.bin",
     "start": 3439264,
     "size": 223,
     "type": "map_layer1"
@@ -350,31 +350,31 @@
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_FestivalTown_0_0.4bpp.lz",
+    "path": "tilesets/gAreaTileset_FestivalTown_Main_0.4bpp.lz",
     "start": 3510624,
     "size": 7144,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_FestivalTown_0_1.4bpp.lz",
+    "path": "tilesets/gAreaTileset_FestivalTown_Main_1.4bpp.lz",
     "start": 3517768,
     "size": 9362,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_FestivalTown_0_2.4bpp.lz",
+    "path": "tilesets/gAreaTileset_FestivalTown_Main_2.4bpp.lz",
     "start": 3527132,
     "size": 7515,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_HyruleTown_0_0.bin",
+    "path": "assets/gAreaRoomMap_HyruleTown_Main_0.bin",
     "start": 3534648,
     "size": 4509,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_HyruleTown_0_1.bin",
+    "path": "assets/gAreaRoomMap_HyruleTown_Main_1.bin",
     "start": 3539160,
     "size": 2272,
     "type": "map_layer1"
@@ -386,13 +386,13 @@
     "type": "unknown"
   },
   {
-    "path": "assets/gAreaRoomMap_FestivalTown_0_0.bin",
+    "path": "assets/gAreaRoomMap_FestivalTown_Main_0.bin",
     "start": 3542388,
     "size": 2109,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_FestivalTown_0_1.bin",
+    "path": "assets/gAreaRoomMap_FestivalTown_Main_1.bin",
     "start": 3544500,
     "size": 1369,
     "type": "map_layer1"
@@ -2414,13 +2414,13 @@
     "type": "map_layer1"
   },
   {
-    "path": "tilesets/gAreaTileset_LakeWoodsCave_0_3.4bpp.lz",
+    "path": "tilesets/gAreaTileset_LakeWoodsCave_Main_3.4bpp.lz",
     "start": 4097736,
     "size": 4118,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_LakeWoodsCave_0_4.4bpp.lz",
+    "path": "tilesets/gAreaTileset_LakeWoodsCave_Main_4.4bpp.lz",
     "start": 4101856,
     "size": 2564,
     "type": "tileset"
@@ -2474,19 +2474,19 @@
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_HyliaDigCaves_0_3.4bpp.lz",
+    "path": "tilesets/gAreaTileset_HyliaDigCaves_Middle_3.4bpp.lz",
     "start": 4132376,
     "size": 3117,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_HyliaDigCaves_0_4.4bpp.lz",
+    "path": "tilesets/gAreaTileset_HyliaDigCaves_Middle_4.4bpp.lz",
     "start": 4135496,
     "size": 2564,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_LakeWoodsCave_0_0.bin",
+    "path": "assets/gAreaRoomMap_LakeWoodsCave_Main_0.bin",
     "start": 4138060,
     "size": 1344,
     "type": "map_layer2"
@@ -2498,13 +2498,13 @@
     "type": "unknown"
   },
   {
-    "path": "assets/gAreaRoomMap_LakeWoodsCave_0_1.bin",
+    "path": "assets/gAreaRoomMap_LakeWoodsCave_Main_1.bin",
     "start": 4140432,
     "size": 1261,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_HyliaDigCaves_0_0.bin",
+    "path": "assets/gAreaRoomMap_HyliaDigCaves_Middle_0.bin",
     "start": 4141696,
     "size": 188,
     "type": "map_layer2"
@@ -2516,13 +2516,13 @@
     "type": "unknown"
   },
   {
-    "path": "assets/gAreaRoomMap_HyliaDigCaves_0_1.bin",
+    "path": "assets/gAreaRoomMap_HyliaDigCaves_Middle_1.bin",
     "start": 4142000,
     "size": 170,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_HyliaDigCaves_1_0.bin",
+    "path": "assets/gAreaRoomMap_HyliaDigCaves_North_0.bin",
     "start": 4142172,
     "size": 946,
     "type": "map_layer2"
@@ -2534,7 +2534,7 @@
     "type": "unknown"
   },
   {
-    "path": "assets/gAreaRoomMap_HyliaDigCaves_1_1.bin",
+    "path": "assets/gAreaRoomMap_HyliaDigCaves_North_1.bin",
     "start": 4143580,
     "size": 981,
     "type": "map_layer1"
@@ -2738,19 +2738,19 @@
     "type": "map_layer1"
   },
   {
-    "path": "tilesets/gAreaTileset_MinishVillage_0_0.4bpp.lz",
+    "path": "tilesets/gAreaTileset_MinishVillage_Main_0.4bpp.lz",
     "start": 4162720,
     "size": 6774,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_MinishVillage_0_1.4bpp.lz",
+    "path": "tilesets/gAreaTileset_MinishVillage_Main_1.4bpp.lz",
     "start": 4169496,
     "size": 8896,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_MinishVillage_0_2.4bpp.lz",
+    "path": "tilesets/gAreaTileset_MinishVillage_Main_2.4bpp.lz",
     "start": 4178392,
     "size": 8090,
     "type": "tileset"
@@ -2780,43 +2780,43 @@
     "type": "metatiles_tile_types1"
   },
   {
-    "path": "tilesets/gAreaTileset_MinishVillage_1_0.4bpp.lz",
+    "path": "tilesets/gAreaTileset_MinishVillage_SideHouse_0.4bpp.lz",
     "start": 4200216,
     "size": 5014,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_MinishVillage_1_1.4bpp.lz",
+    "path": "tilesets/gAreaTileset_MinishVillage_SideHouse_1.4bpp.lz",
     "start": 4205232,
     "size": 8896,
     "type": "tileset"
   },
   {
-    "path": "tilesets/gAreaTileset_MinishVillage_1_2.4bpp.lz",
+    "path": "tilesets/gAreaTileset_MinishVillage_SideHouse_2.4bpp.lz",
     "start": 4214128,
     "size": 3192,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_MinishVillage_0_0.bin",
+    "path": "assets/gAreaRoomMap_MinishVillage_Main_0.bin",
     "start": 4217320,
     "size": 3014,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_MinishVillage_0_1.bin",
+    "path": "assets/gAreaRoomMap_MinishVillage_Main_1.bin",
     "start": 4220336,
     "size": 2744,
     "type": "map_layer1"
   },
   {
-    "path": "assets/gAreaRoomMap_MinishVillage_1_0.bin",
+    "path": "assets/gAreaRoomMap_MinishVillage_SideHouse_0.bin",
     "start": 4223080,
     "size": 417,
     "type": "map_layer2"
   },
   {
-    "path": "assets/gAreaRoomMap_MinishVillage_1_1.bin",
+    "path": "assets/gAreaRoomMap_MinishVillage_SideHouse_1.bin",
     "start": 4223500,
     "size": 451,
     "type": "map_layer1"
@@ -4928,163 +4928,163 @@
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_0_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_MayorsHouse_2.bin",
     "start": 4876696,
     "size": 1285,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_0_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_MayorsHouse_0.8bpp.lz",
     "start": 4877984,
     "size": 8598,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_0_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_MayorsHouse_1.bin",
     "start": 4886584,
     "size": 50,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_1_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_WestOracle_2.bin",
     "start": 4886636,
     "size": 1413,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_1_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_WestOracle_0.8bpp.lz",
     "start": 4888052,
     "size": 10686,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_1_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_WestOracle_1.bin",
     "start": 4898740,
     "size": 65,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_2_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_DrLeft_2.bin",
     "start": 4898808,
     "size": 1317,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_2_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_DrLeft_0.8bpp.lz",
     "start": 4900128,
     "size": 9694,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_2_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_DrLeft_1.bin",
     "start": 4909824,
     "size": 47,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_3_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_Carpenter_2.bin",
     "start": 4909872,
     "size": 1415,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_3_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_Carpenter_0.8bpp.lz",
     "start": 4911288,
     "size": 10723,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_3_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_Carpenter_1.bin",
     "start": 4922012,
     "size": 59,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_4_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_Cafe_2.bin",
     "start": 4922072,
     "size": 1339,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_4_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_Cafe_0.8bpp.lz",
     "start": 4923412,
     "size": 9306,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_4_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_Cafe_1.bin",
     "start": 4932720,
     "size": 60,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_5_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_Unused_2.bin",
     "start": 4932780,
     "size": 1424,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_5_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_Unused_0.8bpp.lz",
     "start": 4934204,
     "size": 12389,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_5_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_Unused_1.bin",
     "start": 4946596,
     "size": 52,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_6_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_LibraryBookshelf_2.bin",
     "start": 4946648,
     "size": 3294,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_6_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_LibraryBookshelf_0.8bpp.lz",
     "start": 4949944,
     "size": 12973,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_6_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_LibraryBookshelf_1.bin",
     "start": 4962920,
     "size": 119,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_7_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_LibrariBookHouse_2.bin",
     "start": 4963040,
     "size": 1676,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_7_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_LibrariBookHouse_0.8bpp.lz",
     "start": 4964716,
     "size": 17700,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_7_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_LibrariBookHouse_1.bin",
     "start": 4982416,
     "size": 55,
     "type": "map_collision"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_8_2.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_RemShoeShop_2.bin",
     "start": 4982472,
     "size": 2978,
     "type": "map_mapping2"
   },
   {
-    "path": "tilesets/gAreaTileset_TownMinishHoles_8_0.8bpp.lz",
+    "path": "tilesets/gAreaTileset_TownMinishHoles_RemShoeShop_0.8bpp.lz",
     "start": 4985452,
     "size": 13622,
     "type": "tileset"
   },
   {
-    "path": "assets/gAreaRoomMap_TownMinishHoles_8_1.bin",
+    "path": "assets/gAreaRoomMap_TownMinishHoles_RemShoeShop_1.bin",
     "start": 4999076,
     "size": 78,
     "type": "map_collision"
