@@ -23,28 +23,28 @@ void sub_08024C7C(Entity*);
 void sub_08024C94(Entity*);
 bool32 sub_08024CC0(Entity*);
 void sub_08024D00(Entity*);
-void sub_08024E00(Entity*, u32);
-void sub_08024E1C(Entity*);
-u32 sub_08024E34(void);
+void Pesto_Random_Timer(Entity*, u32);
+void Pesto_Random_Speed(Entity*);
+u32 Pesto_Random(void);
 void sub_08024E4C(Entity*);
 void sub_08024F50(Entity*);
 
 extern Entity* gUnk_020000B0;
 
 extern void (*const Pesto_Functions[])(Entity*);
-extern void (*const gUnk_080CBEDC[])(Entity*);
+extern void (*const Pesto_Actions[])(Entity*);
 extern void (*const gUnk_080CBEF8[])(Entity*);
 
-extern const u8 gUnk_080CBF10[];
-extern const u16 gUnk_080CBF18[];
-extern const u8 gUnk_080CBF20[];
+extern const u8 Pesto_Timer_Durationss[];
+extern const u16 Pesto_Speeds[];
+extern const u8 Pesto_Random_Table[];
 
 void Pesto(Entity* this) {
     Pesto_Functions[GetNextFunction(this)](this);
 }
 
 void Pesto_OnTick(Entity* this) {
-    gUnk_080CBEDC[this->action](this);
+    Pesto_Actions[this->action](this);
 }
 
 void Pesto_OnCollision(Entity* this) {
@@ -126,7 +126,7 @@ void sub_0802409C(Entity* this) {
     CreateDust(this);
 }
 
-void sub_080240B8(Entity* this) {
+void Pesto_Innitialize(Entity* this) {
     u32 direction = (Random() & 0xc0) >> 3;
     sub_0804A720(this);
     this->action = 1;
@@ -178,7 +178,7 @@ void sub_080240B8(Entity* this) {
     }
 }
 
-void sub_080241C0(Entity* this) {
+void Pesto_Low_Wander(Entity* this) {
     sub_08024940(this);
     switch (this->field_0x80.HALF.LO) {
         case 0:
@@ -202,8 +202,8 @@ void sub_080241C0(Entity* this) {
                         this->action = 3;
                         this->field_0x80.HALF.LO = tmp;
                         this->subtimer = 10;
-                        sub_08024E00(this, 0);
-                        sub_08024E1C(this);
+                        Pesto_Random_Timer(this, 0);
+                        Pesto_Random_Speed(this);
                         sub_08024A14(this, 3, this->subtimer);
                     }
                 } else {
@@ -214,20 +214,20 @@ void sub_080241C0(Entity* this) {
     }
 }
 
-void sub_08024298(Entity* this) {
+void Pesto_Attack(Entity* this) {
     sub_08024D00(this);
 }
 
-void sub_080242A0(Entity* this) {
+void Pesto_Action_3(Entity* this) {
     sub_08024940(this);
     if (sub_08024CC0(this)) {
         if (--this->timer == 0) {
             this->direction = GetFacingDirection(this, gUnk_020000B0);
-            sub_08024E00(this, 1);
+            Pesto_Random_Timer(this, 1);
             if (this->speed != 0) {
                 this->speed = 0;
             } else {
-                sub_08024E1C(this);
+                Pesto_Random_Speed(this);
             }
         } else if (--this->subtimer == 0) {
             sub_08024A14(this, 3, 10);
@@ -242,7 +242,7 @@ void sub_080242A0(Entity* this) {
     }
 }
 
-void sub_0802433C(Entity* this) {
+void Pesto_High_Wander(Entity* this) {
     sub_08024940(this);
     switch (this->field_0x80.HALF.LO) {
         case 0:
@@ -250,7 +250,7 @@ void sub_0802433C(Entity* this) {
                 this->field_0x80.HALF.LO++;
                 this->speed = 0x100;
                 this->subtimer = 8;
-                sub_08024E00(this, 1);
+                Pesto_Random_Timer(this, 1);
             }
             break;
         case 1:
@@ -268,7 +268,7 @@ void sub_0802433C(Entity* this) {
     }
 }
 
-void sub_080243B8(Entity* this) {
+void Pesto_Drop_Attack(Entity* this) {
     sub_08024940(this);
     switch (this->field_0x80.HALF.LO) {
         case 0:
@@ -331,7 +331,7 @@ void sub_080243B8(Entity* this) {
     }
 }
 
-void sub_080244E8(Entity* this) {
+void Pesto_Action_6(Entity* this) {
     sub_08024940(this);
     switch (this->field_0x80.HALF.LO) {
         case 0:
@@ -372,10 +372,10 @@ void sub_080244E8(Entity* this) {
                     if (this->speed) {
                         this->speed = 0;
                     } else {
-                        sub_08024E1C(this);
+                        Pesto_Random_Speed(this);
                     }
                     this->direction = GetFacingDirection(this, this->child);
-                    sub_08024E00(this, 0);
+                    Pesto_Random_Timer(this, 0);
                     sub_080249DC(this);
                 } else if (--this->subtimer == 0) {
                     sub_08024A14(this, 1, 8);
@@ -795,17 +795,17 @@ void sub_08024D00(Entity* this) {
     }
 }
 
-void sub_08024E00(Entity* this, u32 unk) {
-    this->timer = gUnk_080CBF10[sub_08024E34() * 2 | unk];
+void Pesto_Random_Timer(Entity* this, u32 unk) {
+    this->timer = Pesto_Timer_Durationss[Pesto_Random() * 2 | unk];
 }
 
-void sub_08024E1C(Entity* this) {
-    this->speed = gUnk_080CBF18[sub_08024E34()];
+void Pesto_Random_Speed(Entity* this) {
+    this->speed = Pesto_Speeds[Pesto_Random()];
 }
 
-u32 sub_08024E34(void) {
+u32 Pesto_Random(void) {
     u32 idx = (Random() & 0x3c) >> 2;
-    return gUnk_080CBF20[idx];
+    return Pesto_Random_Table[idx];
 }
 
 void sub_08024E4C(Entity* this) {
@@ -878,14 +878,14 @@ void (*const Pesto_Functions[])(Entity*) = {
     Pesto_OnGrabbed,
 };
 
-void (*const gUnk_080CBEDC[])(Entity*) = {
-    sub_080240B8,
-    sub_080241C0,
-    sub_08024298,
-    sub_080242A0,
-    sub_0802433C,
-    sub_080243B8,
-    sub_080244E8,
+void (*const Pesto_Actions[])(Entity*) = {
+    Pesto_Innitialize,
+    Pesto_Low_Wander,
+    Pesto_Attack,
+    Pesto_Action_3,
+    Pesto_High_Wander,
+    Pesto_Drop_Attack,
+    Pesto_Action_6,
 };
 
 void (*const gUnk_080CBEF8[])(Entity*) = {
@@ -897,15 +897,15 @@ void (*const gUnk_080CBEF8[])(Entity*) = {
     sub_0802409C,
 };
 
-const u8 gUnk_080CBF10[] = {
+const u8 Pesto_Timer_Durationss[] = {
     30, 60, 50, 90, 70, 100, 90, 120,
 };
 
-const u16 gUnk_080CBF18[] = {
+const u16 Pesto_Speeds[] = {
     0x80, 0xC0, 0x100, 0x140,
 };
 
-const u8 gUnk_080CBF20[] = {
+const u8 Pesto_Random_Table[] = {
     0, 2, 1, 1, 3, 1, 2, 0,
     1, 1, 2, 3, 2, 2, 1, 2,
 };
