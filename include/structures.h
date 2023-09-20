@@ -30,7 +30,7 @@ typedef struct {
     u8 field_0x4;
     u8 listenForKeyPresses;
     u8 field_0x6;
-    u8 field_0x7;
+    u8 field_0x7; // Kiosk Demo Timer Setting ( &2 for 8 minutes, otherwise 15 mins)
     u8 pad[24];
 } struct_02000010;
 static_assert(sizeof(struct_02000010) == 0x20);

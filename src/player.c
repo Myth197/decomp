@@ -90,7 +90,7 @@ static EntityAction PlayerFallUpdate;
 // PLAYER_BOUNCE
 static EntityAction PlayerBounceInit;
 static EntityAction PlayerBounceUpdate;
-static EntityAction sub_08070E7C;
+static EntityAction PlayerBounceDone;
 
 // PLAYER_TALKNPC
 static EntityAction sub_08070EDC;
@@ -99,16 +99,16 @@ static EntityAction sub_08070f24;
 // PLAYER_ITEMGET
 static EntityAction PlayerItemGetInit;
 static EntityAction PlayerItemGetUpdate;
-static EntityAction sub_08071038;
+static EntityAction PlayerItemGetDone;
 
 // PLAYER_JUMP
 static EntityAction PlayerJumpInit;
-static EntityAction sub_08071130;
-static EntityAction sub_08071208;
+static EntityAction PlayerJumpUpdate;
+static EntityAction PlayerJumpDone;
 
 // PLAYER_DROWN
 static EntityAction PlayerDrownInit;
-static EntityAction sub_080712F0;
+static EntityAction PlayerDrownUpdate;
 
 // PLAYER_USEPORTAL
 static EntityAction PortalJumpOnUpdate;
@@ -118,7 +118,7 @@ static EntityAction PortalActivateUpdate;
 static EntityAction PortalShrinkInit;
 static EntityAction PortalShrinkUpdate;
 static EntityAction PortalEnterUpdate;
-static EntityAction PortalUnknownUpdate;
+static EntityAction PortalJumpOffUpdate;
 
 // PLAYER_TALKEZLO
 static EntityAction PlayerTalkEzlo_Init;
@@ -129,7 +129,7 @@ static EntityAction PlayerTalkEzlo_Leave;
 // PLAYER_PUSH
 static EntityAction PlayerPushInit;
 static EntityAction PlayerPushUpdate;
-static EntityAction sub_08071B60;
+static EntityAction PlayerPushDone;
 
 // PLAYER_MINISHDIE
 static EntityAction PlayerMinishDieInit;
@@ -633,7 +633,7 @@ static void PlayerBounce(Entity* this) {
     static EntityAction* const sPlayerBounceStates[] = {
         PlayerBounceInit,
         PlayerBounceUpdate,
-        sub_08070E7C,
+        PlayerBounceDone,
     };
     sPlayerBounceStates[this->subAction](this);
 }
@@ -704,7 +704,7 @@ static void PlayerBounceUpdate(Entity* this) {
         gPlayerState.animation = DEFAULT_ANIM;
 }
 
-static void sub_08070E7C(Entity* this) {
+static void PlayerBounceDone(Entity* this) {
     if (--this->timer == 0) {
         gPlayerState.jump_status = 0;
         ResetPlayerAnimationAndAction();
@@ -751,7 +751,7 @@ static void PlayerItemGet(Entity* this) {
     static EntityAction* const sPlayerItemGetStates[] = {
         PlayerItemGetInit,
         PlayerItemGetUpdate,
-        sub_08071038,
+        PlayerItemGetDone,
     };
 
     Entity* child;
@@ -806,7 +806,7 @@ static void PlayerItemGetUpdate(Entity* this) {
         this->subAction = 2;
 }
 
-static void sub_08071038(Entity* this) {
+static void PlayerItemGetDone(Entity* this) {
     UpdateAnimationSingleFrame(this);
 
     // player is still reading message
@@ -827,8 +827,8 @@ static void sub_08071038(Entity* this) {
 static void PlayerJump(Entity* this) {
     static EntityAction* const sPlayerJumpStates[] = {
         PlayerJumpInit,
-        sub_08071130,
-        sub_08071208,
+        PlayerJumpUpdate,
+        PlayerJumpDone,
     };
 
     gPlayerState.framestate = PL_STATE_JUMP;
@@ -869,7 +869,7 @@ static void PlayerJumpInit(Entity* this) {
     SoundReq(SFX_PLY_VO4);
 }
 
-static void sub_08071130(Entity* this) {
+static void PlayerJumpUpdate(Entity* this) {
     if (CheckQueuedAction())
         return;
 
@@ -924,7 +924,7 @@ static void sub_08071130(Entity* this) {
     SoundReq(SFX_PLY_LAND);
 }
 
-static void sub_08071208(Entity* this) {
+static void PlayerJumpDone(Entity* this) {
     if ((gPlayerState.heldObject | gPlayerState.keepFacing) == 0) {
         if ((gPlayerState.flags & PL_MINISH) == 0) {
             UpdateAnimationSingleFrame(this);
@@ -940,7 +940,7 @@ static void sub_08071208(Entity* this) {
 static void PlayerDrown(Entity* this) {
     static EntityAction* const sPlayerDrownStates[] = {
         PlayerDrownInit,
-        sub_080712F0,
+        PlayerDrownUpdate,
     };
 
     gPlayerState.framestate = PL_STATE_DROWN;
@@ -971,7 +971,7 @@ static void PlayerDrownInit(Entity* this) {
     ResetActiveItems();
 }
 
-static void sub_080712F0(Entity* this) {
+static void PlayerDrownUpdate(Entity* this) {
     u32 temp;
 
     UpdateAnimationSingleFrame(this);
@@ -1001,7 +1001,7 @@ static void sub_080712F0(Entity* this) {
 static void PlayerUsePortal(Entity* this) {
     static EntityAction* const sPlayerUsePortalStates[] = {
         PortalJumpOnUpdate, PortalStandUpdate,  PortalActivateInit, PortalActivateUpdate,
-        PortalShrinkInit,   PortalShrinkUpdate, PortalEnterUpdate,  PortalUnknownUpdate,
+        PortalShrinkInit,   PortalShrinkUpdate, PortalEnterUpdate,  PortalJumpOffUpdate,
     };
 
     gPlayerState.framestate = PL_STATE_USEPORTAL;
@@ -1234,7 +1234,7 @@ static void PortalEnterUpdate(Entity* this) {
     this->timer--;
 }
 
-static void PortalUnknownUpdate(Entity* this) {
+static void PortalJumpOffUpdate(Entity* this) {
     if (gFadeControl.active)
         return;
 
@@ -1388,7 +1388,7 @@ static void PlayerPush(Entity* this) {
     static EntityAction* const sPlayerPushStates[] = {
         PlayerPushInit,
         PlayerPushUpdate,
-        sub_08071B60,
+        PlayerPushDone,
     };
 
     gPlayerState.framestate = PL_STATE_PUSH;
@@ -1455,7 +1455,7 @@ static void PlayerPushUpdate(Entity* this) {
     UpdatePlayerMovement();
 }
 
-static void sub_08071B60(Entity* this) {
+static void PlayerPushDone(Entity* this) {
     gPlayerState.pushedObject = 2;
     gPlayerState.flags &= ~PL_BUSY;
     this->type = 0;

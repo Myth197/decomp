@@ -5,7 +5,7 @@
 
 const ItemMetaData gItemMetaData[] = {
     //                              = { u8 menuSlot;                u8 unk1;    u8 unk2;    u8 unk3;    u8 textId;  u8 textCategory;    u8 unk6;    u8 unk7;
-    [ITEM_NONE]                     = { 0x63u,                      0u,         0u,         0u,         0u,         0u, 0u, 0u },
+    [ITEM_NONE]                     = { 0x63u,                      0u,         0u,         0u,         0u,         0u,                 0u,         0u },
     [ITEM_SMITH_SWORD]              = { MENU_SLOT_SWORD,            0u,         0u,         0u,         0x1u,       TEXT_ITEM_GET,      0x1u,       0x5u },
     [ITEM_GREEN_SWORD]              = { MENU_SLOT_SWORD,            0u,         0u,         0u,         0x2u,       TEXT_ITEM_GET,      0x2u,       0x5u },
     [ITEM_RED_SWORD]                = { MENU_SLOT_SWORD,            0u,         0u,         0u,         0x3u,       TEXT_ITEM_GET,      0x3u,       0x5u },
