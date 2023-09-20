@@ -406,7 +406,7 @@ static void HandleFileScreenEnter(void) {
     MemClear(&gUnk_0200AF00, sizeof(gUnk_0200AF00));
     MemClear(&gMapDataBottomSpecial, sizeof(gMapDataBottomSpecial));
     gMapDataBottomSpecial.unk3 = 7;
-    gMapDataBottomSpecial.unk6 = gSaveHeader->language > LANGUAGE_EN ? 3 : 0;
+    gMapDataBottomSpecial.unk6 = gSaveHeader->language > LANGUAGE_US ? 3 : 0;
     MemClear(&gUI, sizeof(gUI));
     gUI.lastState = 8;
     SetFileSelectState(STATE_NONE);

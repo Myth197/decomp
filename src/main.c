@@ -205,7 +205,7 @@ void InitSaveHeader(void) {
     if ((gSaveHeader->signature != SIGNATURE) || (gSaveHeader->saveFileId >= NUM_SAVE_SLOTS) ||
         (gSaveHeader->msg_speed >= MAX_MSG_SPEED) || (gSaveHeader->brightness >= MAX_BRIGHTNESS)
 #ifdef EU
-        || (gSaveHeader->language <= GAME_LANGUAGE) || (gSaveHeader->language > NUM_LANGUAGES)
+        || (gSaveHeader->language <= GAME_LANGUAGE) || (gSaveHeader->language > LANGUAGE_IT)
 #else
         || (gSaveHeader->language != GAME_LANGUAGE)
 #endif

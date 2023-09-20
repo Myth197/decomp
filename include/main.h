@@ -19,16 +19,16 @@
 /** Supported game languages. */
 typedef enum {
     LANGUAGE_JP,
+    LANGUAGE_US,
     LANGUAGE_EN,
     LANGUAGE_FR,
     LANGUAGE_DE,
     LANGUAGE_ES,
     LANGUAGE_IT,
-    NUM_LANGUAGES,
 } Language;
 
 #ifdef ENGLISH
-#define GAME_LANGUAGE LANGUAGE_EN
+#define GAME_LANGUAGE LANGUAGE_US
 #else
 #define GAME_LANGUAGE LANGUAGE_JP
 #endif

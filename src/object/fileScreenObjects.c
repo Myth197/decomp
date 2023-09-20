@@ -213,7 +213,7 @@ void FileScreenObjects_Type0(FileScreenObjectsEntity* this) {
     u32 var1;
 
     if (super->type == 3) {
-        if (gSaveHeader->language > LANGUAGE_EN) {
+        if (gSaveHeader->language > LANGUAGE_US) {
             super->spriteSettings.draw = 2;
         } else {
             super->spriteSettings.draw = 0;
